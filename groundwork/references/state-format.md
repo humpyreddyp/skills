@@ -74,7 +74,7 @@ Question fields:
 
 Remediation fields: `id`, `question_id`, `scope`, `affects`, `sources`, `action`, `status` (`open` or `verified`), and `decision`. A decision holds `choice`, `human_statement`, and `github_id`.
 
-Verified remediation means a completed fix was checked; Bootstrap does not implement it. The associated question records whether the unresolved work blocks safe reasoning for the scope.
+Verified remediation means a completed fix was checked; Groundwork does not implement it. The associated question records whether the unresolved work blocks safe reasoning for the scope.
 
 Exclusion fields: `id`, `question_id`, `scope`, `affects`, `source`, `claim`, `rationale`, `recheck_when`, `status` (`active`, `needs review`, or `retired`), `source_snapshot`, and `decision`. The source uses the same shape as page provenance.
 
@@ -98,7 +98,7 @@ Before trusting a page, run `freshness` and read the index plus active or review
 
 Revalidation means investigating the changed claims and explicitly republishing those that pass review. A changed hash does not justify a new conclusion. Complete scopes can become `needs revalidation`.
 
-Raw Markdown records what was reviewed at a particular revision. The future `wire-context` skill must teach readers to use this index/freshness/exclusion check; Bootstrap does not write host instructions.
+Raw Markdown records what was reviewed at a particular revision. The future `wire-context` skill must teach readers to use this index/freshness/exclusion check; Groundwork does not write host instructions.
 
 ## Recover and clean up
 
@@ -106,4 +106,4 @@ Writes are atomic per file. If publication stops between page, tracking, and ind
 
 The helper allows one writer through `.bootstrap/.lock`. After a crash, check that its recorded process has stopped before removing the lock. One parent allocates IDs and writes state; isolated investigators return findings. Do not run multiple parent sessions against the same baseline. Reserve PB IDs with `allocate-pb`; gaps are fine.
 
-After each investigation, save the finding or its durable outcome and one next action. Remove obsolete Bootstrap-owned temporary files once their useful content is published or recorded elsewhere. This includes previous-session checkpoints no longer needed by a saved action. Retain relevant questions, open remediation, exclusions, fingerprints, and resume state. Never delete user files or perform cleanup during a status-only request.
+After each investigation, save the finding or its durable outcome and one next action. Remove obsolete Groundwork-owned temporary files once their useful content is published or recorded elsewhere. This includes previous-session checkpoints no longer needed by a saved action. Retain relevant questions, open remediation, exclusions, fingerprints, and resume state. Never delete user files or perform cleanup during a status-only request.

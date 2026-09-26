@@ -7,7 +7,7 @@ import sys
 import tempfile
 import unittest
 
-SCRIPT = Path(__file__).resolve().parents[1] / 'bootstrap-context/scripts/bootstrap.py'
+SCRIPT = Path(__file__).resolve().parents[1] / 'groundwork/scripts/bootstrap.py'
 spec = importlib.util.spec_from_file_location('bootstrap', SCRIPT)
 bootstrap = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(bootstrap)

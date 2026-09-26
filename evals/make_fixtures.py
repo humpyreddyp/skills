@@ -6,7 +6,7 @@ from pathlib import Path
 import subprocess
 import sys
 
-SKILL = Path(__file__).resolve().parents[1] / 'bootstrap-context'
+SKILL = Path(__file__).resolve().parents[1] / 'groundwork'
 
 
 def put(root, name, value):
@@ -60,7 +60,7 @@ def build(base):
     root = lambda n: base / f'case-{n:02d}'
     put(root(1), 'docs/checkout.md', '# Checkout, historical v1\nFor the retired v1 endpoint, fee is 2.\n')
     put(root(1), 'docs/adr-004.md', '# Accepted v2 packing fee\nCurrent checkout is v2; fee is 3 for packing costs. v1 has been retired.\n')
-    requests[1] = 'Use bootstrap-context to baseline the current checkout fee. Scope is checkout. Repository contains the available context; ask only questions that remain material after investigation.'
+    requests[1] = 'Use groundwork to baseline the current checkout fee. Scope is checkout. Repository contains the available context; ask only questions that remain material after investigation.'
     put(root(2), 'docs/checkout.md', '# Current checkout contract\nThe fee MUST be 2 for all current checkouts.\n')
     requests[2] = 'Baseline checkout so future changes can safely reason about its fee. I have no more context right now.'
     (root(3) / 'docs/checkout.md').unlink()
@@ -88,7 +88,7 @@ def build(base):
     put(root(9), '.bootstrap/runs/current.md', 'Scope: checkout. Fee 3 is corroborated by code, test, and docs.\nNext: publish fee behavior using the next available PB ID, then link engineering verification.\nSources: src/checkout.py, tests/test_checkout.py, docs/checkout.md.\n')
     command(root(9), 'checkpoint', '--scope', 'checkout', '--status', 'partial', '--next',
             'Publish investigated fee behavior and engineering linkage', '--finding', '.bootstrap/runs/current.md')
-    requests[9] = 'Continue bootstrap-context from the saved state. This is a new session; I have no previous conversation to provide.'
+    requests[9] = 'Continue groundwork from the saved state. This is a new session; I have no previous conversation to provide.'
     for i in range(1200):
         put(root(10), f'noise/module_{i:04d}.py', '# unrelated generated sample\nVALUE = 0\n')
     for i in range(100):

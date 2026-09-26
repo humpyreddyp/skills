@@ -48,7 +48,7 @@ Follow the dependencies when choosing verification expectations. A producer chan
 
 Keep three things separate: checks that exist, checks actually run, and checks worth adding. Record discovered paths and commands. For a result, include the revision and outcome. Never describe an unexecuted test as passing.
 
-When verification is missing, explain what kind of check would protect which behavior. Recommend unit, integration, contract, end-to-end, build, lint/type, CI, or runtime checks as appropriate. Bootstrap records the gap; it does not implement the tooling.
+When verification is missing, explain what kind of check would protect which behavior. Recommend unit, integration, contract, end-to-end, build, lint/type, CI, or runtime checks as appropriate. Groundwork records the gap; it does not implement the tooling.
 
 ## Before publishing
 

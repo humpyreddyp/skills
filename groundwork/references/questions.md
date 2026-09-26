@@ -24,7 +24,7 @@ When a contradiction still matters, explain the options and ask for an explicit 
 
 ### FIX: record the work
 
-Save an open remediation item with the requested correction, scope, affected claims, sources, and human decision. Bootstrap does not perform the fix.
+Save an open remediation item with the requested correction, scope, affected claims, sources, and human decision. Groundwork does not perform the fix.
 
 A recorded fix is still future work. Keep the blocked claim unpublished until the completed fix is verified or other evidence independently resolves the question. Recording a decision does not close remediation or publish a claim.
 

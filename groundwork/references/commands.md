@@ -5,7 +5,7 @@ Run `scripts/bootstrap.py` from this skill with Python 3.9 or later. It uses the
 Resolve the script path from the skill folder, not the target repo. For example:
 
 ```sh
-python3 /path/to/bootstrap-context/scripts/bootstrap.py --repo /path/to/repo scan
+python3 /path/to/groundwork/scripts/bootstrap.py --repo /path/to/repo scan
 ```
 
 Every path argument except `--repo` is relative to the repo, including `--draft`. The commands below show the part after `--repo /path/to/repo`.

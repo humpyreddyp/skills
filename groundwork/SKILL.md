@@ -1,9 +1,9 @@
 ---
-name: bootstrap-context
+name: groundwork
 description: Build or resume a product and engineering baseline for an existing repository. Use when preparing repository context for future AI changes, resolving baseline questions, or revalidating changed sources. Does not fix application code.
 ---
 
-# Bootstrap Context
+# Groundwork
 
 Give the next agent enough context to change one capability safely: what it does, why it exists, where it lives, and what else a change could affect.
 
@@ -45,7 +45,7 @@ Review the evidence before calling `publish`. The helper checks structure, links
 
 Save the scope status and next action after each investigation, before asking questions, and before stopping. Keep published Markdown in `context/`, durable records in `.bootstrap/`, and unfinished findings in `.bootstrap/runs/`.
 
-A scope is complete when useful product and engineering context is linked, important dependencies and verification expectations are understood, and no unresolved question prevents safe reasoning about that scope. Non-blocking questions may remain. Remove obsolete Bootstrap-owned drafts and checkpoints after their useful content is saved elsewhere; retain relevant questions, remediation, exclusions, and source fingerprints.
+A scope is complete when useful product and engineering context is linked, important dependencies and verification expectations are understood, and no unresolved question prevents safe reasoning about that scope. Non-blocking questions may remain. Remove obsolete Groundwork-owned drafts and checkpoints after their useful content is saved elsewhere; retain relevant questions, remediation, exclusions, and source fingerprints.
 
 ## Later requests
 
@@ -59,6 +59,6 @@ New context can change an earlier conclusion. Revisit the affected claims and qu
 
 ## Boundaries
 
-Bootstrap discovers, investigates, and publishes context. It does not change application code, perform fixes, choose FIX versus IGNORE, clean the repo, rewrite unrelated stale docs, or build missing test infrastructure.
+Groundwork discovers, investigates, and publishes context. It does not change application code, perform fixes, choose FIX versus IGNORE, clean the repo, rewrite unrelated stale docs, or build missing test infrastructure.
 
 Do not edit `CLAUDE.md` or `AGENTS.md`. A future `wire-context` skill can teach agents to start from the index and respect freshness, exclusions, dependencies, and verification. The core workflow must work without host-specific tools.

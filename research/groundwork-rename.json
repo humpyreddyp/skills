@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-26T13:36:04.032670+00:00",
+  "skill_name": "groundwork",
+  "previous_skill_name": "bootstrap-context",
+  "change_type": "naming-only successor to frozen V1; not a new behavioral evaluation",
+  "repository": "https://github.com/humpyreddyp/skills",
+  "frozen_source_commit": "eb996aa8d59458a3d0d9b411bf4680cbbe9b86fc",
+  "frozen_source_tag": "bootstrap-context-v0.1",
+  "frozen_research_tag": "bootstrap-context-v0.1-research",
+  "historical_records_unchanged": true,
+  "frozen_runtime_available": "Original names and bytes remain accessible at the frozen Git tags and in bootstrap-context.zip.",
+  "files": [
+    {
+      "path": "groundwork/SKILL.md",
+      "sha256": "6e877120f0102a17efabc00d6b358a40aa85f8650194a8e8a69b96b4349b39ab",
+      "original_path": "bootstrap-context/SKILL.md",
+      "original_sha256": "0c67613e3f68b1ed99bda98138eeeb07512d243ff764eeabc9f35011316443e2"
+    },
+    {
+      "path": "groundwork/agents/openai.yaml",
+      "sha256": "18e67d0ee019ce5d79207a2c76207db8fbefbf0cbd8c247160c69e29cd7344a6",
+      "original_path": "bootstrap-context/agents/openai.yaml",
+      "original_sha256": "5c9c0815037bc2cc7038bb5b799adc965e4999b580012a8eb2129032388935d2"
+    },
+    {
+      "path": "groundwork/references/evidence.md",
+      "sha256": "1232429b47dec56c852eafff4eea8fac4bc15c4747ae3ba3a1d38689eab89986",
+      "original_path": "bootstrap-context/references/evidence.md",
+      "original_sha256": "90fc9eff51a293d258d2981ac2e239412ad9ce7a66dac355c27384605c08d99d"
+    },
+    {
+      "path": "groundwork/references/questions.md",
+      "sha256": "d18a190eeb8227a6a56d96f4f1f16a2455971becdb5d1b483807b1fd353656b5",
+      "original_path": "bootstrap-context/references/questions.md",
+      "original_sha256": "bfec60eecc48552248c1ad89f17d8efc877b68e907fc207ce758d3c648b205e2"
+    },
+    {
+      "path": "groundwork/references/state-format.md",
+      "sha256": "3c16f0b90360ba07224748a148cda1e16c9fe52a0c63d6de74749411d99c37ca",
+      "original_path": "bootstrap-context/references/state-format.md",
+      "original_sha256": "95397e5b357c07ed2d13d460daa2d299f1ea4ff80cab74b407d99a87978ee4bc"
+    },
+    {
+      "path": "groundwork/references/commands.md",
+      "sha256": "09fbe950e192278761f0394753dc1a8bccf64e85e246e9a62bb1311712173d5e",
+      "original_path": "bootstrap-context/references/commands.md",
+      "original_sha256": "48de5ffb0eed5059d65b63c73620c9832c88db77cb7b4b794231a27e9bf86e23"
+    },
+    {
+      "path": "groundwork/assets/product.md",
+      "sha256": "80433bb4287c88fc64fb7f02ee52538a7daa41796fc82ad687bd4ba1225b552a",
+      "original_path": "bootstrap-context/assets/product.md",
+      "original_sha256": "80433bb4287c88fc64fb7f02ee52538a7daa41796fc82ad687bd4ba1225b552a"
+    },
+    {
+      "path": "groundwork/assets/engineering.md",
+      "sha256": "cbe5344aac0da5e949d5e4ad6e7b32d888757ed46dc3463f05ef2542c0ad3f0c",
+      "original_path": "bootstrap-context/assets/engineering.md",
+      "original_sha256": "cbe5344aac0da5e949d5e4ad6e7b32d888757ed46dc3463f05ef2542c0ad3f0c"
+    },
+    {
+      "path": "groundwork/scripts/bootstrap.py",
+      "sha256": "f4a51f84d0499e6e2754770e8e31293c31925edd7f584c55c4017156fdf31c08",
+      "original_path": "bootstrap-context/scripts/bootstrap.py",
+      "original_sha256": "f4a51f84d0499e6e2754770e8e31293c31925edd7f584c55c4017156fdf31c08"
+    }
+  ],
+  "helper_byte_identical": true,
+  "state_directory": ".bootstrap",
+  "helper_path": "groundwork/scripts/bootstrap.py",
+  "state_schema_unchanged": true,
+  "evaluation_entrypoint_changes": [
+    "evals/test_runtime.py now locates groundwork/scripts/bootstrap.py",
+    "evals/make_fixtures.py now locates groundwork and uses its new invocation name"
+  ],
+  "package": {
+    "path": "groundwork.zip",
+    "sha256": "7e228d6837f2bce34407e0b97c3658ecc14a9d9636647f4d6e2059f7a14235b2"
+  },
+  "validation": {
+    "python_version": "3.14.2",
+    "helper_tests": 23,
+    "helper_tests_passed": 23,
+    "helper_log": "evals/results/groundwork-rename/helper-tests.txt",
+    "skill_validator": "passed",
+    "validator_log": "evals/results/groundwork-rename/skill-validation.txt",
+    "instruction_reference_links": "valid; template output example links are placeholders",
+    "renamed_skill_changes": "Each file checked against original bytes with only approved naming substitutions; helper bytes identical."
+  },
+  "behavioral_rerun": false,
+  "downstream_experiments_run": false
+}

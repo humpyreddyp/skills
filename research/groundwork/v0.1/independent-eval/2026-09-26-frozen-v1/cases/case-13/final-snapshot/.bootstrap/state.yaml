@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "needs revalidation",
+      "next_action": "Investigate fee amount and source/test mismatch before reviewing CAP-fee and CMP-fee; keep baseline pages unchanged until requested",
+      "checkpoint": ".bootstrap/runs/revalidation.md"
+    }
+  },
+  "next_pb": 1,
+  "next_question": 1
+}

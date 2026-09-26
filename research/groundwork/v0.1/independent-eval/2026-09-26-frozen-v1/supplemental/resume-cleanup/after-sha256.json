@@ -1,0 +1,18 @@
+{
+  "pyproject.toml": "149a3d7284f4792192e09759e398477e3db68da6c567af218bdd694f4043a513",
+  "context/index.yaml": "3ce5bda42b9ff1898ea339c473f22df11326a3352acdc7c2b2253133695e295b",
+  ".bootstrap/state.yaml": "6b2caaddf73544f81d4e398b1357243f4336191e47545d7003966a530249935e",
+  ".bootstrap/exclusions.yaml": "40e763b392a67736b7ad4ffc4209ac796cb66fff3f894f3b74775a59bef85cb8",
+  ".bootstrap/questions.yaml": "96daaa50423d62b859609366527e6f3eb00d9d3ea13ad14d1b3bfa945704780a",
+  ".bootstrap/remediation.yaml": "3276cf9508209935756f8a752370355ab9ca1ca038e23e9a6aa0cbcb0d13bca6",
+  ".bootstrap/external.yaml": "aa332eba865198f16b388f93af797dfb0dd7d743786a1c38c30244cf94b08132",
+  ".bootstrap/tracking.yaml": "3aa6498288f052e986cbe4cdee04b20edc3124ae54091c145858ed28ffe0a89e",
+  "tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb",
+  "docs/checkout.md": "3884cb34dc586b3c704203b2f5d0237b47aaa0f2b40ad6f72c8852b7d59ff118",
+  "docs/tax.md": "4f58f14d28469e4a76cc7f31f2f66e86b507c4ed31293489e9dfc14360b602b7",
+  "notes/user-notes.md": "5bf2b6c48d87804c5280a39a51bd40873f4902aea10a6fa44c38f0efb8732166",
+  "src/tax.py": "99c22548ceadf371770817536f362034363bb82bf864e8408c8967c04df4dfa2",
+  "src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+  "context/product/checkout.md": "19703086e1cd5809e4096b19b3341b3a2d6fe8f5b9ae08703f621e4241cb7dd4",
+  "context/engineering/checkout.md": "7cbb70eb229c490125676b714fc18ddf282806d542fe9538954a6b2e54c7d760"
+}

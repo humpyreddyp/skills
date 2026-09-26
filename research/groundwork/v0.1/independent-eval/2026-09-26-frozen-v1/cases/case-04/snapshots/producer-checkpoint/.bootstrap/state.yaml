@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "paid-order": {
+      "status": "partial",
+      "next_action": "Trace order.paid through deployment subscriptions to its consumer",
+      "checkpoint": ".bootstrap/runs/producer.md"
+    }
+  },
+  "next_pb": 1,
+  "next_question": 1
+}

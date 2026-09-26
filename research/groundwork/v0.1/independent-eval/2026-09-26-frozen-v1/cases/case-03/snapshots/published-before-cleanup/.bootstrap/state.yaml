@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Answer Q-001 with fee purpose and intended policy, then validate and add supported intent",
+      "checkpoint": ".bootstrap/runs/current.md"
+    }
+  },
+  "next_pb": 2,
+  "next_question": 2
+}

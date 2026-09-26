@@ -1,0 +1,1 @@
+All four agent slots are occupied (root and three executing agents). No isolated investigator is available. Each investigation is bounded to one uncertainty and checkpointed. This shared executor does not clear earlier case context. No token count is exposed. Common skill and reference reads are recorded in cases/behavior-a/raw.jsonl.

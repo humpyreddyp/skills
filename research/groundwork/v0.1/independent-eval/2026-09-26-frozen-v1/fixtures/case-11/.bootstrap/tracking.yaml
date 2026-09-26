@@ -1,0 +1,36 @@
+{
+  "context/product/receipt.md": {
+    "sources": {
+      "path:docs/receipt.md": "872b825172694c24ef97b155a09f0db6c9d48489269058fdbe02cd6ec317c925",
+      "path:src/receipt.py": "fecd98ac71a31b8b5bafcda08c1db57dfacdb9fc25ebc8cf2765bbfce83887df"
+    },
+    "watches": {
+      "docs/*receipt*.md": "a7fcc63b68a412f4255b7734b13c9525976e0df5e41195765b34c4fa778b8014",
+      "src/*receipt*.py": "5ce64f7bead20a1ea6cfb5d3f000e370d0f899d012f23be1f5e35c6b92423d8c",
+      "tests/test*receipt*.py": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "dependencies": {},
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "ec0746b3457ca4779b183d950f98f8f6028bad21d5684cc5a22c3d63c1adca9c",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/receipt.md": {
+    "sources": {
+      "path:docs/receipt.md": "872b825172694c24ef97b155a09f0db6c9d48489269058fdbe02cd6ec317c925",
+      "path:src/receipt.py": "fecd98ac71a31b8b5bafcda08c1db57dfacdb9fc25ebc8cf2765bbfce83887df"
+    },
+    "watches": {
+      "docs/*receipt*.md": "a7fcc63b68a412f4255b7734b13c9525976e0df5e41195765b34c4fa778b8014",
+      "src/*receipt*.py": "5ce64f7bead20a1ea6cfb5d3f000e370d0f899d012f23be1f5e35c6b92423d8c",
+      "tests/test*receipt*.py": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "dependencies": {
+      "CAP-checkout-receipt": "ec0746b3457ca4779b183d950f98f8f6028bad21d5684cc5a22c3d63c1adca9c"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "e7d4fe84ab8fab40fb87dde63ee15939fdbdb2ab56000182963279049972ebbe",
+    "status": "current",
+    "reasons": []
+  }
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Docs say the fee is 2; implementation uses 3.",
+    "sources": [
+      "docs/checkout.md",
+      "src/checkout.py"
+    ],
+    "why": "Fee changes affect charged totals.",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "question": "Which fee should checkout apply?",
+    "blocking": true,
+    "status": "conflicting",
+    "decision": "R-001",
+    "validation": "FIX authorizes future engineering work only. Reinspection shows src/checkout.py still uses FEE=3 and tests/test_checkout.py still expects 13 for subtotal 10, while docs specify 2. R-001 remains open and Q-001 remains conflicting; no completed fix has been verified."
+  }
+]

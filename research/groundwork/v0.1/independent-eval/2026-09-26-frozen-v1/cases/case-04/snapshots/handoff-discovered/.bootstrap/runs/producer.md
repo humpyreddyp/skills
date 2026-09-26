@@ -1,0 +1,2 @@
+# Paid-order producer finding
+The document explains the intended payment/warehouse decoupling. src/checkout.py emits order.paid with id and returns accepted; it does not check payment status itself. Its bus is caller-supplied. tests/test_checkout.py compares a literal to itself and does not exercise checkout. Next: inspect deployment subscriptions, warehouse worker, and CI to establish routing and verification.

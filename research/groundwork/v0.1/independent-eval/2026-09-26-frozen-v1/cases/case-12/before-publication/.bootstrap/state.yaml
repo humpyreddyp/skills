@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "paid-order": {
+      "status": "partial",
+      "next_action": "Publish paid-order traceability and verification gaps",
+      "checkpoint": ".bootstrap/runs/current.md"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 1
+}

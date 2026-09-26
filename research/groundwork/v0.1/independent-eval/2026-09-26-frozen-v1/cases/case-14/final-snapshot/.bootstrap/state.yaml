@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout-warehouse": {
+      "status": "complete",
+      "next_action": "Revalidate checkout, subscription, and warehouse evidence before changing the handoff"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 1
+}

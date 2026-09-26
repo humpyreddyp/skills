@@ -1,0 +1,28 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "docs/checkout.md identifies current fee 2; implementation and passing total test use 3. Receipt documentation and implementation independently agree on returning the order id.",
+    "sources": [
+      {
+        "path": "docs/checkout.md"
+      },
+      {
+        "path": "src/checkout.py"
+      },
+      {
+        "path": "tests/test_checkout.py"
+      }
+    ],
+    "why": "Future fee changes need an agreed current contract. Receipt does not depend on the fee and can be published independently.",
+    "affects": [
+      "PB-001",
+      "CAP-checkout-fee",
+      "CMP-checkout-fee"
+    ],
+    "question": "Which current fee should apply? Choose FIX and identify the correction to record, or IGNORE and identify the exact source/claim to exclude and why. The document says 2; code and its passing test use 3.",
+    "blocking": true,
+    "status": "conflicting",
+    "validation": "Current claims disagree without version/environment reconciliation. No supplied human choice. Receipt sources contain no fee dependency, so this blocker does not affect PB-002."
+  }
+]

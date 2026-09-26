@@ -1,0 +1,3 @@
+Published checkout’s observed behavior and implementation: total(subtotal) adds 3, and the discovered test passed. Scope remains partial because the available sources do not explain the fee’s purpose. Q-001: What purpose does the fee serve, and what policy should constrain future changes? A concise explanation is enough; a document is not required.
+
+[Groundwork SKILL.md](/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/SKILL.md) says, “Missing product purpose is a question to investigate, not a reason to invent a story.” The available fixture sources did not settle this.

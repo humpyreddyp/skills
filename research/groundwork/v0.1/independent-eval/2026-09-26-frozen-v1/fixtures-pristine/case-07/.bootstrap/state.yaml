@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "waiting for human",
+      "next_action": "Validate the answer to Q-001 against checkout evidence"
+    }
+  },
+  "next_pb": 1,
+  "next_question": 1
+}

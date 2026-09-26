@@ -1,0 +1,1 @@
+Show me what needs revalidation after the latest checkout source change. Mark affected context, but do not rewrite any baseline pages yet.

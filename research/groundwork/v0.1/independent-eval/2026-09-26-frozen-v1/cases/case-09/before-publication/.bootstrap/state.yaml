@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Publish reviewed PB-012 product and engineering pages",
+      "checkpoint": ".bootstrap/runs/resume-finding.md"
+    }
+  },
+  "next_pb": 13,
+  "next_question": 1
+}

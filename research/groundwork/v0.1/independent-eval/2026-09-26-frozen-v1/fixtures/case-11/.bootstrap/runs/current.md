@@ -1,0 +1,2 @@
+# Checkout partial baseline
+Fee PB-001 is blocked by Q-001: current document says 2, code and passing test use 3. Receipt PB-002 is independent: docs/receipt.md explains purchase reference purpose, and src/receipt.py returns order_id from order.id without fee use. No receipt tests were discovered in the complete bounded scan. Next: publish receipt product/engineering context, then obtain explicit FIX/IGNORE fee decision.

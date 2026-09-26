@@ -1,0 +1,27 @@
+{
+  "observations": [
+    "Read saved state/index, ran freshness before reading published claims.",
+    "Fee product and engineering marked needs revalidation; receipt pages remained current.",
+    "All four published Markdown files verified byte-for-byte identical with pre-action snapshot.",
+    "Source fee is 4 while docs and test still use 3; stored finding and next action without rewriting claims or choosing a human decision.",
+    "Structural check passes despite stale pages: the check is correctly interpreted as structure only."
+  ],
+  "unexpected": [],
+  "human_input": "No question needed to mark affected context. Later investigation may require explicit FIX/IGNORE for unresolved fee mismatch; none inferred.",
+  "case": 13,
+  "execution_order": [
+    9,
+    12,
+    13,
+    14
+  ],
+  "raw_command_record_count": 9,
+  "step_count_definition": "Number of append-only subprocess command records, including reads, helper actions, writes, and integrity checks. Tool-level bootstrap steps described separately below.",
+  "failed_command_count": 0,
+  "token_count": null,
+  "token_count_reason": "Not exposed by runtime; no estimate invented.",
+  "isolation_constraint": "All four agent slots occupied when checked; bounded investigations and checkpoints used per skill fallback.",
+  "skill_helper_failures": [],
+  "fixture_revision_limit": "Scan reports enclosing repository HEAD 52e6d91eebdb0973bc18dfcdc0deb0b97f4a16e3, not a fixture-specific commit. Authored pages use working-tree.",
+  "evidence_preservation": "Raw logs append-only; authored drivers retained; pre-publication, pre-cleanup, and final snapshots retained where applicable. No prior outcomes, fixture generator, regression suite, research, or other agent reports read."
+}

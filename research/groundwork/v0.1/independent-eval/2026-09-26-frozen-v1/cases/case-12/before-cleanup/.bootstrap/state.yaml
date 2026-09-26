@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "paid-order": {
+      "status": "complete",
+      "next_action": "Revalidate paid-order sources and cross-component contracts before changes"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 1
+}

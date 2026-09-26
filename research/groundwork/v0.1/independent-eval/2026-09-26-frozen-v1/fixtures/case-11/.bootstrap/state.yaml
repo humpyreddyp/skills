@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "waiting for human",
+      "next_action": "Resolve Q-001 with explicit FIX or precise IGNORE choice; keep published receipt context usable",
+      "checkpoint": ".bootstrap/runs/current.md"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 2
+}

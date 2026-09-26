@@ -1,0 +1,7 @@
+[
+  "docs/adr-004.md",
+  "docs/checkout.md",
+  "pyproject.toml",
+  "src/checkout.py",
+  "tests/test_checkout.py"
+]

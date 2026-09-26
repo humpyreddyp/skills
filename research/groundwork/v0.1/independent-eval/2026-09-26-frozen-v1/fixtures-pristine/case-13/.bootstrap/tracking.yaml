@@ -1,0 +1,50 @@
+{
+  "context/product/fee.md": {
+    "sources": {
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca"
+    },
+    "watches": {},
+    "dependencies": {},
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "7989cbbf26e123305d1f5261cbc1f66a4f4b85dc9e60f8cb3fc69d94a542634e",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/fee.md": {
+    "sources": {
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca"
+    },
+    "watches": {},
+    "dependencies": {
+      "CAP-fee": "7989cbbf26e123305d1f5261cbc1f66a4f4b85dc9e60f8cb3fc69d94a542634e"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "56bf73335cd1f09c130438cda67034323770bb255201b570cae5eb1d27216980",
+    "status": "current",
+    "reasons": []
+  },
+  "context/product/receipt.md": {
+    "sources": {
+      "path:src/receipt.py": "fecd98ac71a31b8b5bafcda08c1db57dfacdb9fc25ebc8cf2765bbfce83887df"
+    },
+    "watches": {},
+    "dependencies": {},
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "ab5e8103581e2fb95d35c8d29f56070ef39c9006330d46a9272e3664dc9c9bb2",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/receipt.md": {
+    "sources": {
+      "path:src/receipt.py": "fecd98ac71a31b8b5bafcda08c1db57dfacdb9fc25ebc8cf2765bbfce83887df"
+    },
+    "watches": {},
+    "dependencies": {
+      "CAP-receipt": "ab5e8103581e2fb95d35c8d29f56070ef39c9006330d46a9272e3664dc9c9bb2"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "8524609d11457594ff6b817212a881832e7f97fe5e9864b6efbd39f9c2dc065e",
+    "status": "current",
+    "reasons": []
+  }
+}

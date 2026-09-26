@@ -1,0 +1,9 @@
+[
+  "docs/checkout.md",
+  "src/checkout.py",
+  "tests/test_checkout.py",
+  "pyproject.toml",
+  "deploy/subscriptions.json",
+  "warehouse/worker.py",
+  ".github/workflows/check.yml"
+]

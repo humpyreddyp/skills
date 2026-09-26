@@ -1,0 +1,28 @@
+{
+  "observations": [
+    "Executed first with no previous session chat. State/checkpoint were read before primary sources; context index absent initially.",
+    "Saved next action was publication; primary evidence rechecked, PB-012 allocated from saved next_pb=12, next_pb finishes 13.",
+    "Two pages published; initial forward dependency needs-revalidation status cleared by documented reviewed republish.",
+    "Old checkpoint and drafts removed only after published content and evidence snapshots were saved."
+  ],
+  "unexpected": [
+    "Initial requests.json lookup at evidence root failed; corrected to fixtures/requests.json. This was an execution path error, not a skill failure."
+  ],
+  "human_input": "None needed.",
+  "case": 9,
+  "execution_order": [
+    9,
+    12,
+    13,
+    14
+  ],
+  "raw_command_record_count": 23,
+  "step_count_definition": "Number of append-only subprocess command records, including reads, helper actions, writes, and integrity checks. Tool-level bootstrap steps described separately below.",
+  "failed_command_count": 1,
+  "token_count": null,
+  "token_count_reason": "Not exposed by runtime; no estimate invented.",
+  "isolation_constraint": "All four agent slots occupied when checked; bounded investigations and checkpoints used per skill fallback.",
+  "skill_helper_failures": [],
+  "fixture_revision_limit": "Scan reports enclosing repository HEAD 52e6d91eebdb0973bc18dfcdc0deb0b97f4a16e3, not a fixture-specific commit. Authored pages use working-tree.",
+  "evidence_preservation": "Raw logs append-only; authored drivers retained; pre-publication, pre-cleanup, and final snapshots retained where applicable. No prior outcomes, fixture generator, regression suite, research, or other agent reports read."
+}

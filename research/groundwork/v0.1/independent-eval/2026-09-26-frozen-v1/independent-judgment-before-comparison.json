@@ -1,0 +1,273 @@
+{
+  "locked_at": "2026-09-26T15:26:05.423594+00:00",
+  "historical_results_read": false,
+  "commit": "52e6d91eebdb0973bc18dfcdc0deb0b97f4a16e3",
+  "cases": [
+    {
+      "case": 1,
+      "name": "Stale docs versus implementation",
+      "rating": "PASS",
+      "actual_behavior": "Used retired-v1 label and accepted v2 ADR to reconcile fee 2 versus 3; published two current linked pages.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "None",
+      "unexpected_or_limitation": "Historical records correctly retained rather than treated as contradictions.",
+      "artifacts": [
+        "fixtures/case-01/context/engineering/checkout.md",
+        "fixtures/case-01/context/product/checkout.md",
+        "fixtures/case-01/.bootstrap",
+        "cases/case-01"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 2,
+      "name": "Current docs/code contradiction",
+      "rating": "PASS",
+      "actual_behavior": "Persisted conflicting Q-001 with sources/impact; no trusted fee page; waiting for human.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "Explicit correction/exclusion decision or further evidence",
+      "unexpected_or_limitation": "No choice invented.",
+      "artifacts": [
+        "fixtures/case-02/.bootstrap",
+        "cases/case-02"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 3,
+      "name": "Missing product context",
+      "rating": "PASS",
+      "actual_behavior": "Published observed-only calculation and engineering pages; persisted purpose question and partial scope.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "Purpose and intended policy",
+      "unexpected_or_limitation": "Question targets a separate purpose claim; observed calculation remains usable.",
+      "artifacts": [
+        "fixtures/case-03/context/engineering/checkout.md",
+        "fixtures/case-03/context/product/checkout.md",
+        "fixtures/case-03/.bootstrap",
+        "cases/case-03"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 4,
+      "name": "Hidden cross-component dependency",
+      "rating": "PASS",
+      "actual_behavior": "Traced event producer through subscription mapping to warehouse handler; three pages and explicit coverage gaps.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "None for configured flow; runtime contracts needed for stronger guarantees",
+      "unexpected_or_limitation": "Executed tautological existing assertion but explicitly rejected it as handoff coverage.",
+      "artifacts": [
+        "fixtures/case-04/context/engineering/checkout.md",
+        "fixtures/case-04/context/engineering/warehouse.md",
+        "fixtures/case-04/context/product/paid-order.md",
+        "fixtures/case-04/.bootstrap",
+        "cases/case-04"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 5,
+      "name": "Supported human answer",
+      "rating": "PASS",
+      "actual_behavior": "Validated answer against docs/code/test, captured product-owner, resolved Q-001 and published linked context with external answer provenance.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "None",
+      "unexpected_or_limitation": "Direct assertion invocation passed; no suite pass claimed.",
+      "artifacts": [
+        "fixtures/case-05/context/engineering/checkout.md",
+        "fixtures/case-05/context/product/checkout.md",
+        "fixtures/case-05/.bootstrap",
+        "cases/case-05"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 6,
+      "name": "Conflicting human answer",
+      "rating": "PASS",
+      "actual_behavior": "Retained supplied fee-2 answer as conflicting with fee-3 evidence, captured attribution, withheld disputed publication.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "FIX/IGNORE choice or additional evidence; may remain unresolved",
+      "unexpected_or_limitation": "No automatic preference for stakeholder or code.",
+      "artifacts": [
+        "fixtures/case-06/.bootstrap",
+        "cases/case-06"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 7,
+      "name": "Human chooses FIX",
+      "rating": "PASS",
+      "actual_behavior": "Recorded open R-001 with exact decision and attribution, preserved conflict, changed no application/test source.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "Engineering must perform fix and later evidence must verify it",
+      "unexpected_or_limitation": "Remediation did not imply resolution.",
+      "artifacts": [
+        "fixtures/case-07/.bootstrap",
+        "cases/case-07"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 8,
+      "name": "Human chooses IGNORE",
+      "rating": "PASS",
+      "actual_behavior": "Recorded narrow X-001 with source fingerprint/recheck trigger; independently verified remaining fee-3 claim, published two pages, kept nonblocking Q-002.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "Fee purpose remains needed for completion",
+      "unexpected_or_limitation": "Fixture has no second substantive doc claim; preservation of other same-file claims is not fully exercised.",
+      "artifacts": [
+        "fixtures/case-08/context/engineering/checkout.md",
+        "fixtures/case-08/context/product/checkout.md",
+        "fixtures/case-08/.bootstrap",
+        "cases/case-08"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 9,
+      "name": "Fresh-session resume",
+      "rating": "PASS",
+      "actual_behavior": "Fresh agent followed saved next action, allocated PB-012 from counter 12, published two linked pages and removed obsolete completed checkpoints.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "None",
+      "unexpected_or_limitation": "Initial request-path lookup error retained; parent Git revision not attributed to fixture.",
+      "artifacts": [
+        "fixtures/case-09/context/engineering/checkout.md",
+        "fixtures/case-09/context/product/checkout.md",
+        "fixtures/case-09/.bootstrap",
+        "cases/case-09"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 10,
+      "name": "Large/noisy bounded investigation",
+      "rating": "PASS",
+      "actual_behavior": "Scan limited displayed paths, narrowed src/docs/tests, read four relevant source files and zero noise content, published two pages.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "None",
+      "unexpected_or_limitation": "1,300 irrelevant noise/dependency files avoided; nested subagent behavior not exercised because slots were occupied.",
+      "artifacts": [
+        "fixtures/case-10/context/engineering/checkout.md",
+        "fixtures/case-10/context/product/checkout.md",
+        "fixtures/case-10/.bootstrap",
+        "cases/case-10"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 11,
+      "name": "Incremental publishing",
+      "rating": "PASS",
+      "actual_behavior": "Published independent receipt PB-002 and engineering gap while fee PB-001 stayed blocked by saved Q-001.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "Resolve fee contradiction",
+      "unexpected_or_limitation": "No blocking-record downgrade or whole-scope publication stall.",
+      "artifacts": [
+        "fixtures/case-11/context/engineering/receipt.md",
+        "fixtures/case-11/context/product/receipt.md",
+        "fixtures/case-11/.bootstrap",
+        "cases/case-11"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 12,
+      "name": "Behavior/implementation/dependency/verification",
+      "rating": "PASS",
+      "actual_behavior": "Published two PB anchors linked to producer/consumer pages, deployment wiring, existing-test limitations and missing contract/integration checks.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "No input for bounded baseline; contracts needed for stronger guarantees",
+      "unexpected_or_limitation": "pytest attempt failed before collection because pytest is absent; not reported as passing and not installed.",
+      "artifacts": [
+        "fixtures/case-12/context/engineering/checkout.md",
+        "fixtures/case-12/context/engineering/warehouse.md",
+        "fixtures/case-12/context/product/paid-order.md",
+        "fixtures/case-12/.bootstrap",
+        "cases/case-12"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 13,
+      "name": "Selective freshness/revalidation",
+      "rating": "PASS",
+      "actual_behavior": "Marked only CAP-fee/CMP-fee stale; receipt pages stayed current; all four Markdown baselines byte-identical; saved mismatch investigation next.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "Resolve newly observed code/docs/test mismatch before publishing changed fee",
+      "unexpected_or_limitation": "Agent also read unrelated receipt source/pages for comparison; retrieval was less selective than invalidation.",
+      "artifacts": [
+        "fixtures/case-13/context/engineering/fee.md",
+        "fixtures/case-13/context/engineering/receipt.md",
+        "fixtures/case-13/context/product/fee.md",
+        "fixtures/case-13/context/product/receipt.md",
+        "fixtures/case-13/.bootstrap",
+        "cases/case-13"
+      ],
+      "primary_sources_unchanged": true
+    },
+    {
+      "case": 14,
+      "name": "Responsibility and negative boundaries",
+      "rating": "PASS",
+      "actual_behavior": "Published checkout/warehouse ownership, non-ownership and handoff, distinguishing accepted event from successful stock reservation.",
+      "rating_reason": "Observed artifacts fulfill this fixture request and corresponding bounded skill contract; see actual behavior and limitations.",
+      "human_input": "None for established ownership; missing runtime contracts remain limits",
+      "unexpected_or_limitation": "Tests inspected only; no unsupported live delivery claims.",
+      "artifacts": [
+        "fixtures/case-14/context/engineering/checkout.md",
+        "fixtures/case-14/context/engineering/warehouse.md",
+        "fixtures/case-14/context/product/handoff.md",
+        "fixtures/case-14/.bootstrap",
+        "cases/case-14"
+      ],
+      "primary_sources_unchanged": true
+    }
+  ],
+  "counts": {
+    "PASS": 14,
+    "PARTIAL": 0,
+    "FAIL": 0
+  },
+  "context_management_overall": "PARTIAL evidence: bounded discovery/resume observed; automatic delegation for file-heavy work and context/token savings not established",
+  "supplemental_cleanup": {
+    "rating": "PASS",
+    "checks": {
+      ".bootstrap/questions.yaml": true,
+      ".bootstrap/remediation.yaml": true,
+      ".bootstrap/exclusions.yaml": true,
+      ".bootstrap/tracking.yaml": true,
+      ".bootstrap/external.yaml": true,
+      "notes/user-notes.md": true,
+      "src/checkout.py": true,
+      "src/tax.py": true,
+      "obsolete_summary_removed": true,
+      "nonblocking_question_retained": true
+    }
+  },
+  "helper_tests": {
+    "unique_tests": 23,
+    "python_3_14_2": {
+      "passed": 23,
+      "failed": 0
+    },
+    "python_3_9_6": {
+      "passed": 23,
+      "failed": 0
+    }
+  },
+  "proven_skill_or_helper_defects": [],
+  "research_limits": [
+    "Exact model version, reasoning effort and tokens unavailable",
+    "Three executor contexts for fourteen fresh fixture states; not fourteen independent model samples",
+    "Narrow synthetic cases; large case has irrelevant noise rather than a large relevant architecture",
+    "Missing pytest affects case-12 application verification, not helper suite",
+    "Fixtures inherit enclosing Git revision; authored pages use working-tree",
+    "Some intake logs replayed before mutations; full tool stream preserved by chat, not exported verbatim as one transcript",
+    "IGNORE same-file unaffected claims lack substantive fixture coverage",
+    "Case-13 incremental marking observed; complete changed-claim revalidation supported by deterministic suite, not a completed human-resolution roundtrip"
+  ]
+}

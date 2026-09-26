@@ -1,0 +1,1 @@
+Scope: checkout. Q-001 evidence review completed; existing test directly invoked and passed. Sources: src/checkout.py::total, tests/test_checkout.py::test_total, docs/checkout.md, Q-001. Next: publish reviewed fee behavior and implementing function; preserve any remaining purpose gap.

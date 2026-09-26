@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Publish receipt independently; retain Q-001 as a blocking fee question",
+      "checkpoint": ".bootstrap/runs/current.md"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 2
+}

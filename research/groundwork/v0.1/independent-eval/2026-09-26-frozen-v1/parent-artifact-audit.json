@@ -1,0 +1,959 @@
+[
+  {
+    "case": 1,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "complete",
+          "next_action": "Revalidate checkout context if its fee sources change"
+        }
+      },
+      "next_pb": 2,
+      "next_question": 1
+    },
+    "source_file_count": 5,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/checkout.md",
+        "id": "CMP-checkout",
+        "behaviors": [],
+        "implements": [
+          "PB-001"
+        ],
+        "depends_on": [
+          "CAP-checkout"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-001",
+            "kind": "existing",
+            "reference": "tests/test_checkout.py::test_total"
+          }
+        ],
+        "body_words": 130,
+        "front_matter_bytes": 739,
+        "body_bytes": 1014
+      },
+      {
+        "path": "context/product/checkout.md",
+        "id": "CAP-checkout",
+        "behaviors": [
+          "PB-001"
+        ],
+        "implements": [],
+        "depends_on": [],
+        "verification": [],
+        "body_words": 126,
+        "front_matter_bytes": 582,
+        "body_bytes": 857
+      }
+    ],
+    "freshness": {
+      "CMP-checkout": "current",
+      "CAP-checkout": "current"
+    },
+    "questions": [],
+    "index_bytes": 930
+  },
+  {
+    "case": 2,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "waiting for human",
+          "next_action": "Resolve Q-001: explicit FIX or IGNORE choice for the current fee contradiction",
+          "checkpoint": ".bootstrap/runs/current.md"
+        }
+      },
+      "next_pb": 2,
+      "next_question": 2
+    },
+    "source_file_count": 4,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [],
+    "freshness": {},
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "conflicting",
+        "blocking": true,
+        "affects": [
+          "CAP-checkout",
+          "CMP-checkout",
+          "PB-001"
+        ],
+        "decision": null
+      }
+    ],
+    "index_bytes": 240
+  },
+  {
+    "case": 3,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "partial",
+          "next_action": "Answer Q-001 with fee purpose and intended policy, then validate and add supported intent",
+          "checkpoint": ".bootstrap/runs/current.md"
+        }
+      },
+      "next_pb": 2,
+      "next_question": 2
+    },
+    "source_file_count": 3,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/checkout.md",
+        "id": "CMP-checkout",
+        "behaviors": [],
+        "implements": [
+          "PB-001"
+        ],
+        "depends_on": [
+          "CAP-checkout-observed"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-001",
+            "kind": "existing",
+            "reference": "tests/test_checkout.py::test_total"
+          }
+        ],
+        "body_words": 94,
+        "front_matter_bytes": 619,
+        "body_bytes": 720
+      },
+      {
+        "path": "context/product/checkout.md",
+        "id": "CAP-checkout-observed",
+        "behaviors": [
+          "PB-001"
+        ],
+        "implements": [],
+        "depends_on": [],
+        "verification": [],
+        "body_words": 90,
+        "front_matter_bytes": 507,
+        "body_bytes": 680
+      }
+    ],
+    "freshness": {
+      "CMP-checkout": "current",
+      "CAP-checkout-observed": "current"
+    },
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "open",
+        "blocking": true,
+        "affects": [
+          "CAP-checkout-purpose"
+        ],
+        "decision": null
+      }
+    ],
+    "index_bytes": 970
+  },
+  {
+    "case": 4,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "paid-order": {
+          "status": "complete",
+          "next_action": "Revalidate the event mapping and producer/consumer contract together when this flow changes; obtain external contracts before changing delivery guarantees"
+        }
+      },
+      "next_pb": 3,
+      "next_question": 1
+    },
+    "source_file_count": 7,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/checkout.md",
+        "id": "CMP-checkout",
+        "behaviors": [],
+        "implements": [
+          "PB-001"
+        ],
+        "depends_on": [
+          "CAP-paid-order",
+          "CMP-warehouse"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-001",
+            "kind": "existing",
+            "reference": "tests/test_checkout.py::test_event_name (literal equality only)"
+          },
+          {
+            "behavior": "PB-001",
+            "kind": "gap",
+            "reference": "Exercise checkout with a fake bus; assert event name, id payload and accepted return; validate subscription and warehouse consumer contract."
+          }
+        ],
+        "body_words": 186,
+        "front_matter_bytes": 1264,
+        "body_bytes": 1444
+      },
+      {
+        "path": "context/engineering/warehouse.md",
+        "id": "CMP-warehouse",
+        "behaviors": [],
+        "implements": [
+          "PB-002"
+        ],
+        "depends_on": [
+          "CAP-paid-order"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-002",
+            "kind": "gap",
+            "reference": "Contract check routing order.paid payload id through warehouse.reserve to a fake inventory reserve call; reservation failure/idempotency expectations require the external inventory contract."
+          }
+        ],
+        "body_words": 133,
+        "front_matter_bytes": 1144,
+        "body_bytes": 1134
+      },
+      {
+        "path": "context/product/paid-order.md",
+        "id": "CAP-paid-order",
+        "behaviors": [
+          "PB-001",
+          "PB-002"
+        ],
+        "implements": [],
+        "depends_on": [],
+        "verification": [],
+        "body_words": 196,
+        "front_matter_bytes": 843,
+        "body_bytes": 1610
+      }
+    ],
+    "freshness": {
+      "CMP-checkout": "current",
+      "CMP-warehouse": "current",
+      "CAP-paid-order": "current"
+    },
+    "questions": [],
+    "index_bytes": 1359
+  },
+  {
+    "case": 5,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "complete",
+          "next_action": "Run freshness before relying on the fee baseline; revalidate any changed fee sources or checked owner intent"
+        }
+      },
+      "next_pb": 2,
+      "next_question": 1
+    },
+    "source_file_count": 4,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/checkout.md",
+        "id": "CMP-checkout",
+        "behaviors": [],
+        "implements": [
+          "PB-001"
+        ],
+        "depends_on": [
+          "CAP-fee"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-001",
+            "kind": "existing",
+            "reference": "tests/test_checkout.py::test_total"
+          },
+          {
+            "behavior": "PB-001",
+            "kind": "gap",
+            "reference": "Caller integration and numeric/input contract coverage require caller and contract evidence"
+          }
+        ],
+        "body_words": 146,
+        "front_matter_bytes": 853,
+        "body_bytes": 1107
+      },
+      {
+        "path": "context/product/checkout.md",
+        "id": "CAP-fee",
+        "behaviors": [
+          "PB-001"
+        ],
+        "implements": [],
+        "depends_on": [
+          "CMP-checkout"
+        ],
+        "verification": [],
+        "body_words": 115,
+        "front_matter_bytes": 683,
+        "body_bytes": 827
+      }
+    ],
+    "freshness": {
+      "CMP-checkout": "current",
+      "CAP-fee": "current"
+    },
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "resolved",
+        "blocking": true,
+        "affects": [
+          "CAP-fee",
+          "PB-001"
+        ],
+        "decision": null
+      }
+    ],
+    "index_bytes": 936
+  },
+  {
+    "case": 6,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "waiting for human",
+          "next_action": "Obtain explicit FIX or narrowly scoped IGNORE choice for Q-001; compare any new evidence before publication",
+          "checkpoint": ".bootstrap/runs/conflict.md"
+        }
+      },
+      "next_pb": 1,
+      "next_question": 1
+    },
+    "source_file_count": 4,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [],
+    "freshness": {},
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "conflicting",
+        "blocking": true,
+        "affects": [
+          "CAP-fee",
+          "PB-001"
+        ],
+        "decision": null
+      }
+    ],
+    "index_bytes": 240
+  },
+  {
+    "case": 7,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "partial",
+          "next_action": "Await engineering remediation R-001, then inspect and verify the completed fee-2 change before resolving Q-001",
+          "checkpoint": ".bootstrap/runs/remediation.md"
+        }
+      },
+      "next_pb": 1,
+      "next_question": 1
+    },
+    "source_file_count": 4,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [],
+    "freshness": {},
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "conflicting",
+        "blocking": true,
+        "affects": [
+          "CAP-fee",
+          "PB-001"
+        ],
+        "decision": "R-001"
+      }
+    ],
+    "index_bytes": 240
+  },
+  {
+    "case": 8,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "partial",
+          "next_action": "Obtain and validate Q-002 fee purpose evidence before completing the scope",
+          "checkpoint": ".bootstrap/runs/purpose.md"
+        }
+      },
+      "next_pb": 2,
+      "next_question": 3
+    },
+    "source_file_count": 4,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/checkout.md",
+        "id": "CMP-checkout",
+        "behaviors": [],
+        "implements": [
+          "PB-001"
+        ],
+        "depends_on": [
+          "CAP-fee"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-001",
+            "kind": "existing",
+            "reference": "tests/test_checkout.py::test_total"
+          },
+          {
+            "behavior": "PB-001",
+            "kind": "gap",
+            "reference": "Caller integration and numeric/input contract coverage require caller and contract evidence"
+          }
+        ],
+        "body_words": 146,
+        "front_matter_bytes": 853,
+        "body_bytes": 1107
+      },
+      {
+        "path": "context/product/checkout.md",
+        "id": "CAP-fee",
+        "behaviors": [
+          "PB-001"
+        ],
+        "implements": [],
+        "depends_on": [
+          "CMP-checkout"
+        ],
+        "verification": [],
+        "body_words": 163,
+        "front_matter_bytes": 637,
+        "body_bytes": 1116
+      }
+    ],
+    "freshness": {
+      "CMP-checkout": "current",
+      "CAP-fee": "current"
+    },
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "resolved",
+        "blocking": true,
+        "affects": [
+          "CAP-fee",
+          "PB-001"
+        ],
+        "decision": "X-001"
+      },
+      {
+        "id": "Q-002",
+        "status": "open",
+        "blocking": false,
+        "affects": [],
+        "decision": null
+      }
+    ],
+    "index_bytes": 936
+  },
+  {
+    "case": 9,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "complete",
+          "next_action": "Revalidate checkout sources before future changes"
+        }
+      },
+      "next_pb": 13,
+      "next_question": 1
+    },
+    "source_file_count": 4,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/checkout.md",
+        "id": "CMP-checkout",
+        "behaviors": [],
+        "implements": [
+          "PB-012"
+        ],
+        "depends_on": [
+          "CAP-checkout"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-012",
+            "kind": "existing",
+            "reference": "tests/test_checkout.py::test_total"
+          }
+        ],
+        "body_words": 168,
+        "front_matter_bytes": 730,
+        "body_bytes": 1267
+      },
+      {
+        "path": "context/product/checkout.md",
+        "id": "CAP-checkout",
+        "behaviors": [
+          "PB-012"
+        ],
+        "implements": [],
+        "depends_on": [
+          "CMP-checkout"
+        ],
+        "verification": [],
+        "body_words": 118,
+        "front_matter_bytes": 587,
+        "body_bytes": 838
+      }
+    ],
+    "freshness": {
+      "CMP-checkout": "current",
+      "CAP-checkout": "current"
+    },
+    "questions": [],
+    "index_bytes": 952
+  },
+  {
+    "case": 10,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "complete",
+          "next_action": "Revalidate the checkout sources when its fee or relevant tests change"
+        }
+      },
+      "next_pb": 2,
+      "next_question": 1
+    },
+    "source_file_count": 1304,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/checkout.md",
+        "id": "CMP-checkout",
+        "behaviors": [],
+        "implements": [
+          "PB-001"
+        ],
+        "depends_on": [
+          "CAP-checkout"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-001",
+            "kind": "existing",
+            "reference": "tests/test_checkout.py::test_total"
+          }
+        ],
+        "body_words": 138,
+        "front_matter_bytes": 678,
+        "body_bytes": 1037
+      },
+      {
+        "path": "context/product/checkout.md",
+        "id": "CAP-checkout",
+        "behaviors": [
+          "PB-001"
+        ],
+        "implements": [],
+        "depends_on": [],
+        "verification": [],
+        "body_words": 121,
+        "front_matter_bytes": 510,
+        "body_bytes": 885
+      }
+    ],
+    "freshness": {
+      "CMP-checkout": "current",
+      "CAP-checkout": "current"
+    },
+    "questions": [],
+    "index_bytes": 925
+  },
+  {
+    "case": 11,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "waiting for human",
+          "next_action": "Resolve Q-001 with explicit FIX or precise IGNORE choice; keep published receipt context usable",
+          "checkpoint": ".bootstrap/runs/current.md"
+        }
+      },
+      "next_pb": 3,
+      "next_question": 2
+    },
+    "source_file_count": 6,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/receipt.md",
+        "id": "CMP-checkout-receipt",
+        "behaviors": [],
+        "implements": [
+          "PB-002"
+        ],
+        "depends_on": [
+          "CAP-checkout-receipt"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-002",
+            "kind": "gap",
+            "reference": "Unit check that receipt(order) preserves order.id in the order_id field; no receipt test exists in the inspected fixture."
+          }
+        ],
+        "body_words": 150,
+        "front_matter_bytes": 720,
+        "body_bytes": 1121
+      },
+      {
+        "path": "context/product/receipt.md",
+        "id": "CAP-checkout-receipt",
+        "behaviors": [
+          "PB-002"
+        ],
+        "implements": [],
+        "depends_on": [],
+        "verification": [],
+        "body_words": 126,
+        "front_matter_bytes": 472,
+        "body_bytes": 902
+      }
+    ],
+    "freshness": {
+      "CMP-checkout-receipt": "current",
+      "CAP-checkout-receipt": "current"
+    },
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "conflicting",
+        "blocking": true,
+        "affects": [
+          "PB-001",
+          "CAP-checkout-fee",
+          "CMP-checkout-fee"
+        ],
+        "decision": null
+      }
+    ],
+    "index_bytes": 959
+  },
+  {
+    "case": 12,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "paid-order": {
+          "status": "complete",
+          "next_action": "Revalidate paid-order sources and cross-component contracts before changes"
+        }
+      },
+      "next_pb": 3,
+      "next_question": 1
+    },
+    "source_file_count": 7,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/checkout.md",
+        "id": "CMP-checkout",
+        "behaviors": [],
+        "implements": [
+          "PB-001"
+        ],
+        "depends_on": [
+          "CAP-paid-order"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-001",
+            "kind": "existing",
+            "reference": "tests/test_checkout.py::test_event_name (tautological; no implementation coverage)"
+          },
+          {
+            "behavior": "PB-001",
+            "kind": "gap",
+            "reference": "Unit-check checkout publishes order.paid with order.id and returns accepted; contract-check payload against subscription and reserve consumer"
+          }
+        ],
+        "body_words": 241,
+        "front_matter_bytes": 1257,
+        "body_bytes": 1842
+      },
+      {
+        "path": "context/engineering/warehouse.md",
+        "id": "CMP-warehouse",
+        "behaviors": [],
+        "implements": [
+          "PB-002"
+        ],
+        "depends_on": [
+          "CAP-paid-order"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-002",
+            "kind": "gap",
+            "reference": "Unit-check reserve forwards message id; integration/contract-check order.paid subscription and producer-to-consumer handoff"
+          }
+        ],
+        "body_words": 201,
+        "front_matter_bytes": 1076,
+        "body_bytes": 1619
+      },
+      {
+        "path": "context/product/paid-order.md",
+        "id": "CAP-paid-order",
+        "behaviors": [
+          "PB-001",
+          "PB-002"
+        ],
+        "implements": [],
+        "depends_on": [
+          "CMP-checkout",
+          "CMP-warehouse"
+        ],
+        "verification": [],
+        "body_words": 203,
+        "front_matter_bytes": 885,
+        "body_bytes": 1674
+      }
+    ],
+    "freshness": {
+      "CMP-checkout": "current",
+      "CMP-warehouse": "current",
+      "CAP-paid-order": "current"
+    },
+    "questions": [],
+    "index_bytes": 1384
+  },
+  {
+    "case": 13,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout": {
+          "status": "needs revalidation",
+          "next_action": "Investigate fee amount and source/test mismatch before reviewing CAP-fee and CMP-fee; keep baseline pages unchanged until requested",
+          "checkpoint": ".bootstrap/runs/revalidation.md"
+        }
+      },
+      "next_pb": 1,
+      "next_question": 1
+    },
+    "source_file_count": 5,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/fee.md",
+        "id": "CMP-fee",
+        "behaviors": [],
+        "implements": [
+          "PB-001"
+        ],
+        "depends_on": [],
+        "verification": [
+          {
+            "behavior": "PB-001",
+            "kind": "gap",
+            "reference": "Add a targeted contract check."
+          }
+        ],
+        "body_words": 4,
+        "front_matter_bytes": 432,
+        "body_bytes": 66
+      },
+      {
+        "path": "context/engineering/receipt.md",
+        "id": "CMP-receipt",
+        "behaviors": [],
+        "implements": [
+          "PB-002"
+        ],
+        "depends_on": [],
+        "verification": [
+          {
+            "behavior": "PB-002",
+            "kind": "gap",
+            "reference": "Add a targeted contract check."
+          }
+        ],
+        "body_words": 4,
+        "front_matter_bytes": 439,
+        "body_bytes": 69
+      },
+      {
+        "path": "context/product/fee.md",
+        "id": "CAP-fee",
+        "behaviors": [
+          "PB-001"
+        ],
+        "implements": [],
+        "depends_on": [],
+        "verification": [],
+        "body_words": 9,
+        "front_matter_bytes": 312,
+        "body_bytes": 77
+      },
+      {
+        "path": "context/product/receipt.md",
+        "id": "CAP-receipt",
+        "behaviors": [
+          "PB-002"
+        ],
+        "implements": [],
+        "depends_on": [],
+        "verification": [],
+        "body_words": 9,
+        "front_matter_bytes": 319,
+        "body_bytes": 76
+      }
+    ],
+    "freshness": {
+      "CMP-fee": "needs revalidation",
+      "CMP-receipt": "current",
+      "CAP-fee": "needs revalidation",
+      "CAP-receipt": "current"
+    },
+    "questions": [],
+    "index_bytes": 1616
+  },
+  {
+    "case": 14,
+    "state": {
+      "schema_version": 1,
+      "scopes": {
+        "checkout-warehouse": {
+          "status": "complete",
+          "next_action": "Revalidate checkout, subscription, and warehouse evidence before changing the handoff"
+        }
+      },
+      "next_pb": 3,
+      "next_question": 1
+    },
+    "source_file_count": 7,
+    "changed_primary_files": [],
+    "added_primary_files": [],
+    "structural_check_returncode": 0,
+    "published_pages": [
+      {
+        "path": "context/engineering/checkout.md",
+        "id": "CMP-checkout",
+        "behaviors": [],
+        "implements": [
+          "PB-001"
+        ],
+        "depends_on": [
+          "CAP-order-handoff"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-001",
+            "kind": "existing",
+            "reference": "tests/test_checkout.py::test_event_name; constant equality only"
+          },
+          {
+            "behavior": "PB-001",
+            "kind": "gap",
+            "reference": "Exercise checkout with a fake bus to verify event, id, and return; contract-check subscription and warehouse handler"
+          }
+        ],
+        "body_words": 227,
+        "front_matter_bytes": 1226,
+        "body_bytes": 1739
+      },
+      {
+        "path": "context/engineering/warehouse.md",
+        "id": "CMP-warehouse",
+        "behaviors": [],
+        "implements": [
+          "PB-002"
+        ],
+        "depends_on": [
+          "CAP-order-handoff"
+        ],
+        "verification": [
+          {
+            "behavior": "PB-002",
+            "kind": "gap",
+            "reference": "Check reserve passes message id to inventory; contract/integration-check configured order.paid handoff"
+          }
+        ],
+        "body_words": 197,
+        "front_matter_bytes": 1062,
+        "body_bytes": 1583
+      },
+      {
+        "path": "context/product/handoff.md",
+        "id": "CAP-order-handoff",
+        "behaviors": [
+          "PB-001",
+          "PB-002"
+        ],
+        "implements": [],
+        "depends_on": [
+          "CMP-checkout",
+          "CMP-warehouse"
+        ],
+        "verification": [],
+        "body_words": 211,
+        "front_matter_bytes": 924,
+        "body_bytes": 1689
+      }
+    ],
+    "freshness": {
+      "CMP-checkout": "current",
+      "CMP-warehouse": "current",
+      "CAP-order-handoff": "current"
+    },
+    "questions": [],
+    "index_bytes": 1440
+  }
+]

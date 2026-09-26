@@ -1,0 +1,22 @@
+[
+  {
+    "id": "R-001",
+    "question_id": "Q-003",
+    "scope": "tax",
+    "affects": [
+      "CAP-tax",
+      "CMP-tax"
+    ],
+    "sources": [
+      "docs/tax.md",
+      "src/tax.py"
+    ],
+    "action": "Align tax implementation and tests to agreed 0.06 rate",
+    "status": "open",
+    "decision": {
+      "choice": "FIX",
+      "human_statement": "Engineering should align tax implementation to 0.06; record remediation only.",
+      "github_id": "fixture-owner"
+    }
+  }
+]

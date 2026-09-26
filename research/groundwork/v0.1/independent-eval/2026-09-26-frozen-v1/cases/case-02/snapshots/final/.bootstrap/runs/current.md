@@ -1,0 +1,2 @@
+# Checkout fee contradiction
+Current contract docs/checkout.md requires 2 for all current checkouts. src/checkout.py adds 3, and tests/test_checkout.py expects 13 from 10. The discovered test passed in the working-tree fixture. No version/environment qualifiers reconcile these current claims in the bounded complete inventory. No fee claim is ready for trusted publication. Next: obtain an explicit FIX or IGNORE choice and the intended correction/exclusion, then validate it.

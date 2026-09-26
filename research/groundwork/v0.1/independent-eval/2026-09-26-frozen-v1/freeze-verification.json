@@ -1,0 +1,58 @@
+{
+  "date_utc": "2026-09-26T15:28:31.328430+00:00",
+  "commit": {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "52e6d91eebdb0973bc18dfcdc0deb0b97f4a16e3\n",
+    "stderr": ""
+  },
+  "status": {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "branch": {
+    "command": [
+      "git",
+      "symbolic-ref",
+      "-q",
+      "HEAD"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  "tracked_diff": {
+    "command": [
+      "git",
+      "diff",
+      "--exit-code",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "skill_hashes_unchanged": true,
+  "skill_hashes_after": {
+    "groundwork/SKILL.md": "6e877120f0102a17efabc00d6b358a40aa85f8650194a8e8a69b96b4349b39ab",
+    "groundwork/references/commands.md": "09fbe950e192278761f0394753dc1a8bccf64e85e246e9a62bb1311712173d5e",
+    "groundwork/references/evidence.md": "1232429b47dec56c852eafff4eea8fac4bc15c4747ae3ba3a1d38689eab89986",
+    "groundwork/references/state-format.md": "3c16f0b90360ba07224748a148cda1e16c9fe52a0c63d6de74749411d99c37ca",
+    "groundwork/references/questions.md": "d18a190eeb8227a6a56d96f4f1f16a2455971becdb5d1b483807b1fd353656b5",
+    "groundwork/agents/openai.yaml": "18e67d0ee019ce5d79207a2c76207db8fbefbf0cbd8c247160c69e29cd7344a6",
+    "groundwork/scripts/bootstrap.py": "f4a51f84d0499e6e2754770e8e31293c31925edd7f584c55c4017156fdf31c08",
+    "groundwork/assets/product.md": "80433bb4287c88fc64fb7f02ee52538a7daa41796fc82ad687bd4ba1225b552a",
+    "groundwork/assets/engineering.md": "cbe5344aac0da5e949d5e4ad6e7b32d888757ed46dc3463f05ef2542c0ad3f0c"
+  }
+}

@@ -1,0 +1,9 @@
+[
+  "docs/checkout.md",
+  "src/checkout.py",
+  "tests/test_checkout.py",
+  "pyproject.toml",
+  "docs/receipt.md",
+  "src/receipt.py",
+  ".bootstrap/state.yaml"
+]

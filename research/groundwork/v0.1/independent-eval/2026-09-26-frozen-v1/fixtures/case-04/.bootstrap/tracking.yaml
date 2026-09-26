@@ -1,0 +1,82 @@
+{
+  "context/product/paid-order.md": {
+    "sources": {
+      "path:docs/checkout.md": "af10ad391d4fb526badb53e134680a6a3ce84b1fb3ffe683ae30448b1024a1b7",
+      "path:src/checkout.py": "a94dde1e67be6bffe489122d2a06dcfc69043f16d31ffb866ad399e224149a53",
+      "path:deploy/subscriptions.json": "fa5c958ce034e49103c356a47b59a93df3b4f052cb4800194f4e3cc6cd6880c2",
+      "path:warehouse/worker.py": "391ed5cd0483796a336c3bbff083e49b57ea2dd5bcf0cb407c6702a8045dacb9",
+      "path:tests/test_checkout.py": "68493d7b839b56627ac63618386e736652ecc25186e408e4605d9e2e9680f7e8",
+      "path:.github/workflows/check.yml": "534452cb9c04d780ff2062dce0b3da0e7fb08c2afed90058d6b1f2b37397ae4b"
+    },
+    "watches": {
+      "src/*checkout*.py": "85a717f1bca6ea4ef896d1149c78e103300a44e8d04b77d764e06fde3cb96ea2",
+      "warehouse/*.py": "8697b31b8917103feef9e7ddb568a9d1bfa2f1ce0bd33f6110199f137c0b2652",
+      "deploy/*subscriptions*.json": "8aee869d9eee5a804b1114a062dd5944d777a663dcb372a494d103421d9c56a1",
+      "tests/test*checkout*.py": "dd3901e70bb87b0d4ee0a793a73313de9b424d1acc429af6d4779e7a696fe8a9",
+      "tests/test*warehouse*.py": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "tests/test*order*.py": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      ".github/workflows/*.yml": "3535317e6f7bd34b4a57d0add99c09d75f07279a141b6673bf11f38455e8160f",
+      "docs/*checkout*.md": "48fac7812573c203b0613f27100ba92c575683c0e8fa728b0e7bc8c93be888b9"
+    },
+    "dependencies": {},
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "aedb98b6412fb3d1bc73e9c669f0fd9a05fa525ab0bcd454633e699bd2e2431a",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/warehouse.md": {
+    "sources": {
+      "path:docs/checkout.md": "af10ad391d4fb526badb53e134680a6a3ce84b1fb3ffe683ae30448b1024a1b7",
+      "path:src/checkout.py": "a94dde1e67be6bffe489122d2a06dcfc69043f16d31ffb866ad399e224149a53",
+      "path:deploy/subscriptions.json": "fa5c958ce034e49103c356a47b59a93df3b4f052cb4800194f4e3cc6cd6880c2",
+      "path:warehouse/worker.py": "391ed5cd0483796a336c3bbff083e49b57ea2dd5bcf0cb407c6702a8045dacb9",
+      "path:tests/test_checkout.py": "68493d7b839b56627ac63618386e736652ecc25186e408e4605d9e2e9680f7e8",
+      "path:.github/workflows/check.yml": "534452cb9c04d780ff2062dce0b3da0e7fb08c2afed90058d6b1f2b37397ae4b"
+    },
+    "watches": {
+      "src/*checkout*.py": "85a717f1bca6ea4ef896d1149c78e103300a44e8d04b77d764e06fde3cb96ea2",
+      "warehouse/*.py": "8697b31b8917103feef9e7ddb568a9d1bfa2f1ce0bd33f6110199f137c0b2652",
+      "deploy/*subscriptions*.json": "8aee869d9eee5a804b1114a062dd5944d777a663dcb372a494d103421d9c56a1",
+      "tests/test*checkout*.py": "dd3901e70bb87b0d4ee0a793a73313de9b424d1acc429af6d4779e7a696fe8a9",
+      "tests/test*warehouse*.py": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "tests/test*order*.py": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      ".github/workflows/*.yml": "3535317e6f7bd34b4a57d0add99c09d75f07279a141b6673bf11f38455e8160f",
+      "docs/*checkout*.md": "48fac7812573c203b0613f27100ba92c575683c0e8fa728b0e7bc8c93be888b9"
+    },
+    "dependencies": {
+      "CAP-paid-order": "aedb98b6412fb3d1bc73e9c669f0fd9a05fa525ab0bcd454633e699bd2e2431a"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "6950d7a2985ee59c1320b42d5c3b640ed60f7c2134f7139be6c4fb8ed25b2f7b",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/checkout.md": {
+    "sources": {
+      "path:docs/checkout.md": "af10ad391d4fb526badb53e134680a6a3ce84b1fb3ffe683ae30448b1024a1b7",
+      "path:src/checkout.py": "a94dde1e67be6bffe489122d2a06dcfc69043f16d31ffb866ad399e224149a53",
+      "path:deploy/subscriptions.json": "fa5c958ce034e49103c356a47b59a93df3b4f052cb4800194f4e3cc6cd6880c2",
+      "path:warehouse/worker.py": "391ed5cd0483796a336c3bbff083e49b57ea2dd5bcf0cb407c6702a8045dacb9",
+      "path:tests/test_checkout.py": "68493d7b839b56627ac63618386e736652ecc25186e408e4605d9e2e9680f7e8",
+      "path:.github/workflows/check.yml": "534452cb9c04d780ff2062dce0b3da0e7fb08c2afed90058d6b1f2b37397ae4b"
+    },
+    "watches": {
+      "src/*checkout*.py": "85a717f1bca6ea4ef896d1149c78e103300a44e8d04b77d764e06fde3cb96ea2",
+      "warehouse/*.py": "8697b31b8917103feef9e7ddb568a9d1bfa2f1ce0bd33f6110199f137c0b2652",
+      "deploy/*subscriptions*.json": "8aee869d9eee5a804b1114a062dd5944d777a663dcb372a494d103421d9c56a1",
+      "tests/test*checkout*.py": "dd3901e70bb87b0d4ee0a793a73313de9b424d1acc429af6d4779e7a696fe8a9",
+      "tests/test*warehouse*.py": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "tests/test*order*.py": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      ".github/workflows/*.yml": "3535317e6f7bd34b4a57d0add99c09d75f07279a141b6673bf11f38455e8160f",
+      "docs/*checkout*.md": "48fac7812573c203b0613f27100ba92c575683c0e8fa728b0e7bc8c93be888b9"
+    },
+    "dependencies": {
+      "CAP-paid-order": "aedb98b6412fb3d1bc73e9c669f0fd9a05fa525ab0bcd454633e699bd2e2431a",
+      "CMP-warehouse": "6950d7a2985ee59c1320b42d5c3b640ed60f7c2134f7139be6c4fb8ed25b2f7b"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "beb86b4505e2926a79a4f3a098f27875f305a8b87231bd193f46666bc69c2296",
+    "status": "current",
+    "reasons": []
+  }
+}

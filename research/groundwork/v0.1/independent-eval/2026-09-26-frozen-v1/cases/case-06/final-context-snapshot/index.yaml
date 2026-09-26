@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "documents": [],
+  "exclusions": ".bootstrap/exclusions.yaml",
+  "questions": ".bootstrap/questions.yaml",
+  "read_contract": "Run freshness; use current pages only; respect active and needs-review exclusions."
+}

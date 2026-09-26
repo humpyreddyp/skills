@@ -1,0 +1,23 @@
+{
+  "case": 5,
+  "observations": [
+    "Checked answer matches independent local code, test, and purpose document.",
+    "Q-001 resolved with supplied attribution; human answer provenance recorded.",
+    "PB-001 allocated via helper; two pages published and dependency republish made both current.",
+    "Scope marked complete for narrow fee calculation; unknown currency/caller contracts documented as coverage limits."
+  ],
+  "human_input_needs": [],
+  "unexpected_behavior": [
+    "No frozen helper error observed.",
+    "Intermediate mutual dependency pages require the documented reviewed republish before becoming current."
+  ],
+  "execution_limitations": [
+    "First attempted requests.json at evidence root failed; corrected to fixtures/requests.json. Failed read retained in case-05 log.",
+    "All four case prompts were read together with the request catalog; no past outcomes, regression suite, fixture generator, research or reports were read.",
+    "Fixture is nested in an enclosing Git repository; authored pages use working-tree rather than claiming an independent fixture commit.",
+    "Skill references/templates read once and shared across this executing agent\u2019s cases; shared setup is logged in case-05.",
+    "Initial recorder bootstrap read and evidence-driver creation occurred before/around recorded execution; exact authored drivers are preserved.",
+    "Existing initial next_question counter is 1 despite Q-001 existing. Case 8 chooses unused Q-002 and advances counter; other fixtures retain inherited value."
+  ],
+  "ratings": "No numeric rating assigned; parent grades artifacts independently."
+}

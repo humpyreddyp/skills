@@ -1,0 +1,8 @@
+[
+  "docs/checkout.md",
+  "pyproject.toml",
+  "src/checkout.py",
+  "tests/test_checkout.py",
+  ".bootstrap/questions.yaml",
+  ".bootstrap/state.yaml"
+]

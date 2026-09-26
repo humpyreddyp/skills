@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-09-26T15:20:57.283533+00:00",
+  "classification": "evaluation-probe limitation",
+  "observation": "Naive relative-link smoke probe reports two missing links in templates: ../engineering/example.md and ../product/example.md#pb-001. These are explicit placeholders to replace before publishing, not shipped supporting-file dependencies. All 15 SKILL/reference links resolve. Raw probe retained unchanged.",
+  "portability_rating": "PASS",
+  "fixture_limitation": "Synthetic cases are output-directory descendants of the development checkout. They contain newly generated source only, but git discovery reaches the enclosing frozen HEAD. Baseline revisions should use working-tree/no-git accurately; no development skill files are executed."
+}

@@ -1,0 +1,26 @@
+{
+  "fixture_files": [
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/.bootstrap/state.yaml",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/.bootstrap/questions.yaml",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/.bootstrap/remediation.yaml",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/.bootstrap/exclusions.yaml",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/.bootstrap/external.yaml",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/.bootstrap/tracking.yaml",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/src/checkout.py",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/tests/test_checkout.py",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/docs/checkout.md",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/pyproject.toml",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-08/context/index.yaml"
+  ],
+  "shared_skill_reads_logged_in": "../case-05/raw.jsonl",
+  "skill_files": [
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/SKILL.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/references/commands.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/references/state-format.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/references/evidence.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/references/questions.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/assets/product.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/assets/engineering.md"
+  ],
+  "note": "State first; index initially absent. Shared skill read once before applying it to cases 5\u20138. Requests read from fixtures/requests.json; authored drivers are preserved."
+}

@@ -1,0 +1,1 @@
+Baseline only checkout. Keep the investigation bounded; this repository has a lot of unrelated material.

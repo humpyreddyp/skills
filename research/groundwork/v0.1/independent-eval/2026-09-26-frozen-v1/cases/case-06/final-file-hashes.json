@@ -1,0 +1,14 @@
+{
+  "pyproject.toml": "149a3d7284f4792192e09759e398477e3db68da6c567af218bdd694f4043a513",
+  "context/index.yaml": "b7b454641997d9d987f0783a950ba037a89596a21079d6322a927aa4fba8cfb8",
+  ".bootstrap/state.yaml": "ccf3a0007c2f972815200cef809bc3f574eb33533ae1cff75a22fc052b7e6d4f",
+  ".bootstrap/exclusions.yaml": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  ".bootstrap/questions.yaml": "1a9820d3ec922a852d3a1c11f45e75e154d303bf8f5198cbf09f90495322b1ba",
+  ".bootstrap/remediation.yaml": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  ".bootstrap/external.yaml": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+  ".bootstrap/tracking.yaml": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+  "tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb",
+  "docs/checkout.md": "42649f9ad7e553d170e863de69cc24d7245f58698ce212399dd10d7d3ba8ff4a",
+  "src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+  ".bootstrap/runs/conflict.md": "155d836c09848e37246fc4632abf0bb1a94122ad3413aceaa8e0aee08883b064"
+}

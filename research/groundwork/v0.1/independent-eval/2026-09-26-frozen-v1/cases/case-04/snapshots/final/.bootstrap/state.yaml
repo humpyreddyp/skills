@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "paid-order": {
+      "status": "complete",
+      "next_action": "Revalidate the event mapping and producer/consumer contract together when this flow changes; obtain external contracts before changing delivery guarantees"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 1
+}

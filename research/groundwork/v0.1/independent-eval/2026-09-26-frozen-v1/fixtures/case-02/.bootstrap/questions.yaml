@@ -1,0 +1,28 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Current contract requires fee 2; implementation and passing test use fee 3.",
+    "sources": [
+      {
+        "path": "docs/checkout.md"
+      },
+      {
+        "path": "src/checkout.py"
+      },
+      {
+        "path": "tests/test_checkout.py"
+      }
+    ],
+    "why": "A future fee change cannot safely rely on an agreed current fee until the contradiction is resolved.",
+    "affects": [
+      "CAP-checkout",
+      "CMP-checkout",
+      "PB-001"
+    ],
+    "question": "Which fee should current checkout use? Please choose FIX and identify the correction to record, or IGNORE and identify the precise source/claim to exclude with rationale. The contract says 2; code and test use 3. You may also leave this unresolved.",
+    "blocking": true,
+    "status": "conflicting",
+    "validation": "All available local sources examined; no version or environment distinction resolves the mismatch. No human decision supplied."
+  }
+]

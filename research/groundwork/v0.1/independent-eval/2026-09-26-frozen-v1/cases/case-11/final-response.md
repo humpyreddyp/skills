@@ -1,0 +1,3 @@
+Published the supported receipt behavior and implementation as PB-002: it exposes order.id as order_id so customers can reference a purchase. No receipt test was available; the needed check is recorded. The fee remains unpublished: docs say 2, while code and its passing test use 3. Q-001: Which fee should apply? Choose FIX and the correction to record, or IGNORE and the precise source/claim to exclude with a reason.
+
+[Groundwork SKILL.md](/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/SKILL.md) says, “If a contradiction remains, the human chooses **FIX** or **IGNORE**.” That decision is still missing for the fee.

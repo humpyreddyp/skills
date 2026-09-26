@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Await engineering remediation R-001, then inspect and verify the completed fee-2 change before resolving Q-001",
+      "checkpoint": ".bootstrap/runs/remediation.md"
+    }
+  },
+  "next_pb": 1,
+  "next_question": 1
+}

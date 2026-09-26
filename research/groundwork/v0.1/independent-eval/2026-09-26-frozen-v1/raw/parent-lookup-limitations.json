@@ -1,0 +1,9 @@
+{
+  "wrong_parent_reads": [
+    "fixtures/case-08/context/product/fee.md",
+    "fixtures/case-14/context/product/paid-order.md"
+  ],
+  "result": "cat: No such file or directory; actual files located by inventory (checkout.md and handoff.md).",
+  "logging_limit": "These parent inspection tool calls remain in native chat transcript, not the command-recorder JSONL. This addendum preserves the failure details without claiming contemporaneous recorder capture.",
+  "supplemental_setup_pointer": "obsolete-summary.md used inaccurate fee.md references; fresh executor identified actual checkout.md pages before cleanup."
+}

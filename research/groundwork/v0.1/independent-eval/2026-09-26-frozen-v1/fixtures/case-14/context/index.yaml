@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "CMP-checkout",
+      "kind": "engineering",
+      "scope": "checkout-warehouse",
+      "title": "Checkout responsibilities",
+      "behaviors": [],
+      "implements": [
+        "PB-001"
+      ],
+      "depends_on": [
+        "CAP-order-handoff"
+      ],
+      "path": "context/engineering/checkout.md",
+      "freshness": "current",
+      "reasons": []
+    },
+    {
+      "id": "CMP-warehouse",
+      "kind": "engineering",
+      "scope": "checkout-warehouse",
+      "title": "Warehouse responsibilities",
+      "behaviors": [],
+      "implements": [
+        "PB-002"
+      ],
+      "depends_on": [
+        "CAP-order-handoff"
+      ],
+      "path": "context/engineering/warehouse.md",
+      "freshness": "current",
+      "reasons": []
+    },
+    {
+      "id": "CAP-order-handoff",
+      "kind": "product",
+      "scope": "checkout-warehouse",
+      "title": "Checkout and warehouse responsibility boundary",
+      "behaviors": [
+        "PB-001",
+        "PB-002"
+      ],
+      "implements": [],
+      "depends_on": [
+        "CMP-checkout",
+        "CMP-warehouse"
+      ],
+      "path": "context/product/handoff.md",
+      "freshness": "current",
+      "reasons": []
+    }
+  ],
+  "exclusions": ".bootstrap/exclusions.yaml",
+  "questions": ".bootstrap/questions.yaml",
+  "read_contract": "Run freshness; use current pages only; respect active and needs-review exclusions."
+}

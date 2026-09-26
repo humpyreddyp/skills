@@ -1,0 +1,25 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "The current docs, code and test all use fee 3; a stakeholder recalled fee 2.",
+    "sources": [
+      "docs/checkout.md",
+      "src/checkout.py"
+    ],
+    "why": "Fee changes affect charged totals.",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "question": "Which fee should checkout apply?",
+    "blocking": true,
+    "status": "conflicting",
+    "answer": {
+      "summary": "The current fee is definitely 2; please make the baseline reflect that.",
+      "github_id": "product-owner",
+      "sources": []
+    },
+    "validation": "The supplied answer asserts fee 2, while docs/checkout.md and src/checkout.py use 3 and test_total expects 13 for subtotal 10. The answer is not supported as current observed behavior; desired intent and implementation remain in conflict. An explicit FIX or narrowly targeted IGNORE decision is needed before publishing the disputed claim."
+  }
+]

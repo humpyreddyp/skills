@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Publish observed value",
+      "checkpoint": ".bootstrap/runs/unfinished.md"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 1
+}

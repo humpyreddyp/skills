@@ -1,0 +1,38 @@
+{
+  "context/product/checkout.md": {
+    "sources": {
+      "path:docs/checkout.md": "42649f9ad7e553d170e863de69cc24d7245f58698ce212399dd10d7d3ba8ff4a",
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+      "path:tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb"
+    },
+    "watches": {
+      "docs/*checkout*.md": "e7157422a94051553a848ba0ac1f4453e3348b58303a6bdb18b8b1019d530b35",
+      "src/*checkout*.py": "53dffd98dfbe70f1bea7bb17a374522068ce93f231ad3e50be7d9ff7a60e3a68",
+      "tests/test*checkout*.py": "124dc9a751db7edf2546d22777db5af7122d03c1aed284817edd7a320aad8d6c"
+    },
+    "dependencies": {},
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "57f92b2038d054ccf1267cf7679b0aafa3705beb7f5ecb226da72f04dd978770",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/checkout.md": {
+    "sources": {
+      "path:docs/checkout.md": "42649f9ad7e553d170e863de69cc24d7245f58698ce212399dd10d7d3ba8ff4a",
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+      "path:tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb"
+    },
+    "watches": {
+      "docs/*checkout*.md": "e7157422a94051553a848ba0ac1f4453e3348b58303a6bdb18b8b1019d530b35",
+      "src/*checkout*.py": "53dffd98dfbe70f1bea7bb17a374522068ce93f231ad3e50be7d9ff7a60e3a68",
+      "tests/test*checkout*.py": "124dc9a751db7edf2546d22777db5af7122d03c1aed284817edd7a320aad8d6c"
+    },
+    "dependencies": {
+      "CAP-checkout": "57f92b2038d054ccf1267cf7679b0aafa3705beb7f5ecb226da72f04dd978770"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "71b68b41b8b3cde02b16a1c8231292ac788625f817903dfacd0e5f2d5ac0cb2b",
+    "status": "current",
+    "reasons": []
+  }
+}

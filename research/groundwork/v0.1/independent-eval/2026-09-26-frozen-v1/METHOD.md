@@ -1,0 +1,19 @@
+# Independent evaluation method
+
+Target: https://github.com/humpyreddyp/skills, commit `52e6d91eebdb0973bc18dfcdc0deb0b97f4a16e3`.
+
+The artifact under test is the committed `groundwork/` directory in the clean detached worktree at `/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly`. No evaluation branch was created. The primary checkout was inspected only to locate the repository/object; its skill was not executed. Evaluation outputs are in a separate, untracked `independent-evaluation/2026-09-26-frozen-v1/` directory. The fixture source is the frozen commit's `evals/make_fixtures.py`.
+
+Before fixture execution, the evaluator recorded environment, commit, detached state, clean Git status, and skill hashes. Exact model version and reasoning effort were not exposed by the execution tools. The runtime identifies the assistant as GPT-6; this is not an exact reproducible model identifier. Child agents inherit the same configuration. Token usage is unavailable, not zero.
+
+Three fresh executing agents received the frozen skill path and assigned requests, without conversation history or earlier evaluation findings. Agent A executes cases 1–4, 10, 11; B executes 5–8; C executes case 9 first, then 12–14. Case 9 therefore tests resume without preceding case or chat history. Other cases have fresh filesystem state but share their executing agent's accumulated context; this is not fourteen independent model sessions or a stochastic reliability study. All three agent slots were occupied during these runs, limiting further nested investigation delegation. The parent independently reviews generated artifacts and source agreement instead of matching expected prose.
+
+Agents log commands and output and retain authored drivers, prompts, generated context, durable state, intermediate snapshots, final responses, and observations. The root command recorder uses append-only JSONL. Failures are retained. No skill repair is allowed. Actual private chain-of-thought is neither requested nor stored; evidence consists of observable outputs and compact findings.
+
+Historical results (`evals/RESULTS.md`, `evals/results`, research evaluation reports, and repository `REPORT.md`) remain unread until execution and independent grading are complete. Existing fixture definitions and deterministic test code are allowed inputs. The archived old-name skill package is used solely to test saved-state compatibility, not as a source of evaluation conclusions.
+
+The primary Python runtime is 3.14.2. An additional available system Python 3.9.6 tests the declared minimum-version support. The helper suite is run unchanged from the detached worktree, with bytecode writes disabled. No dependencies are installed, live services called, or repository changes pushed.
+
+One setup limitation was detected and communicated during execution: synthetic fixture directories live below the primary checkout's output directory and have no Git repository of their own. Git discovery inherits the enclosing checkout's HEAD (also the frozen SHA), which is not a fixture commit. Agents are instructed to use working-tree provenance rather than misattribute this revision; source fingerprints still capture the actual synthetic inputs. Pristine fixture copies and hashes are preserved. The artifact under test remains exclusively the detached frozen skill. Portability probes additionally run in independent `/private/tmp` directories outside any Git checkout.
+
+Ratings use PASS for an observed contract-compliant outcome, PARTIAL for a meaningful unfulfilled portion or material evidence limitation, and FAIL for an observed contract violation. A human answer still being needed is not itself failure when correctly persisted and scoped. Helper success establishes structural validity, not semantic truth.

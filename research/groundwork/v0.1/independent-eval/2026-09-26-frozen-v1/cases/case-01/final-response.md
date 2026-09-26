@@ -1,0 +1,1 @@
+Checkout is complete in context/product/checkout.md and context/engineering/checkout.md. The current fee is 3 for packing costs; the fee of 2 applies to retired v1. The discovered total test passed. No material question remains.

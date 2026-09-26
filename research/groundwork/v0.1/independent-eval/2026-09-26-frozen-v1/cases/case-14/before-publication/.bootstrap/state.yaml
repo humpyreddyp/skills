@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout-warehouse": {
+      "status": "partial",
+      "next_action": "Publish supported responsibilities, non-ownership, and event contract",
+      "checkpoint": ".bootstrap/runs/current.md"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 1
+}

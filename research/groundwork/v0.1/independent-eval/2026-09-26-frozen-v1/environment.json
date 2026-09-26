@@ -1,0 +1,65 @@
+{
+  "recorded_before_execution": true,
+  "date_utc": "2026-09-26T15:18:22.245912+00:00",
+  "worktree": "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly",
+  "commit": {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "52e6d91eebdb0973bc18dfcdc0deb0b97f4a16e3\n",
+    "stderr": ""
+  },
+  "git_status": {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "branch": {
+    "command": [
+      "git",
+      "symbolic-ref",
+      "-q",
+      "HEAD"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  "runtime": {
+    "python": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+    "executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "platform": "macOS-15.7.9-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "git": {
+      "command": [
+        "git",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "git version 2.50.1 (Apple Git-155)\n",
+      "stderr": ""
+    }
+  },
+  "model": {
+    "identity_exposed": "GPT-6 family per runtime instruction",
+    "exact_model_version": "not exposed to evaluator",
+    "reasoning_setting": "not exposed to evaluator",
+    "subagents": "inherit parent; exact version/settings not exposed"
+  },
+  "environment": {
+    "timezone": "America/New_York",
+    "network": "restricted",
+    "filesystem": "workspace-write sandbox",
+    "host": "Codex desktop macOS",
+    "repository": "https://github.com/humpyreddyp/skills",
+    "prior_evaluation_results_read": false
+  }
+}

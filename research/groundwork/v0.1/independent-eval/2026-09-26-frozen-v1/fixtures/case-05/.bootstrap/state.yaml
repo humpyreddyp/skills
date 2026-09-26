@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "complete",
+      "next_action": "Run freshness before relying on the fee baseline; revalidate any changed fee sources or checked owner intent"
+    }
+  },
+  "next_pb": 2,
+  "next_question": 1
+}

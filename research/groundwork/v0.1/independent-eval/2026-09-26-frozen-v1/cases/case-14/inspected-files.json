@@ -1,0 +1,23 @@
+{
+  "skill_and_references_loaded_once_in_case_09": [
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/SKILL.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/references/commands.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/references/state-format.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/references/evidence.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/references/questions.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/assets/product.md",
+    "/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/assets/engineering.md"
+  ],
+  "fixture_content_inspected": [
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-14/docs/checkout.md",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-14/src/checkout.py",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-14/deploy/subscriptions.json",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-14/warehouse/worker.py",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-14/tests/test_checkout.py",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-14/.github/workflows/check.yml",
+    "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/case-14/pyproject.toml"
+  ],
+  "request_source": "/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1/fixtures/requests.json",
+  "additional_integrity_reads": "All primary files and their pristine counterparts listed with hashes in the final raw command record; snapshots copy state/context without additional model inspection.",
+  "helper_accesses": "Helper reads/writes its own state and source hashes, captured by raw commands."
+}

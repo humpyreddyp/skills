@@ -1,0 +1,2 @@
+# Bounded checkout finding
+Initial path inventory was truncated; subsequent src/docs/tests scans were each complete with one relevant path. Read only docs/checkout.md, src/checkout.py, tests/test_checkout.py and pyproject.toml. The document establishes a fixed fee of 3 for packing and excludes inventory availability; code adds 3 and test expects total(10)==13. No noise file contents read. Scope covers documented purpose and observed total calculation; actual payment collection is not established. Next: execute the discovered check and publish linked pages.

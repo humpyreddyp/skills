@@ -1,0 +1,1 @@
+Scope: checkout. Fee-3 behavior is independently supported and published; Q-001 resolved and X-001 remains narrow. Q-002 asks what purpose the fee serves and which requirement supports it. Do not invent a rationale. Next: validate supplied purpose evidence, update provenance, and reassess completion.

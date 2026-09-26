@@ -1,0 +1,5 @@
+{
+  "recorded_at": "2026-09-26T15:21:31.682028+00:00",
+  "additional_runtime": "/usr/bin/python3: Python 3.9.6",
+  "reason_for_additional_suite": "Verify declared minimum Python 3.9 compatibility; primary run uses Python 3.14.2."
+}

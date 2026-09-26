@@ -1,0 +1,21 @@
+{
+  "command_steps": 17,
+  "content_files_read": 7,
+  "inspected_files": [
+    "docs/checkout.md",
+    "src/checkout.py",
+    "tests/test_checkout.py",
+    "pyproject.toml",
+    "docs/receipt.md",
+    "src/receipt.py",
+    ".bootstrap/state.yaml"
+  ],
+  "token_count": null,
+  "common_skill_content_files_read": 7,
+  "isolation": "All agent slots occupied; bounded checkpoints used. Prior case context remains in executor.",
+  "authored_fixture_write_or_delete_steps": 9,
+  "recorded_execution_steps": 26,
+  "primary_fixture_content_files_read": 6,
+  "generated_state_content_files_read": 1,
+  "step_definition": "Each recorder command plus each authored fixture-file write/deletion. Evidence bookkeeping and snapshot copies are not investigation steps."
+}

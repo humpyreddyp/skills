@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "When purpose evidence becomes available, validate it against Q-002 and current checkout sources; register supported intent provenance, update affected baseline pages, and reassess scope completion. Until then retain the observed fee-3 baseline and do not infer fee rationale."
+    },
+    "tax": {
+      "status": "waiting for human",
+      "next_action": "Verify R-001 after engineering completes the tax rate correction"
+    }
+  },
+  "next_pb": 2,
+  "next_question": 4
+}

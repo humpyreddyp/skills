@@ -1,0 +1,8 @@
+{
+  "recorded_command_steps_before_evidence_summary": 11,
+  "helper_command_steps": 6,
+  "authored_workflow_phases": 2,
+  "token_count": null,
+  "token_count_reason": "Not exposed by execution tools",
+  "note": "Raw command steps count driver wrappers and their nested helper calls separately; shared setup/skill reads are in case-05. Counts stop before this evidence-summary wrapper is appended."
+}

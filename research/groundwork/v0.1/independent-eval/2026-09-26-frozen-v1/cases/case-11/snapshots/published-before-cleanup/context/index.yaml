@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "CMP-checkout-receipt",
+      "kind": "engineering",
+      "scope": "checkout",
+      "title": "Receipt mapping implementation",
+      "behaviors": [],
+      "implements": [
+        "PB-002"
+      ],
+      "depends_on": [
+        "CAP-checkout-receipt"
+      ],
+      "path": "context/engineering/receipt.md",
+      "freshness": "current",
+      "reasons": []
+    },
+    {
+      "id": "CAP-checkout-receipt",
+      "kind": "product",
+      "scope": "checkout",
+      "title": "Receipt order reference",
+      "behaviors": [
+        "PB-002"
+      ],
+      "implements": [],
+      "depends_on": [],
+      "path": "context/product/receipt.md",
+      "freshness": "current",
+      "reasons": []
+    }
+  ],
+  "exclusions": ".bootstrap/exclusions.yaml",
+  "questions": ".bootstrap/questions.yaml",
+  "read_contract": "Run freshness; use current pages only; respect active and needs-review exclusions."
+}

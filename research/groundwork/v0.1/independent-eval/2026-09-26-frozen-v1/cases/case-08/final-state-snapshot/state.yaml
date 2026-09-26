@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Obtain and validate Q-002 fee purpose evidence before completing the scope",
+      "checkpoint": ".bootstrap/runs/purpose.md"
+    }
+  },
+  "next_pb": 2,
+  "next_question": 3
+}

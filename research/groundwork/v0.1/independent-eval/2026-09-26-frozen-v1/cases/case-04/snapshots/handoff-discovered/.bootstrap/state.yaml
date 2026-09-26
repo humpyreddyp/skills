@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "paid-order": {
+      "status": "partial",
+      "next_action": "Publish the configured checkout-to-warehouse handoff and verification gaps",
+      "checkpoint": ".bootstrap/runs/handoff.md"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 1
+}

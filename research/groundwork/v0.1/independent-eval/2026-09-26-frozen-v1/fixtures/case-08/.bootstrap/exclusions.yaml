@@ -1,0 +1,24 @@
+[
+  {
+    "question_id": "Q-001",
+    "scope": "checkout",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "decision": {
+      "choice": "IGNORE",
+      "human_statement": "For Q-001 I choose IGNORE the claim in docs/checkout.md that checkout fee is 2. That claim is outdated; the current fee of 3 is supported by the code and test. Keep other claims in that document usable. Recheck this exclusion if the fee documentation changes. My GitHub ID is product-owner.",
+      "github_id": "product-owner"
+    },
+    "status": "active",
+    "source": {
+      "path": "docs/checkout.md"
+    },
+    "claim": "The fee is 2.",
+    "rationale": "The human identifies this fee claim as outdated; current code and test support fee 3. Other claims in the document remain usable.",
+    "recheck_when": "The fee documentation changes",
+    "source_snapshot": "3884cb34dc586b3c704203b2f5d0237b47aaa0f2b40ad6f72c8852b7d59ff118",
+    "id": "X-001"
+  }
+]

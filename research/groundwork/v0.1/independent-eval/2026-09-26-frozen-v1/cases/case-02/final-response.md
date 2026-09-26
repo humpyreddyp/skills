@@ -1,0 +1,3 @@
+Checkout is waiting for input. The current contract requires fee 2, while the implementation adds 3 and its test passes with 3. I saved Q-001 and withheld the disputed fee from trusted context. Which fee should apply? Please choose FIX and the correction to record, or IGNORE and the exact source/claim to exclude with a reason. You may leave it unresolved.
+
+[Groundwork SKILL.md](/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/SKILL.md) says, “If a contradiction remains, the human chooses **FIX** or **IGNORE**.” This unresolved current-fee disagreement needs that choice.

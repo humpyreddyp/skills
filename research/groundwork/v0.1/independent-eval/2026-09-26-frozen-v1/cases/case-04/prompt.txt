@@ -1,0 +1,1 @@
+Baseline the paid-order flow from checkout through stock reservation. Investigate how these components are connected.

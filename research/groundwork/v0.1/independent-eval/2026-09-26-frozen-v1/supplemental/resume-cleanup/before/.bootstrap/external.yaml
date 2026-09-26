@@ -1,0 +1,8 @@
+{
+  "checkout-owner-answer": {
+    "label": "Q-001 answer by product-owner",
+    "location": ".bootstrap/questions.yaml#Q-001",
+    "revision": "sha256:bc18dd70197e7ef1d7827fc470e07efe24f4a2651bbb149fe0b81d7059beb206",
+    "review_after": "2026-12-26"
+  }
+}

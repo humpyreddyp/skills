@@ -1,0 +1,36 @@
+{
+  "context/product/checkout.md": {
+    "sources": {
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+      "path:tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb"
+    },
+    "watches": {
+      "src/checkout.py": "53dffd98dfbe70f1bea7bb17a374522068ce93f231ad3e50be7d9ff7a60e3a68",
+      "tests/test_checkout*.py": "124dc9a751db7edf2546d22777db5af7122d03c1aed284817edd7a320aad8d6c",
+      "docs/*checkout*": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "docs/adr-*": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "dependencies": {},
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "3dda09067dae3d38707c572790e4e61db601cc0f8ba6a026c3b2be37897df532",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/checkout.md": {
+    "sources": {
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+      "path:tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb"
+    },
+    "watches": {
+      "src/checkout.py": "53dffd98dfbe70f1bea7bb17a374522068ce93f231ad3e50be7d9ff7a60e3a68",
+      "tests/test_checkout*.py": "124dc9a751db7edf2546d22777db5af7122d03c1aed284817edd7a320aad8d6c"
+    },
+    "dependencies": {
+      "CAP-checkout-observed": "3dda09067dae3d38707c572790e4e61db601cc0f8ba6a026c3b2be37897df532"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "00741e309bc3c349abaa280f5bdfea0f6261858d5aa990a075c3a3ddaf821c1c",
+    "status": "current",
+    "reasons": []
+  }
+}

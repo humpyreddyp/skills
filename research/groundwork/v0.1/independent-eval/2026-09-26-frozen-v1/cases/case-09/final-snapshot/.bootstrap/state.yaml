@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "complete",
+      "next_action": "Revalidate checkout sources before future changes"
+    }
+  },
+  "next_pb": 13,
+  "next_question": 1
+}

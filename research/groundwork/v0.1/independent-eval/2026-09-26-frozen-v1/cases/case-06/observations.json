@@ -1,0 +1,24 @@
+{
+  "case": 6,
+  "observations": [
+    "Answer retained faithfully with product-owner attribution.",
+    "Docs/code/test disagree with answer, so Q-001 is conflicting and blocking.",
+    "No inferred FIX/IGNORE, remediation, exclusion, or fee-2 publication.",
+    "Saved conflict finding and explicit next action."
+  ],
+  "human_input_needs": [
+    "Explicit FIX or narrow IGNORE choice for Q-001, or leave unresolved."
+  ],
+  "unexpected_behavior": [
+    "No frozen helper error observed."
+  ],
+  "execution_limitations": [
+    "First attempted requests.json at evidence root failed; corrected to fixtures/requests.json. Failed read retained in case-05 log.",
+    "All four case prompts were read together with the request catalog; no past outcomes, regression suite, fixture generator, research or reports were read.",
+    "Fixture is nested in an enclosing Git repository; authored pages use working-tree rather than claiming an independent fixture commit.",
+    "Skill references/templates read once and shared across this executing agent\u2019s cases; shared setup is logged in case-05.",
+    "Initial recorder bootstrap read and evidence-driver creation occurred before/around recorded execution; exact authored drivers are preserved.",
+    "Existing initial next_question counter is 1 despite Q-001 existing. Case 8 chooses unused Q-002 and advances counter; other fixtures retain inherited value."
+  ],
+  "ratings": "No numeric rating assigned; parent grades artifacts independently."
+}

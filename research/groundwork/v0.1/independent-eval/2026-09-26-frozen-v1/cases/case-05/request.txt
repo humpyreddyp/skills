@@ -1,0 +1,1 @@
+Continue bootstrap and resolve Q-001. My GitHub ID is product-owner. The current fee is 3, for packing costs, as documented in docs/checkout.md.

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "CAP-fee",
+      "kind": "product",
+      "scope": "checkout",
+      "title": "Checkout fee",
+      "behaviors": [
+        "PB-001"
+      ],
+      "implements": [],
+      "depends_on": [
+        "CMP-checkout"
+      ],
+      "path": "context/product/checkout.md",
+      "freshness": "needs revalidation",
+      "reasons": [
+        "dependency needs revalidation: CMP-checkout"
+      ]
+    }
+  ],
+  "exclusions": ".bootstrap/exclusions.yaml",
+  "questions": ".bootstrap/questions.yaml",
+  "read_contract": "Run freshness; use current pages only; respect active and needs-review exclusions."
+}

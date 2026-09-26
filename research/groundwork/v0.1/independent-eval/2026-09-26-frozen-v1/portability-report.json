@@ -1,0 +1,104 @@
+{
+  "scratch": "/private/tmp/groundwork-portability-4l5wyhun",
+  "checks": {
+    "all_relative_links_resolve": false,
+    "name": true,
+    "no_old_folder_runtime_references": true,
+    "zip_matches_committed_skill": true,
+    "old_saved_state_preserved_by_new_init": true,
+    "old_saved_ids_resume": true,
+    "arbitrary_folder_scan": true,
+    "old_and_new_helper_identical": true
+  },
+  "notes": [
+    "Archived old-name package used only as compatibility fixture; no historical evaluation results read."
+  ],
+  "relative_links": [
+    {
+      "file": "SKILL.md",
+      "target": "references/commands.md",
+      "exists": true
+    },
+    {
+      "file": "SKILL.md",
+      "target": "references/state-format.md",
+      "exists": true
+    },
+    {
+      "file": "SKILL.md",
+      "target": "references/evidence.md",
+      "exists": true
+    },
+    {
+      "file": "SKILL.md",
+      "target": "references/questions.md",
+      "exists": true
+    },
+    {
+      "file": "SKILL.md",
+      "target": "assets/product.md",
+      "exists": true
+    },
+    {
+      "file": "SKILL.md",
+      "target": "assets/engineering.md",
+      "exists": true
+    },
+    {
+      "file": "SKILL.md",
+      "target": "references/state-format.md",
+      "exists": true
+    },
+    {
+      "file": "references/commands.md",
+      "target": "state-format.md",
+      "exists": true
+    },
+    {
+      "file": "references/evidence.md",
+      "target": "questions.md",
+      "exists": true
+    },
+    {
+      "file": "references/state-format.md",
+      "target": "../assets/product.md",
+      "exists": true
+    },
+    {
+      "file": "references/state-format.md",
+      "target": "../assets/engineering.md",
+      "exists": true
+    },
+    {
+      "file": "references/state-format.md",
+      "target": "commands.md",
+      "exists": true
+    },
+    {
+      "file": "references/state-format.md",
+      "target": "questions.md",
+      "exists": true
+    },
+    {
+      "file": "references/questions.md",
+      "target": "state-format.md",
+      "exists": true
+    },
+    {
+      "file": "references/questions.md",
+      "target": "commands.md",
+      "exists": true
+    },
+    {
+      "file": "assets/product.md",
+      "target": "../engineering/example.md",
+      "exists": false
+    },
+    {
+      "file": "assets/engineering.md",
+      "target": "../product/example.md#pb-001",
+      "exists": false
+    }
+  ],
+  "metadata": "interface:\n  display_name: \"Groundwork\"\n  short_description: \"Build linked product and engineering context\"\n"
+}

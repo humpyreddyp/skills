@@ -1,0 +1,27 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Packing fee rationale was missing from code; docs now describe the rationale and fee.",
+    "sources": [
+      "docs/checkout.md",
+      "src/checkout.py"
+    ],
+    "why": "Fee changes affect charged totals.",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "question": "Which fee should checkout apply?",
+    "blocking": true,
+    "status": "resolved",
+    "answer": {
+      "summary": "The current fee is 3, for packing costs, as documented in docs/checkout.md.",
+      "github_id": "product-owner",
+      "sources": [
+        "docs/checkout.md"
+      ]
+    },
+    "validation": "The answer agrees with docs/checkout.md, FEE = 3 and total(subtotal) in src/checkout.py, and test_total expecting total(10) == 13. Packing purpose is documented. Q-001 is resolved."
+  }
+]

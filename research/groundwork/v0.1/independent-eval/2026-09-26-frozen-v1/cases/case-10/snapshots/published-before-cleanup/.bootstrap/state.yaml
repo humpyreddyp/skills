@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Verify total and publish the bounded checkout baseline",
+      "checkpoint": ".bootstrap/runs/current.md"
+    }
+  },
+  "next_pb": 2,
+  "next_question": 1
+}

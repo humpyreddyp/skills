@@ -1,0 +1,1 @@
+Q-001 is resolved. Your answer agrees with the code, test, and documentation: checkout adds 3 to cover packing costs. I saved your GitHub ID as product-owner and published linked product and engineering context. The existing fee assertion passed by direct invocation, and the pages are current. The narrow checkout-fee scope is complete.

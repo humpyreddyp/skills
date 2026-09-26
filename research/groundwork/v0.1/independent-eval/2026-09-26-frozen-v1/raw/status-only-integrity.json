@@ -1,0 +1,24 @@
+{
+  "returncode": 0,
+  "all_files_unchanged": true,
+  "before": {
+    ".bootstrap/state.yaml": "7f02fe81df7150aa4e82cd49b22ef20ffcfbc162aefc5db3be9e4d94bb32b2c3",
+    ".bootstrap/exclusions.yaml": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    ".bootstrap/questions.yaml": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    ".bootstrap/remediation.yaml": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    ".bootstrap/external.yaml": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    ".bootstrap/tracking.yaml": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "src/app.py": "b7286676d4708b372b1aa8922455b9070ca83d565120add116ceb6d3a1272314",
+    ".bootstrap/runs/unfinished.md": "2586b29671a33c5c960482035c4b2c50edf425790baa48058dc4cbf10aa6372f"
+  },
+  "after": {
+    ".bootstrap/state.yaml": "7f02fe81df7150aa4e82cd49b22ef20ffcfbc162aefc5db3be9e4d94bb32b2c3",
+    ".bootstrap/exclusions.yaml": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    ".bootstrap/questions.yaml": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    ".bootstrap/remediation.yaml": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    ".bootstrap/external.yaml": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    ".bootstrap/tracking.yaml": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "src/app.py": "b7286676d4708b372b1aa8922455b9070ca83d565120add116ceb6d3a1272314",
+    ".bootstrap/runs/unfinished.md": "2586b29671a33c5c960482035c4b2c50edf425790baa48058dc4cbf10aa6372f"
+  }
+}

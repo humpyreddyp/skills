@@ -1,0 +1,1 @@
+Baseline checkout and warehouse responsibilities, including meaningful things each component does not own and their handoff.

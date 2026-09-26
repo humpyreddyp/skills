@@ -1,0 +1,256 @@
+Independently evaluate the frozen `groundwork` skill.
+
+Repository:
+
+`https://github.com/humpyreddyp/skills`
+
+Frozen Groundwork commit:
+
+`52e6d91eebdb0973bc18dfcdc0deb0b97f4a16e3`
+
+You did not create this skill. Treat it as the system under test.
+
+## Set up a clean evaluation workspace
+
+Do not evaluate from the active development working tree.
+
+Create a separate **detached git worktree** at the frozen Groundwork commit in a clean directory.
+
+The evaluation worktree should contain exactly the committed repository state for:
+
+`52e6d91eebdb0973bc18dfcdc0deb0b97f4a16e3`
+
+Do not create an evaluation branch unless technically necessary.
+
+Do not modify the frozen skill during evaluation.
+
+Any evaluation outputs should be written outside the frozen skill files, or into a clearly separate evaluation-results location that does not alter the artifact under test.
+
+Before running anything, record:
+
+- exact commit
+- git status
+- model
+- reasoning setting
+- evaluation date
+- Python/runtime versions
+- relevant environment information
+
+## Independence rules
+
+This is an independent validation pass.
+
+Do not use previous evaluation result tables, conclusions, expected outputs, fixes, or evaluator reasoning as guidance before executing the cases.
+
+You may use the existing evaluation fixtures and scenario definitions, but execute the cases from fresh state.
+
+Do not grade based on wording similarity.
+
+Evaluate observable behavior and artifacts against the intended skill contract.
+
+If a failure occurs:
+
+- record it
+- classify it
+- do not repair the skill
+- continue where possible
+
+Do not revise `groundwork` during this session.
+
+## 1. Rename and portability smoke checks
+
+Verify that:
+
+- the skill is named `groundwork`
+- its metadata and invocation are correct
+- supporting files resolve
+- scripts/templates/references resolve
+- there are no runtime dependencies on the old skill folder name
+- historical references to `bootstrap-context` in preserved research records are not treated as defects
+- `.bootstrap/` persisted state remains compatible
+- an existing saved run can resume
+
+## 2. Independent behavioral evaluation
+
+Run fresh behavioral cases covering:
+
+1. stale docs versus current implementation
+2. current docs/code contradiction
+3. missing product context
+4. hidden cross-component/system dependency
+5. supported human answer
+6. human answer conflicting with evidence
+7. human chooses FIX
+8. human chooses IGNORE
+9. fresh-session resume
+10. large/noisy repository with bounded investigation
+11. incremental publishing
+12. product behavior → implementation → dependency → verification linkage
+13. selective freshness/revalidation
+14. responsibility and negative boundaries
+
+For each case record:
+
+- PASS / PARTIAL / FAIL
+- what Groundwork actually did
+- artifacts created
+- why the rating was given
+- unexpected behavior
+- whether human input remained necessary
+
+Do not supply previous result summaries to the executing agents before they perform the task.
+
+## 3. Context-management evaluation
+
+Explicitly inspect whether Groundwork manages context safely.
+
+Check that it:
+
+- starts from small persisted state
+- performs cheap/deterministic discovery first
+- narrows before deep investigation
+- retrieves only relevant context
+- uses isolated subagents/contexts when file-heavy investigation warrants it
+- returns compact findings rather than large context dumps
+- can resume in a fresh session
+- does not attempt to understand the entire repo in one context window
+
+Where measurable, record:
+
+- files inspected
+- irrelevant files avoided
+- context/token usage
+- number of investigation steps
+
+## 4. Published-context review
+
+Inspect representative published Product and Engineering baseline artifacts.
+
+Check whether they are:
+
+- human readable
+- concise
+- machine navigable
+- supported rather than speculative
+- linked using stable product behavior IDs
+- explicit about meaningful boundaries
+- clear about dependencies
+- clear about verification expectations
+
+Check that:
+
+- unresolved material ambiguity is not published as trusted fact
+- `index.yaml` acts as a navigation structure rather than duplicating the full knowledge base
+- provenance is lightweight
+- product and engineering context are actually linked
+
+## 5. Human-question and contradiction workflow
+
+Verify:
+
+- Groundwork investigates before asking humans
+- non-blocking questions persist
+- questions contain enough context to answer
+- GitHub ID is captured where available
+- human answers are validated
+- Groundwork does not decide FIX vs IGNORE
+- FIX creates durable remediation state
+- IGNORE creates an exclusion future reasoning can respect
+
+## 6. Resume and cleanup
+
+Verify that:
+
+- an interrupted run resumes using persisted state
+- prior chat history is not required
+- temporary investigation artifacts can be disposed of safely
+- unanswered questions, remediation, exclusions, and necessary revalidation state remain durable
+
+## 7. Freshness
+
+Change a source that supports published context.
+
+Verify that:
+
+- only affected context is marked `needs revalidation`
+- unrelated published context remains current
+- Groundwork does not silently rewrite the baseline
+- revalidation is incremental
+
+## 8. Verification-gap behavior
+
+Verify that Groundwork can identify cases where existing test/verification coverage appears insufficient for discovered dependencies.
+
+It may recommend missing verification capability.
+
+It must not implement that tooling itself.
+
+## 9. Helper/regression suite
+
+Run the existing deterministic/helper test suite independently.
+
+Record:
+
+- total tests
+- passed
+- failed
+- runtime versions
+- warnings/errors
+
+Do not fix failures during this evaluation.
+
+## Failure classification
+
+Classify problems separately as:
+
+- Groundwork skill failure
+- helper/runtime failure
+- evaluation-fixture failure
+- environment/service failure
+- model-judgment variability
+- unclear specification
+
+Do not collapse all failures into one category.
+
+## Research integrity
+
+This evaluation may support a research paper.
+
+Preserve:
+
+- exact prompts
+- exact frozen commit
+- raw outputs
+- generated context
+- state artifacts
+- evaluator reports
+- model/version/settings
+- runtime versions
+- failures
+- partial outcomes
+- unexpected behavior
+
+Do not rewrite or clean results after seeing them.
+
+Keep this independent-evaluation evidence separate from development-time eval results.
+
+## Final report
+
+At the end provide:
+
+1. exact frozen Groundwork commit evaluated
+2. environment/model/settings
+3. behavioral evaluation table
+4. context-management findings
+5. published-context findings
+6. helper/regression results
+7. rename/portability findings
+8. discrepancies from earlier development evals, but only after the independent run is complete
+9. newly discovered weaknesses
+10. environment-related failures
+11. whether anything found invalidates treating this Groundwork commit as the frozen V1 research baseline
+12. paths to all raw evaluation artifacts
+
+Do not modify the skill.
+
+If you recommend improvements, list them separately as possible changes for a future version.

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Observed fixed fee 3; no available source establishes why it exists or the intended fee policy.",
+    "sources": [
+      {
+        "path": "src/checkout.py"
+      },
+      {
+        "path": "tests/test_checkout.py"
+      },
+      {
+        "path": "pyproject.toml"
+      }
+    ],
+    "why": "Changing the fee safely requires understanding its purpose and intended constraints; implementation alone cannot establish those.",
+    "affects": [
+      "CAP-checkout-purpose"
+    ],
+    "question": "What purpose does the checkout fee serve, and what intended policy should constrain future fee changes? A concise explanation is enough if no product document exists.",
+    "blocking": true,
+    "status": "open",
+    "validation": "The available implementation, test and package manifest establish observed calculation only. Missing intent does not contradict that observation."
+  }
+]

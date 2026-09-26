@@ -1,0 +1,1 @@
+Recorded R-001 as open remediation under product-owner: engineering should change the fee to 2 and update its tests. Application code and tests remain unchanged. Q-001 stays unresolved, and the disputed fee claim remains unpublished until the completed fix is checked. The next action is saved for that verification.

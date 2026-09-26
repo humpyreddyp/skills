@@ -1,0 +1,10 @@
+from pathlib import Path
+import sys,json,hashlib,shutil
+ROOT=Path('/Users/humpyreddypininti/Documents/ChatGPT/skilly/independent-evaluation/2026-09-26-frozen-v1'); sys.path.insert(0,str(ROOT)); from record_command import run
+CASE=ROOT/'cases/case-13'; REPO=ROOT/'fixtures/case-13'; HELPER='/Users/humpyreddypininti/.codex/worktrees/groundwork-independent-eval/skilly/groundwork/scripts/bootstrap.py'
+def cmd(*a): return run(CASE/'raw.jsonl',list(a),REPO)
+cmd('python3','-c','from pathlib import Path; p=Path(".bootstrap/runs/revalidation.md"); p.parent.mkdir(parents=True,exist_ok=True); p.write_text("Scope: checkout. Freshness marks CAP-fee and CMP-fee for revalidation because src/checkout.py changed, with engineering also affected by product dependency. CAP-receipt and CMP-receipt remain current. All baseline Markdown preserved. Current source has FEE=4, while docs state 3 and test expects total(10)=13. This is an unresolved evidence mismatch, not a newly published conclusion. Next: investigate the intended fee and source/test discrepancy, then seek FIX/IGNORE if unresolved; republish only after review. User requested marking only in this session.\\n"); print("Saved revalidation finding")')
+cmd('python3',HELPER,'--repo',str(REPO),'checkpoint','--scope','checkout','--status','needs revalidation','--next','Investigate fee amount and source/test mismatch before reviewing CAP-fee and CMP-fee; keep baseline pages unchanged until requested','--finding','.bootstrap/runs/revalidation.md')
+cmd('python3',HELPER,'--repo',str(REPO),'status')
+cmd('python3','-c','from pathlib import Path; import hashlib,json; a=Path(__import__("sys").argv[1]); before={str(p.relative_to(a)):hashlib.sha256(p.read_bytes()).hexdigest() for p in a.rglob("*.md")}; b=Path("context"); after={str(p.relative_to(b)):hashlib.sha256(p.read_bytes()).hexdigest() for p in b.rglob("*.md")}; print(json.dumps({"baseline_markdown_identical":before==after,"before":before,"after":after},indent=2)); assert before==after',str(CASE/'before-freshness/context'))
+for d in ['.bootstrap','context']: shutil.copytree(REPO/d,CASE/'final-snapshot'/d,dirs_exist_ok=True)

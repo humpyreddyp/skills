@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "CMP-fee",
+      "kind": "engineering",
+      "scope": "checkout",
+      "title": "CMP-fee",
+      "behaviors": [],
+      "implements": [
+        "PB-001"
+      ],
+      "depends_on": [],
+      "path": "context/engineering/fee.md",
+      "freshness": "current",
+      "reasons": []
+    },
+    {
+      "id": "CMP-receipt",
+      "kind": "engineering",
+      "scope": "checkout",
+      "title": "CMP-receipt",
+      "behaviors": [],
+      "implements": [
+        "PB-002"
+      ],
+      "depends_on": [],
+      "path": "context/engineering/receipt.md",
+      "freshness": "current",
+      "reasons": []
+    },
+    {
+      "id": "CAP-fee",
+      "kind": "product",
+      "scope": "checkout",
+      "title": "CAP-fee",
+      "behaviors": [
+        "PB-001"
+      ],
+      "implements": [],
+      "depends_on": [],
+      "path": "context/product/fee.md",
+      "freshness": "current",
+      "reasons": []
+    },
+    {
+      "id": "CAP-receipt",
+      "kind": "product",
+      "scope": "checkout",
+      "title": "CAP-receipt",
+      "behaviors": [
+        "PB-002"
+      ],
+      "implements": [],
+      "depends_on": [],
+      "path": "context/product/receipt.md",
+      "freshness": "current",
+      "reasons": []
+    }
+  ],
+  "exclusions": ".bootstrap/exclusions.yaml",
+  "questions": ".bootstrap/questions.yaml",
+  "read_contract": "Run freshness; use current pages only; respect active and needs-review exclusions."
+}

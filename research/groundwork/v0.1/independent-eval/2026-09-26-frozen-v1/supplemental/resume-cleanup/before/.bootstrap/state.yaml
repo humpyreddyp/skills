@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Review checkout progress, retain unanswered purpose question, and remove obsolete Groundwork drafts after confirming their content is durable",
+      "checkpoint": ".bootstrap/runs/purpose.md"
+    },
+    "tax": {
+      "status": "waiting for human",
+      "next_action": "Verify R-001 after engineering completes the tax rate correction"
+    }
+  },
+  "next_pb": 2,
+  "next_question": 4
+}

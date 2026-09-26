@@ -1,0 +1,6 @@
+[
+  "pyproject.toml",
+  "src/checkout.py",
+  "tests/test_checkout.py",
+  ".bootstrap/state.yaml"
+]

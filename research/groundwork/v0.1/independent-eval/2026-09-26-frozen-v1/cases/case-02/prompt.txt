@@ -1,0 +1,1 @@
+Baseline checkout so future changes can safely reason about its fee. I have no more context right now.

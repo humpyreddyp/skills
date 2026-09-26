@@ -1,0 +1,25 @@
+{
+  "target_repository_content_inspected_unique": 14,
+  "target_repository_files": [
+    ".bootstrap/state.yaml",
+    "context/index.yaml",
+    ".bootstrap/questions.yaml",
+    ".bootstrap/remediation.yaml",
+    ".bootstrap/exclusions.yaml",
+    ".bootstrap/external.yaml",
+    ".bootstrap/runs/purpose.md",
+    ".bootstrap/runs/obsolete-summary.md",
+    "context/product/checkout.md",
+    "context/engineering/checkout.md",
+    "src/checkout.py",
+    "tests/test_checkout.py",
+    "docs/checkout.md",
+    "pyproject.toml"
+  ],
+  "primary_source_files": 4,
+  "groundwork_record_or_page_files": 10,
+  "skill_and_reference_files": 5,
+  "prompt_files": 1,
+  "recording_utility_files": 1,
+  "note": "Counts describe files whose contents were read into model context, not helper-internal reads or snapshot copy reads. Initial intake reads were replayed in commands.jsonl before mutations."
+}

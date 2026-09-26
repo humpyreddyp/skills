@@ -1,0 +1,20 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Docs say the fee is 2; implementation uses 3.",
+    "sources": [
+      "docs/checkout.md",
+      "src/checkout.py"
+    ],
+    "why": "Fee changes affect charged totals.",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "question": "Which fee should checkout apply?",
+    "blocking": true,
+    "status": "open",
+    "decision": "R-001"
+  }
+]

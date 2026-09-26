@@ -1,0 +1,1 @@
+Use groundwork to baseline the current checkout fee. Scope is checkout. Repository contains the available context; ask only questions that remain material after investigation.

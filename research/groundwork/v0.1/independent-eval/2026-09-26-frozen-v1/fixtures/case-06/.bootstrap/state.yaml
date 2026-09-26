@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "waiting for human",
+      "next_action": "Obtain explicit FIX or narrowly scoped IGNORE choice for Q-001; compare any new evidence before publication",
+      "checkpoint": ".bootstrap/runs/conflict.md"
+    }
+  },
+  "next_pb": 1,
+  "next_question": 1
+}

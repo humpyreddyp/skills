@@ -1,0 +1,25 @@
+{
+  "runtime_sha256": {
+    "SKILL.md": "46f4684ea960786e71d87a37cc2a4bc6daa4b92b43d36e860127bb0a591ff37e",
+    "agents/openai.yaml": "5c9c0815037bc2cc7038bb5b799adc965e4999b580012a8eb2129032388935d2",
+    "assets/baseline.md": "b54b62d7c1d6fa06bbac140283e2a730d4c40f8e0ab906a5646bdeac761a3c84",
+    "references/commands.md": "994ed717489e65e688b1a2aad7b97ce40a9cc7f49ba18710a7bb9fefcc01b814",
+    "references/state-format.md": "0f893a99a43d0b7f38c9e654ce7626ed7e1c4e41c2ccfcdb6a6c37a713ad3f5c",
+    "references/workflow.md": "44795c1524987f618b3501ce615ad655715dd0d0a5c9abe7b1301440993b7132",
+    "scripts/bootstrap.py": "f4a51f84d0499e6e2754770e8e31293c31925edd7f584c55c4017156fdf31c08"
+  },
+  "behavioral_cases": 14,
+  "rerun_cases": [
+    1,
+    5,
+    8,
+    9
+  ],
+  "runtime_tests": 23,
+  "python_versions": [
+    "3.9.6",
+    "3.14.2"
+  ],
+  "quick_validate": "passed",
+  "live_claude_code_tested": false
+}

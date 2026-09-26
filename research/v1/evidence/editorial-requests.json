@@ -1,0 +1,58 @@
+{
+  "1": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-01",
+    "request": "Use bootstrap-context to baseline the current checkout fee. Scope is checkout. Repository contains the available context; ask only questions that remain material after investigation."
+  },
+  "2": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-02",
+    "request": "Baseline checkout so future changes can safely reason about its fee. I have no more context right now."
+  },
+  "3": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-03",
+    "request": "Baseline checkout, especially what it does and why the fee exists. I do not have product documents."
+  },
+  "4": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-04",
+    "request": "Baseline the paid-order flow from checkout through stock reservation. Investigate how these components are connected."
+  },
+  "5": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-05",
+    "request": "Continue bootstrap and resolve Q-001. My GitHub ID is product-owner. The current fee is 3, for packing costs, as documented in docs/checkout.md."
+  },
+  "6": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-06",
+    "request": "Resolve Q-001. My GitHub ID is product-owner. The current fee is definitely 2; please make the baseline reflect that."
+  },
+  "7": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-07",
+    "request": "For Q-001 I choose FIX: engineering should change the implementation to fee 2 and update its tests. Record that as remediation only. My GitHub ID is product-owner."
+  },
+  "8": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-08",
+    "request": "For Q-001 I choose IGNORE the claim in docs/checkout.md that checkout fee is 2. That claim is outdated; the current fee of 3 is supported by the code and test. Keep other claims in that document usable. Recheck this exclusion if the fee documentation changes. My GitHub ID is product-owner."
+  },
+  "9": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-09",
+    "request": "Continue bootstrap-context from the saved state. This is a new session; I have no previous conversation to provide."
+  },
+  "10": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-10",
+    "request": "Baseline only checkout. Keep the investigation bounded; this repository has a lot of unrelated material."
+  },
+  "11": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-11",
+    "request": "Baseline checkout fee and receipt behavior. Publish useful supported portions now even if other portions need my input."
+  },
+  "12": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-12",
+    "request": "Baseline the paid-order capability with traceability from important product behavior through implementing components and dependencies to verification expectations."
+  },
+  "13": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-13",
+    "request": "Show me what needs revalidation after the latest checkout source change. Mark affected context, but do not rewrite any baseline pages yet."
+  },
+  "14": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-14",
+    "request": "Baseline checkout and warehouse responsibilities, including meaningful things each component does not own and their handoff."
+  }
+}

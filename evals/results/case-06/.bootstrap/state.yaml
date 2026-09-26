@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "waiting for human",
+      "next_action": "Ask product-owner to choose FIX or IGNORE for the fee contradiction; keep PB-001 unpublished"
+    }
+  },
+  "next_pb": 1,
+  "next_question": 2
+}

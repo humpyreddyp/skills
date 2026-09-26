@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "complete",
+      "next_action": "Run freshness before future checkout fee changes; investigate integration contracts if scope expands"
+    }
+  },
+  "next_pb": 2,
+  "next_question": 2
+}

@@ -1,0 +1,730 @@
+{
+  "5": {
+    "commands": [
+      {
+        "arguments": [
+          "scan"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"revision\": \"no-git\",\n  \"within\": \".\",\n  \"entries_visited\": 9,\n  \"coverage_incomplete\": false,\n  \"paths_truncated\": false,\n  \"paths_seen\": 4,\n  \"paths\": [\n    \"docs/checkout.md\",\n    \"pyproject.toml\",\n    \"src/checkout.py\",\n    \"tests/test_checkout.py\"\n  ],\n  \"categories\": {\n    \"manifests\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"pyproject.toml\"\n      ]\n    },\n    \"ci\": {\n      \"count_seen\": 0,\n      \"sample\": []\n    },\n    \"tests\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"tests/test_checkout.py\"\n      ]\n    },\n    \"docs\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"docs/checkout.md\"\n      ]\n    },\n    \"config\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"pyproject.toml\"\n      ]\n    }\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "invalidate",
+          "--ids",
+          "CAP-fee",
+          "--reason",
+          "Validate new product-owner answer to Q-001"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Unknown document IDs: CAP-fee\n"
+      },
+      {
+        "arguments": [
+          "allocate-pb"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"behavior\": \"PB-001\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "/private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/runs/product-draft.md",
+          "--to",
+          "context/product/fee.md"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Expected a repository-relative POSIX path: /private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/runs/product-draft.md\n"
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "/private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/runs/engineering-draft.md",
+          "--to",
+          "context/engineering/checkout.md"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Expected a repository-relative POSIX path: /private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/runs/engineering-draft.md\n"
+      },
+      {
+        "arguments": [
+          "checkpoint",
+          "--scope",
+          "checkout",
+          "--status",
+          "complete",
+          "--next",
+          "Run freshness before future fee changes; revisit caller or currency contracts if the scope expands"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: scope needs linked product and engineering behaviors\n"
+      },
+      {
+        "arguments": [
+          "freshness"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"pages\": {}\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "check"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"valid\": true,\n  \"pages\": 0,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          ".bootstrap/runs/product-draft.md",
+          "--to",
+          "context/product/fee.md"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"published\": \"context/product/fee.md\",\n  \"freshness\": \"needs revalidation\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          ".bootstrap/runs/engineering-draft.md",
+          "--to",
+          "context/engineering/checkout.md"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"published\": \"context/engineering/checkout.md\",\n  \"freshness\": \"needs revalidation\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "checkpoint",
+          "--scope",
+          "checkout",
+          "--status",
+          "complete",
+          "--next",
+          "Run freshness before future fee changes; investigate caller and currency contracts if scope expands"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: scope contains stale/unreviewed pages\n"
+      },
+      {
+        "arguments": [
+          "freshness"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"pages\": {\n    \"context/product/fee.md\": {\n      \"status\": \"needs revalidation\",\n      \"reasons\": [\n        \"dependencies changed\",\n        \"dependency needs revalidation: CMP-checkout\"\n      ]\n    },\n    \"context/engineering/checkout.md\": {\n      \"status\": \"needs revalidation\",\n      \"reasons\": [\n        \"dependency needs revalidation: CAP-fee\"\n      ]\n    }\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "check"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"valid\": true,\n  \"pages\": 2,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "context/product/fee.md",
+          "--to",
+          "context/product/fee.md"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"published\": \"context/product/fee.md\",\n  \"freshness\": \"current\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "context/engineering/checkout.md",
+          "--to",
+          "context/engineering/checkout.md"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"published\": \"context/engineering/checkout.md\",\n  \"freshness\": \"current\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "freshness"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"pages\": {\n    \"context/product/fee.md\": {\n      \"status\": \"current\",\n      \"reasons\": []\n    },\n    \"context/engineering/checkout.md\": {\n      \"status\": \"current\",\n      \"reasons\": []\n    }\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "checkpoint",
+          "--scope",
+          "checkout",
+          "--status",
+          "complete",
+          "--next",
+          "Run freshness before future fee changes; investigate caller and currency contracts if scope expands"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"status\": \"complete\",\n  \"next_action\": \"Run freshness before future fee changes; investigate caller and currency contracts if scope expands\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "check"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"valid\": true,\n  \"pages\": 2,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}\n",
+        "stderr": ""
+      }
+    ],
+    "observations": [
+      "Human answer validated against three relevant files; identity retained; stable PB-001 and CAP-fee published with engineering and verification links.",
+      "Calling invalidate on a prospective unpublished CAP-fee ID fails with Unknown document IDs; no published slice existed to invalidate. This is a workflow edge for new human evidence, safely rejected by helper.",
+      "Initial absolute --draft paths failed; retried with documented repository-relative paths. Publication and final checks then succeeded.",
+      "Mutual depends_on links temporarily mark initial publications stale because the other page did not exist in the first snapshot. Explicitly republishing the reviewed product followed by engineering resolves both to current; completion then succeeds. This is recoverable, not a permanent dependency-cycle bug."
+    ],
+    "errors": [
+      {
+        "arguments": [
+          "invalidate",
+          "--ids",
+          "CAP-fee",
+          "--reason",
+          "Validate new product-owner answer to Q-001"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Unknown document IDs: CAP-fee\n"
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "/private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/runs/product-draft.md",
+          "--to",
+          "context/product/fee.md"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Expected a repository-relative POSIX path: /private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/runs/product-draft.md\n"
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "/private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/runs/engineering-draft.md",
+          "--to",
+          "context/engineering/checkout.md"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Expected a repository-relative POSIX path: /private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/runs/engineering-draft.md\n"
+      },
+      {
+        "arguments": [
+          "checkpoint",
+          "--scope",
+          "checkout",
+          "--status",
+          "complete",
+          "--next",
+          "Run freshness before future fee changes; revisit caller or currency contracts if the scope expands"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: scope needs linked product and engineering behaviors\n"
+      },
+      {
+        "arguments": [
+          "checkpoint",
+          "--scope",
+          "checkout",
+          "--status",
+          "complete",
+          "--next",
+          "Run freshness before future fee changes; investigate caller and currency contracts if scope expands"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: scope contains stale/unreviewed pages\n"
+      }
+    ],
+    "response": "Resolved Q-001 against the documentation, implementation, and inspected test. Published linked product and engineering baseline: current fee 3, documented purpose packing costs. Tests were inspected, not run.",
+    "artifacts": [
+      "/private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/exclusions.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/questions.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/remediation.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/external.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-05/.bootstrap/tracking.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-05/context/index.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-05/context/product/fee.md",
+      "/private/tmp/bootstrap-context-behavior-v1/case-05/context/engineering/checkout.md"
+    ],
+    "final_helper_check_passed": true,
+    "application_files_unchanged": true
+  },
+  "6": {
+    "commands": [
+      {
+        "arguments": [
+          "scan"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"revision\": \"no-git\",\n  \"within\": \".\",\n  \"entries_visited\": 9,\n  \"coverage_incomplete\": false,\n  \"paths_truncated\": false,\n  \"paths_seen\": 4,\n  \"paths\": [\n    \"docs/checkout.md\",\n    \"pyproject.toml\",\n    \"src/checkout.py\",\n    \"tests/test_checkout.py\"\n  ],\n  \"categories\": {\n    \"manifests\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"pyproject.toml\"\n      ]\n    },\n    \"ci\": {\n      \"count_seen\": 0,\n      \"sample\": []\n    },\n    \"tests\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"tests/test_checkout.py\"\n      ]\n    },\n    \"docs\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"docs/checkout.md\"\n      ]\n    },\n    \"config\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"pyproject.toml\"\n      ]\n    }\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "invalidate",
+          "--ids",
+          "CAP-fee",
+          "--reason",
+          "Validate new product-owner answer to Q-001"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Unknown document IDs: CAP-fee\n"
+      },
+      {
+        "arguments": [
+          "checkpoint",
+          "--scope",
+          "checkout",
+          "--status",
+          "waiting for human",
+          "--next",
+          "Ask product-owner to choose FIX or IGNORE for the fee contradiction; keep PB-001 unpublished"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"status\": \"waiting for human\",\n  \"next_action\": \"Ask product-owner to choose FIX or IGNORE for the fee contradiction; keep PB-001 unpublished\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "freshness"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"pages\": {}\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "check"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"valid\": true,\n  \"pages\": 0,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}\n",
+        "stderr": ""
+      }
+    ],
+    "observations": [
+      "Answer retained and marked conflicting; no human decision inferred; no application files changed; no unsupported fee published.",
+      "Calling invalidate on a prospective unpublished CAP-fee ID fails with Unknown document IDs; no published slice existed to invalidate. This is a workflow edge for new human evidence, safely rejected by helper."
+    ],
+    "errors": [
+      {
+        "arguments": [
+          "invalidate",
+          "--ids",
+          "CAP-fee",
+          "--reason",
+          "Validate new product-owner answer to Q-001"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Unknown document IDs: CAP-fee\n"
+      }
+    ],
+    "response": "Your answer is recorded under product-owner, but it conflicts with docs/checkout.md, FEE = 3 in src/checkout.py, and the test expecting total(10) == 13. I have kept the fee baseline unpublished. Choose FIX to record changing implementation/tests/docs to fee 2 as remediation, or IGNORE with the precise evidence claim to exclude and why; the fee claim will still need support.",
+    "artifacts": [
+      "/private/tmp/bootstrap-context-behavior-v1/case-06/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-06/.bootstrap/exclusions.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-06/.bootstrap/questions.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-06/.bootstrap/remediation.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-06/.bootstrap/external.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-06/.bootstrap/tracking.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-06/context/index.yaml"
+    ],
+    "final_helper_check_passed": true,
+    "application_files_unchanged": true
+  },
+  "7": {
+    "commands": [
+      {
+        "arguments": [
+          "scan"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"revision\": \"no-git\",\n  \"within\": \".\",\n  \"entries_visited\": 9,\n  \"coverage_incomplete\": false,\n  \"paths_truncated\": false,\n  \"paths_seen\": 4,\n  \"paths\": [\n    \"docs/checkout.md\",\n    \"pyproject.toml\",\n    \"src/checkout.py\",\n    \"tests/test_checkout.py\"\n  ],\n  \"categories\": {\n    \"manifests\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"pyproject.toml\"\n      ]\n    },\n    \"ci\": {\n      \"count_seen\": 0,\n      \"sample\": []\n    },\n    \"tests\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"tests/test_checkout.py\"\n      ]\n    },\n    \"docs\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"docs/checkout.md\"\n      ]\n    },\n    \"config\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"pyproject.toml\"\n      ]\n    }\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "invalidate",
+          "--ids",
+          "CAP-fee",
+          "--reason",
+          "Validate new product-owner answer to Q-001"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Unknown document IDs: CAP-fee\n"
+      },
+      {
+        "arguments": [
+          "decision",
+          "--question",
+          "Q-001",
+          "--choice",
+          "FIX",
+          "--statement",
+          "For Q-001 I choose FIX: engineering should change the implementation to fee 2 and update its tests. Record that as remediation only. My GitHub ID is product-owner.",
+          "--github-id",
+          "product-owner",
+          "--action",
+          "Engineering to change checkout implementation from fee 3 to fee 2 and update tests; verify the completed implementation against docs/checkout.md before publishing PB-001."
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"question_id\": \"Q-001\",\n  \"scope\": \"checkout\",\n  \"affects\": [\n    \"CAP-fee\",\n    \"PB-001\"\n  ],\n  \"decision\": {\n    \"choice\": \"FIX\",\n    \"human_statement\": \"For Q-001 I choose FIX: engineering should change the implementation to fee 2 and update its tests. Record that as remediation only. My GitHub ID is product-owner.\",\n    \"github_id\": \"product-owner\"\n  },\n  \"status\": \"open\",\n  \"action\": \"Engineering to change checkout implementation from fee 3 to fee 2 and update tests; verify the completed implementation against docs/checkout.md before publishing PB-001.\",\n  \"sources\": [\n    \"docs/checkout.md\",\n    \"src/checkout.py\",\n    \"tests/test_checkout.py\"\n  ],\n  \"id\": \"R-001\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "checkpoint",
+          "--scope",
+          "checkout",
+          "--status",
+          "partial",
+          "--next",
+          "Await independently completed engineering remediation; then verify source and tests before resolving Q-001 or publishing PB-001"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"status\": \"partial\",\n  \"next_action\": \"Await independently completed engineering remediation; then verify source and tests before resolving Q-001 or publishing PB-001\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "freshness"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"pages\": {}\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "check"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"valid\": true,\n  \"pages\": 0,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}\n",
+        "stderr": ""
+      }
+    ],
+    "observations": [
+      "FIX recorded with product-owner identity and affected claims; question still conflicting; implementation and tests unchanged.",
+      "Calling invalidate on a prospective unpublished CAP-fee ID fails with Unknown document IDs; no published slice existed to invalidate. This is a workflow edge for new human evidence, safely rejected by helper."
+    ],
+    "errors": [
+      {
+        "arguments": [
+          "invalidate",
+          "--ids",
+          "CAP-fee",
+          "--reason",
+          "Validate new product-owner answer to Q-001"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Unknown document IDs: CAP-fee\n"
+      }
+    ],
+    "response": "Recorded your FIX decision as open remediation. The implementation and tests are unchanged; Q-001 remains blocking and the fee baseline remains unpublished until the fix is completed and verified.",
+    "artifacts": [
+      "/private/tmp/bootstrap-context-behavior-v1/case-07/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-07/.bootstrap/exclusions.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-07/.bootstrap/questions.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-07/.bootstrap/remediation.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-07/.bootstrap/external.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-07/.bootstrap/tracking.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-07/context/index.yaml"
+    ],
+    "final_helper_check_passed": true,
+    "application_files_unchanged": true
+  },
+  "8": {
+    "commands": [
+      {
+        "arguments": [
+          "scan"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"revision\": \"no-git\",\n  \"within\": \".\",\n  \"entries_visited\": 9,\n  \"coverage_incomplete\": false,\n  \"paths_truncated\": false,\n  \"paths_seen\": 4,\n  \"paths\": [\n    \"docs/checkout.md\",\n    \"pyproject.toml\",\n    \"src/checkout.py\",\n    \"tests/test_checkout.py\"\n  ],\n  \"categories\": {\n    \"manifests\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"pyproject.toml\"\n      ]\n    },\n    \"ci\": {\n      \"count_seen\": 0,\n      \"sample\": []\n    },\n    \"tests\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"tests/test_checkout.py\"\n      ]\n    },\n    \"docs\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"docs/checkout.md\"\n      ]\n    },\n    \"config\": {\n      \"count_seen\": 1,\n      \"sample\": [\n        \"pyproject.toml\"\n      ]\n    }\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "invalidate",
+          "--ids",
+          "CAP-fee",
+          "--reason",
+          "Validate new product-owner answer to Q-001"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Unknown document IDs: CAP-fee\n"
+      },
+      {
+        "arguments": [
+          "decision",
+          "--question",
+          "Q-001",
+          "--choice",
+          "IGNORE",
+          "--statement",
+          "For Q-001 I choose IGNORE the claim in docs/checkout.md that checkout fee is 2. That claim is outdated; the current fee of 3 is supported by the code and test. Keep other claims in that document usable. Recheck this exclusion if the fee documentation changes. My GitHub ID is product-owner.",
+          "--github-id",
+          "product-owner",
+          "--source",
+          "docs/checkout.md",
+          "--claim",
+          "Checkout fee is 2",
+          "--rationale",
+          "Product owner identifies this claim as outdated; code and inspected test support the current fee of 3. Other document claims remain eligible evidence.",
+          "--recheck-when",
+          "Any change to fee documentation in docs/checkout.md; review exclusion against the new revision before relying on it"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"question_id\": \"Q-001\",\n  \"scope\": \"checkout\",\n  \"affects\": [\n    \"CAP-fee\",\n    \"PB-001\"\n  ],\n  \"decision\": {\n    \"choice\": \"IGNORE\",\n    \"human_statement\": \"For Q-001 I choose IGNORE the claim in docs/checkout.md that checkout fee is 2. That claim is outdated; the current fee of 3 is supported by the code and test. Keep other claims in that document usable. Recheck this exclusion if the fee documentation changes. My GitHub ID is product-owner.\",\n    \"github_id\": \"product-owner\"\n  },\n  \"status\": \"active\",\n  \"source\": {\n    \"path\": \"docs/checkout.md\"\n  },\n  \"claim\": \"Checkout fee is 2\",\n  \"rationale\": \"Product owner identifies this claim as outdated; code and inspected test support the current fee of 3. Other document claims remain eligible evidence.\",\n  \"recheck_when\": \"Any change to fee documentation in docs/checkout.md; review exclusion against the new revision before relying on it\",\n  \"source_snapshot\": \"3884cb34dc586b3c704203b2f5d0237b47aaa0f2b40ad6f72c8852b7d59ff118\",\n  \"id\": \"X-001\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "allocate-pb"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"behavior\": \"PB-001\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "/private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/runs/product-draft.md",
+          "--to",
+          "context/product/fee.md"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Expected a repository-relative POSIX path: /private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/runs/product-draft.md\n"
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "/private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/runs/engineering-draft.md",
+          "--to",
+          "context/engineering/checkout.md"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Expected a repository-relative POSIX path: /private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/runs/engineering-draft.md\n"
+      },
+      {
+        "arguments": [
+          "checkpoint",
+          "--scope",
+          "checkout",
+          "--status",
+          "partial",
+          "--next",
+          "Current fee is published; obtain missing fee purpose for Q-002 before considering broad checkout context complete"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"status\": \"partial\",\n  \"next_action\": \"Current fee is published; obtain missing fee purpose for Q-002 before considering broad checkout context complete\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "freshness"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"pages\": {}\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "check"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"valid\": true,\n  \"pages\": 0,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          ".bootstrap/runs/product-draft.md",
+          "--to",
+          "context/product/fee.md"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"published\": \"context/product/fee.md\",\n  \"freshness\": \"needs revalidation\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          ".bootstrap/runs/engineering-draft.md",
+          "--to",
+          "context/engineering/checkout.md"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"published\": \"context/engineering/checkout.md\",\n  \"freshness\": \"needs revalidation\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "freshness"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"pages\": {\n    \"context/product/fee.md\": {\n      \"status\": \"needs revalidation\",\n      \"reasons\": [\n        \"dependencies changed\",\n        \"dependency needs revalidation: CMP-checkout\"\n      ]\n    },\n    \"context/engineering/checkout.md\": {\n      \"status\": \"needs revalidation\",\n      \"reasons\": [\n        \"dependency needs revalidation: CAP-fee\"\n      ]\n    }\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "check"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"valid\": true,\n  \"pages\": 2,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "context/product/fee.md",
+          "--to",
+          "context/product/fee.md"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"published\": \"context/product/fee.md\",\n  \"freshness\": \"current\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "context/engineering/checkout.md",
+          "--to",
+          "context/engineering/checkout.md"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"published\": \"context/engineering/checkout.md\",\n  \"freshness\": \"current\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "freshness"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"pages\": {\n    \"context/product/fee.md\": {\n      \"status\": \"current\",\n      \"reasons\": []\n    },\n    \"context/engineering/checkout.md\": {\n      \"status\": \"current\",\n      \"reasons\": []\n    }\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "check"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"valid\": true,\n  \"pages\": 2,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}\n",
+        "stderr": ""
+      }
+    ],
+    "observations": [
+      "Only fee-is-2 claim excluded; source snapshot and recheck trigger retained; current fee has independent code/test evidence; no other source claims broadened into exclusion; supported baseline published.",
+      "Calling invalidate on a prospective unpublished CAP-fee ID fails with Unknown document IDs; no published slice existed to invalidate. This is a workflow edge for new human evidence, safely rejected by helper.",
+      "Initial absolute --draft paths failed; retried with documented repository-relative paths. Publication and final checks then succeeded.",
+      "Mutual depends_on links temporarily mark initial publications stale because the other page did not exist in the first snapshot. Explicitly republishing the reviewed product followed by engineering resolves both to current; completion then succeeds. This is recoverable, not a permanent dependency-cycle bug."
+    ],
+    "errors": [
+      {
+        "arguments": [
+          "invalidate",
+          "--ids",
+          "CAP-fee",
+          "--reason",
+          "Validate new product-owner answer to Q-001"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Unknown document IDs: CAP-fee\n"
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "/private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/runs/product-draft.md",
+          "--to",
+          "context/product/fee.md"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Expected a repository-relative POSIX path: /private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/runs/product-draft.md\n"
+      },
+      {
+        "arguments": [
+          "publish",
+          "--draft",
+          "/private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/runs/engineering-draft.md",
+          "--to",
+          "context/engineering/checkout.md"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "bootstrap: Expected a repository-relative POSIX path: /private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/runs/engineering-draft.md\n"
+      }
+    ],
+    "response": "Recorded your claim-specific IGNORE decision and resolved Q-001. Published the supported current fee of 3 with code/test links. The exclusion retains other claims in docs/checkout.md and requires review when that source changes. Fee rationale remains a separate gap (Q-002): what purpose should the fee serve?",
+    "artifacts": [
+      "/private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/exclusions.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/questions.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/remediation.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/external.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-08/.bootstrap/tracking.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-08/context/index.yaml",
+      "/private/tmp/bootstrap-context-behavior-v1/case-08/context/product/fee.md",
+      "/private/tmp/bootstrap-context-behavior-v1/case-08/context/engineering/checkout.md"
+    ],
+    "final_helper_check_passed": true,
+    "application_files_unchanged": true
+  },
+  "summary": {
+    "cases_executed": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "unresolved_functional_failures": [],
+    "workflow_frictions": [
+      "Instruction to invalidate new evidence needs a guard for prospective unpublished IDs.",
+      "Cyclic product/component initial publication requires a second reviewed publish after both pages exist; commands guidance could make this explicit."
+    ],
+    "scope_note": "Case 8 exposes a separate missing rationale question after resolving the requested exclusion; its fee baseline is current while overall checkout scope stays partial."
+  }
+}

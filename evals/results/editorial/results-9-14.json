@@ -1,0 +1,269 @@
+[
+  {
+    "case": 9,
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-09",
+    "observed_decisions": "Resumed saved publication step without prior conversation; preserved allocation sequence and used PB-012; removed obsolete saved finding.",
+    "statuses": {
+      "checkout": {
+        "status": "complete",
+        "next_action": "Revalidate if checkout implementation, test or purpose documentation changes"
+      }
+    },
+    "published": [
+      {
+        "id": "CMP-checkout",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-09/context/engineering/checkout.md",
+        "freshness": "current"
+      },
+      {
+        "id": "CAP-checkout",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-09/context/product/checkout.md",
+        "freshness": "current"
+      }
+    ],
+    "helper_errors": [],
+    "check_results": [
+      {
+        "command": [
+          "check"
+        ],
+        "code": 0,
+        "output": "{\n  \"valid\": true,\n  \"pages\": 2,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}",
+        "error": ""
+      }
+    ],
+    "response_to_user": "Checkout fee baseline is complete, with fee 3, packing-cost purpose, implementation and the existing unexecuted unit check linked.",
+    "artifact_paths": [
+      "/private/tmp/bootstrap-context-editorial-evals/case-09/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-09/context/index.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-09/.bootstrap/questions.yaml"
+    ],
+    "instruction_clarity": "Helper allocate-pb returns JSON, not a bare ID; initial evaluator parsing failed after successful PB-012 allocation. Recovered using reserved ID without reset."
+  },
+  {
+    "case": 10,
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-10",
+    "observed_decisions": "Read only four checkout files; narrowed truncated root inventory to src/tests/docs without reading noise or node_modules content.",
+    "statuses": {
+      "checkout": {
+        "status": "complete",
+        "next_action": "Revalidate if checkout implementation, test or purpose documentation changes"
+      }
+    },
+    "published": [
+      {
+        "id": "CMP-checkout",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-10/context/engineering/checkout.md",
+        "freshness": "current"
+      },
+      {
+        "id": "CAP-checkout",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-10/context/product/checkout.md",
+        "freshness": "current"
+      }
+    ],
+    "helper_errors": [],
+    "check_results": [
+      {
+        "command": [
+          "check"
+        ],
+        "code": 0,
+        "output": "{\n  \"valid\": true,\n  \"pages\": 2,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}",
+        "error": ""
+      }
+    ],
+    "response_to_user": "Checkout fee baseline is complete, with fee 3, packing-cost purpose, implementation and the existing unexecuted unit check linked.",
+    "artifact_paths": [
+      "/private/tmp/bootstrap-context-editorial-evals/case-10/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-10/context/index.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-10/.bootstrap/questions.yaml"
+    ],
+    "instruction_clarity": "No specific ambiguity encountered."
+  },
+  {
+    "case": 11,
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-11",
+    "observed_decisions": "Published independent supported receipt pages; reserved fee PB-001 but kept disputed fee unpublished and saved Q-001. No human choice invented.",
+    "statuses": {
+      "checkout": {
+        "status": "waiting for human",
+        "next_action": "Resolve Q-001 via explicit human decision and recheck evidence",
+        "checkpoint": ".bootstrap/runs/current.md"
+      }
+    },
+    "published": [
+      {
+        "id": "CMP-receipt",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-11/context/engineering/receipt.md",
+        "freshness": "current"
+      },
+      {
+        "id": "CAP-receipt",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-11/context/product/receipt.md",
+        "freshness": "current"
+      }
+    ],
+    "helper_errors": [],
+    "check_results": [
+      {
+        "command": [
+          "check"
+        ],
+        "code": 0,
+        "output": "{\n  \"valid\": true,\n  \"pages\": 2,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}",
+        "error": ""
+      }
+    ],
+    "response_to_user": "Published receipt behavior and implementation. Checkout fee remains unresolved: docs say 2 while code and test say 3. Which fee should apply? Choose FIX with the correction to record, or IGNORE with the exact outdated claim and rationale. The skill requires an explicit human choice for unresolved contradictions (references/questions.md).",
+    "artifact_paths": [
+      "/private/tmp/bootstrap-context-editorial-evals/case-11/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-11/context/index.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-11/.bootstrap/questions.yaml"
+    ],
+    "instruction_clarity": "No specific ambiguity encountered."
+  },
+  {
+    "case": 12,
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-12",
+    "observed_decisions": "Traced event via subscription config to warehouse; linked PB IDs to implementation and verification gaps. Recorded documented purpose, actual calls, meaningful non-ownership and unavailable runtime guarantees. Rejected literal-equality test as behavioral evidence.",
+    "statuses": {
+      "paid-order": {
+        "status": "complete",
+        "next_action": "Revalidate producer, subscription and consumer together if handoff changes; investigate external guarantees before changing them"
+      }
+    },
+    "published": [
+      {
+        "id": "CMP-checkout",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-12/context/engineering/checkout.md",
+        "freshness": "current"
+      },
+      {
+        "id": "CMP-warehouse",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-12/context/engineering/warehouse.md",
+        "freshness": "current"
+      },
+      {
+        "id": "CAP-paid-order",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-12/context/product/paid-order.md",
+        "freshness": "current"
+      }
+    ],
+    "helper_errors": [],
+    "check_results": [
+      {
+        "command": [
+          "check"
+        ],
+        "code": 0,
+        "output": "{\n  \"valid\": true,\n  \"pages\": 3,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}",
+        "error": ""
+      }
+    ],
+    "response_to_user": "Paid-order baseline is complete for the supplied implementation and configured handoff. Checkout publishes order.paid; warehouse requests reservation. Producer/consumer contract tests are missing; live transport and inventory guarantees remain outside evidenced coverage.",
+    "artifact_paths": [
+      "/private/tmp/bootstrap-context-editorial-evals/case-12/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-12/context/index.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-12/.bootstrap/questions.yaml"
+    ],
+    "instruction_clarity": "No specific ambiguity encountered."
+  },
+  {
+    "case": 13,
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-13",
+    "observed_decisions": "Ran freshness only for evidence assessment, marked fee pages and their dependency. Did not investigate or rewrite baseline conclusions; receipt remained current. Saved bounded next action.",
+    "statuses": {
+      "checkout": {
+        "status": "needs revalidation",
+        "next_action": "Investigate changed src/checkout.py against fee product and engineering claims before republishing; leave receipt pages unchanged"
+      }
+    },
+    "published": [
+      {
+        "id": "CMP-fee",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-13/context/engineering/fee.md",
+        "freshness": "needs revalidation",
+        "reasons": [
+          "sources changed",
+          "dependency needs revalidation: CAP-fee"
+        ]
+      },
+      {
+        "id": "CMP-receipt",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-13/context/engineering/receipt.md",
+        "freshness": "current",
+        "reasons": []
+      },
+      {
+        "id": "CAP-fee",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-13/context/product/fee.md",
+        "freshness": "needs revalidation",
+        "reasons": [
+          "sources changed"
+        ]
+      },
+      {
+        "id": "CAP-receipt",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-13/context/product/receipt.md",
+        "freshness": "current",
+        "reasons": []
+      }
+    ],
+    "helper_errors": [],
+    "baseline_markdown_unchanged": true,
+    "response_to_user": "Fee product and engineering pages need revalidation because src/checkout.py changed; the engineering page also depends on the affected product page. Receipt context remains current. No baseline page was rewritten.",
+    "artifact_paths": [
+      "/private/tmp/bootstrap-context-editorial-evals/case-13/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-13/.bootstrap/tracking.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-13/context/index.yaml"
+    ],
+    "instruction_clarity": "No specific ambiguity encountered."
+  },
+  {
+    "case": 14,
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-14",
+    "observed_decisions": "Traced event via subscription config to warehouse; linked PB IDs to implementation and verification gaps. Recorded documented purpose, actual calls, meaningful non-ownership and unavailable runtime guarantees. Rejected literal-equality test as behavioral evidence.",
+    "statuses": {
+      "paid-order": {
+        "status": "complete",
+        "next_action": "Revalidate producer, subscription and consumer together if handoff changes; investigate external guarantees before changing them"
+      }
+    },
+    "published": [
+      {
+        "id": "CMP-checkout",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-14/context/engineering/checkout.md",
+        "freshness": "current"
+      },
+      {
+        "id": "CMP-warehouse",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-14/context/engineering/warehouse.md",
+        "freshness": "current"
+      },
+      {
+        "id": "CAP-paid-order",
+        "path": "/private/tmp/bootstrap-context-editorial-evals/case-14/context/product/paid-order.md",
+        "freshness": "current"
+      }
+    ],
+    "helper_errors": [],
+    "check_results": [
+      {
+        "command": [
+          "check"
+        ],
+        "code": 0,
+        "output": "{\n  \"valid\": true,\n  \"pages\": 3,\n  \"note\": \"Structure only; evidence truth requires model review.\"\n}",
+        "error": ""
+      }
+    ],
+    "response_to_user": "Paid-order baseline is complete for the supplied implementation and configured handoff. Checkout publishes order.paid; warehouse requests reservation. Producer/consumer contract tests are missing; live transport and inventory guarantees remain outside evidenced coverage.",
+    "artifact_paths": [
+      "/private/tmp/bootstrap-context-editorial-evals/case-14/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-14/context/index.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-14/.bootstrap/questions.yaml"
+    ],
+    "instruction_clarity": "No specific ambiguity encountered."
+  }
+]

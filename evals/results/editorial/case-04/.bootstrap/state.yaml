@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "paid-order": {
+      "status": "complete",
+      "next_action": "Revalidate producer, subscription, and consumer contract together when any handoff source changes"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 1
+}

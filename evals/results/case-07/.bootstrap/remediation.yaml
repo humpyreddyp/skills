@@ -1,0 +1,23 @@
+[
+  {
+    "question_id": "Q-001",
+    "scope": "checkout",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "decision": {
+      "choice": "FIX",
+      "human_statement": "For Q-001 I choose FIX: engineering should change the implementation to fee 2 and update its tests. Record that as remediation only. My GitHub ID is product-owner.",
+      "github_id": "product-owner"
+    },
+    "status": "open",
+    "action": "Engineering to change checkout implementation from fee 3 to fee 2 and update tests; verify the completed implementation against docs/checkout.md before publishing PB-001.",
+    "sources": [
+      "docs/checkout.md",
+      "src/checkout.py",
+      "tests/test_checkout.py"
+    ],
+    "id": "R-001"
+  }
+]

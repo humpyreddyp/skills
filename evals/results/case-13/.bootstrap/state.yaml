@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "needs revalidation",
+      "next_action": "Revalidate PB-001 and CAP-fee/CMP-fee against changed checkout source and fee documentation/test; preserve receipt context. Do not rewrite pages until requested."
+    }
+  },
+  "next_pb": 1,
+  "next_question": 1
+}

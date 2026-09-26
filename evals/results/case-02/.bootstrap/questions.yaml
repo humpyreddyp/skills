@@ -1,0 +1,27 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Current contract requires fee 2; code sets FEE = 3 and test expects 13 from subtotal 10. No version or environment distinction resolves this conflict.",
+    "sources": [
+      {
+        "path": "docs/checkout.md"
+      },
+      {
+        "path": "src/checkout.py"
+      },
+      {
+        "path": "tests/test_checkout.py"
+      }
+    ],
+    "why": "Future changes cannot safely infer the agreed current fee contract.",
+    "affects": [
+      "PB-001",
+      "CAP-checkout",
+      "CMP-checkout"
+    ],
+    "question": "Choose FIX with a remediation target, IGNORE a precise outdated source/claim with rationale and recheck trigger, or leave unresolved. Which source should be corrected?",
+    "blocking": true,
+    "status": "open"
+  }
+]

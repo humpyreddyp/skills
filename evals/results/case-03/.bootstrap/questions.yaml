@@ -1,0 +1,25 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Code adds 3 and test expects 13 from subtotal 10. No product rationale is available.",
+    "sources": [
+      {
+        "path": "src/checkout.py"
+      },
+      {
+        "path": "tests/test_checkout.py"
+      },
+      {
+        "path": "pyproject.toml"
+      }
+    ],
+    "why": "Requested fee purpose cannot be inferred from arithmetic; future policy changes need intended purpose.",
+    "affects": [
+      "CAP-checkout-purpose"
+    ],
+    "question": "What intended outcome or cost does the checkout fee serve, and is there a product decision explaining it?",
+    "blocking": true,
+    "status": "open"
+  }
+]

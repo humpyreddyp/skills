@@ -1,0 +1,32 @@
+{
+  "context/product/receipt.md": {
+    "sources": {
+      "path:src/receipt.py": "fecd98ac71a31b8b5bafcda08c1db57dfacdb9fc25ebc8cf2765bbfce83887df",
+      "path:docs/receipt.md": "872b825172694c24ef97b155a09f0db6c9d48489269058fdbe02cd6ec317c925"
+    },
+    "watches": {
+      "src/receipt.py": "5ce64f7bead20a1ea6cfb5d3f000e370d0f899d012f23be1f5e35c6b92423d8c"
+    },
+    "dependencies": {},
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "d02acb75319cff6b11ce1ccfa9fcf4a303047591f1a4f71708b2b8a3c5352e14",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/receipt.md": {
+    "sources": {
+      "path:src/receipt.py": "fecd98ac71a31b8b5bafcda08c1db57dfacdb9fc25ebc8cf2765bbfce83887df",
+      "path:docs/receipt.md": "872b825172694c24ef97b155a09f0db6c9d48489269058fdbe02cd6ec317c925"
+    },
+    "watches": {
+      "src/receipt.py": "5ce64f7bead20a1ea6cfb5d3f000e370d0f899d012f23be1f5e35c6b92423d8c"
+    },
+    "dependencies": {
+      "CAP-receipt": "d02acb75319cff6b11ce1ccfa9fcf4a303047591f1a4f71708b2b8a3c5352e14"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "7f04a4b537fb34da62bea3e00cc2bda59c76ab95a4337e350526cade7b260ecf",
+    "status": "current",
+    "reasons": []
+  }
+}

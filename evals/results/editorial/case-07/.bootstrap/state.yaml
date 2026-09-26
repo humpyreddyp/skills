@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Verify R-001 after engineering completes fee-2 implementation and tests",
+      "checkpoint": ".bootstrap/runs/fee.md"
+    }
+  },
+  "next_pb": 1,
+  "next_question": 2
+}

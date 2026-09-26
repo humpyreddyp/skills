@@ -1,0 +1,147 @@
+{
+  "cases": [
+    {
+      "case": 1,
+      "result": "pass",
+      "scope_status": "complete",
+      "observations": [
+        "Resolved apparent fee conflict by reading historical v1 scope and accepted v2 ADR; no unnecessary human question.",
+        "Published observed total plus intended packing rationale with code/test/ADR/historical provenance."
+      ],
+      "response": "Published checkout product and engineering context. Current v2 adds a fee of 3 for packing costs; the fee 2 document explicitly covers retired v1. Scope complete; tests were inspected, not run.",
+      "artifacts": [
+        "/private/tmp/bootstrap-context-behavior-v1/case-01/.bootstrap/exclusions.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-01/.bootstrap/external.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-01/.bootstrap/questions.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-01/.bootstrap/remediation.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-01/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-01/.bootstrap/tracking.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-01/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-01/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-01/context/product/checkout.md"
+      ],
+      "freshness_result": {
+        "pages": {
+          "context/product/checkout.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/checkout.md": {
+            "status": "current",
+            "reasons": []
+          }
+        }
+      },
+      "errors": [
+        {
+          "issue": "Initial absolute draft path rejected",
+          "classification": "executing-agent error",
+          "resolution": "Used documented repository-relative draft path."
+        },
+        {
+          "issue": "Initial complete checkpoint rejected because paired product/component dependencies had stale snapshots",
+          "classification": "workflow friction, recovered",
+          "resolution": "Reviewed complete pair and republished product unchanged after component existed; both pages became current.",
+          "suggestion": "Document a final review/republish pass for coupled or forward dependencies."
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "result": "pass",
+      "scope_status": "waiting for human",
+      "observations": [
+        "Detected unresolved current contract versus code/test conflict.",
+        "No fee pages published; Q-001 blocks fee and no FIX/IGNORE choice was invented."
+      ],
+      "response": "The current contract requires fee 2, but implementation and its test use 3. I saved Q-001 and left disputed fee context unpublished. Choose FIX with the correction target, IGNORE a precise outdated claim with rationale and a recheck trigger, or leave unresolved. FIX records remediation only; IGNORE does not make an unsupported claim true.",
+      "artifacts": [
+        "/private/tmp/bootstrap-context-behavior-v1/case-02/.bootstrap/exclusions.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-02/.bootstrap/external.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-02/.bootstrap/questions.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-02/.bootstrap/remediation.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-02/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-02/.bootstrap/tracking.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-02/context/index.yaml"
+      ],
+      "freshness_result": {
+        "pages": {}
+      },
+      "errors": []
+    },
+    {
+      "case": 3,
+      "result": "pass",
+      "scope_status": "partial",
+      "observations": [
+        "Published observed fee arithmetic without invented rationale.",
+        "Missing purpose recorded separately in Q-001; observed pages remain current while scope is partial."
+      ],
+      "response": "Published the observed checkout behavior: subtotal plus 3, with implementation and verification links. The fee purpose remains unknown, so the scope is partial. Q-001: what intended outcome or cost does this fee serve, and is there a product decision explaining it?",
+      "artifacts": [
+        "/private/tmp/bootstrap-context-behavior-v1/case-03/.bootstrap/exclusions.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-03/.bootstrap/external.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-03/.bootstrap/questions.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-03/.bootstrap/remediation.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-03/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-03/.bootstrap/tracking.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-03/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-03/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-03/context/product/checkout.md"
+      ],
+      "freshness_result": {
+        "pages": {
+          "context/product/checkout.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/checkout.md": {
+            "status": "current",
+            "reasons": []
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "case": 4,
+      "result": "pass",
+      "scope_status": "complete",
+      "observations": [
+        "Traced order.paid through deployment subscription configuration to warehouse handler despite absent import.",
+        "Captured checkout and warehouse ownership, non-ownership, and injected dependencies.",
+        "Recognized tautological test and recorded meaningful producer/consumer/runtime verification gaps; did not claim it passes or proves the flow."
+      ],
+      "response": "Published paid-order product and engineering context linking checkout publication, the deployment subscription and warehouse reservation. Captured responsibilities and verification gaps. The existing test is tautological; actual event delivery, retries and inventory behavior remain unverified. No tests were run.",
+      "artifacts": [
+        "/private/tmp/bootstrap-context-behavior-v1/case-04/.bootstrap/exclusions.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-04/.bootstrap/external.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-04/.bootstrap/questions.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-04/.bootstrap/remediation.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-04/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-04/.bootstrap/tracking.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-04/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-04/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-04/context/product/checkout.md"
+      ],
+      "freshness_result": {
+        "pages": {
+          "context/product/checkout.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/checkout.md": {
+            "status": "current",
+            "reasons": []
+          }
+        }
+      },
+      "errors": []
+    }
+  ],
+  "failures": [],
+  "notes": [
+    "All application source and input docs left unchanged. No external operations or repository test execution.",
+    "Raw repository reads were bounded per case (3-7 relevant files) although independent cases were batched in tool calls."
+  ]
+}

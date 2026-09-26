@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "waiting for human",
+      "next_action": "Resolve Q-001 with explicit FIX/IGNORE choice or new evidence",
+      "checkpoint": ".bootstrap/runs/fee.md"
+    }
+  },
+  "next_pb": 1,
+  "next_question": 2
+}

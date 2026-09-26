@@ -1,0 +1,27 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Only implementation, test, and project manifest are available; none explains the fee purpose.",
+    "sources": [
+      {
+        "path": "src/checkout.py",
+        "section": "FEE,total"
+      },
+      {
+        "path": "tests/test_checkout.py",
+        "section": "test_total"
+      },
+      {
+        "path": "pyproject.toml"
+      }
+    ],
+    "why": "Changing the fee safely requires knowing the product outcome and intended policy; code establishes behavior only.",
+    "affects": [
+      "CAP-checkout-purpose"
+    ],
+    "question": "The code adds 3 and the test expects 13 for a subtotal of 10. Why does checkout charge this fee, and what intended policy should a future fee change preserve? A product owner explanation is sufficient if documents are unavailable.",
+    "blocking": true,
+    "status": "open"
+  }
+]

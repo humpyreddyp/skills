@@ -1,0 +1,42 @@
+{
+  "context/product/checkout.md": {
+    "sources": {
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+      "path:tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb",
+      "path:docs/checkout.md": "42649f9ad7e553d170e863de69cc24d7245f58698ce212399dd10d7d3ba8ff4a"
+    },
+    "watches": {
+      "src/checkout*.py": "53dffd98dfbe70f1bea7bb17a374522068ce93f231ad3e50be7d9ff7a60e3a68",
+      "tests/test_checkout*.py": "124dc9a751db7edf2546d22777db5af7122d03c1aed284817edd7a320aad8d6c",
+      "docs/checkout*.md": "e7157422a94051553a848ba0ac1f4453e3348b58303a6bdb18b8b1019d530b35",
+      "docs/adr*.md": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "dependencies": {
+      "CMP-checkout": "80271922980d835dd15185b2a9fef65c3f4c982001a236cb30cf974390a7292a"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "3271edf899836cb563ad0234a7948c0f4ec6d2147d7352b974d4c88751689faf",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/checkout.md": {
+    "sources": {
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+      "path:tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb",
+      "path:docs/checkout.md": "42649f9ad7e553d170e863de69cc24d7245f58698ce212399dd10d7d3ba8ff4a"
+    },
+    "watches": {
+      "src/checkout*.py": "53dffd98dfbe70f1bea7bb17a374522068ce93f231ad3e50be7d9ff7a60e3a68",
+      "tests/test_checkout*.py": "124dc9a751db7edf2546d22777db5af7122d03c1aed284817edd7a320aad8d6c",
+      "docs/checkout*.md": "e7157422a94051553a848ba0ac1f4453e3348b58303a6bdb18b8b1019d530b35",
+      "docs/adr*.md": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "dependencies": {
+      "CAP-checkout": "3271edf899836cb563ad0234a7948c0f4ec6d2147d7352b974d4c88751689faf"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "80271922980d835dd15185b2a9fef65c3f4c982001a236cb30cf974390a7292a",
+    "status": "current",
+    "reasons": []
+  }
+}

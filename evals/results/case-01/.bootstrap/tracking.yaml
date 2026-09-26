@@ -1,0 +1,44 @@
+{
+  "context/product/checkout.md": {
+    "sources": {
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+      "path:tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb",
+      "path:docs/checkout.md": "b080a0fa4bac1c777c964e2a7fa5afef5f30833989c228c09461ffdb569e99d6",
+      "path:docs/adr-004.md": "81ecff8b1cb1db02eb7c0b5c39f5625d0e3626d13bfa7d1af2651d73ae68e83f"
+    },
+    "watches": {
+      "src/checkout*.py": "53dffd98dfbe70f1bea7bb17a374522068ce93f231ad3e50be7d9ff7a60e3a68",
+      "tests/test_checkout*.py": "124dc9a751db7edf2546d22777db5af7122d03c1aed284817edd7a320aad8d6c",
+      "docs/checkout*.md": "de2d622df61375c2be749849b0a616310b872677490c0dc3fd2ec3789ef8d073",
+      "docs/adr*.md": "ea4329335b2fe1d2e1024e0285f859a85ae48ae658ea939bddadae47421b4d40"
+    },
+    "dependencies": {
+      "CMP-checkout": "2f74527b4fbe1ac7a3031672ac3385c0658979fe0d64f572a45f80fb668319c0"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "90db8c957881d98f0e3a70e8195e7fd76172df7b3e1af32dd4f05fdf5a6e9423",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/checkout.md": {
+    "sources": {
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+      "path:tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb",
+      "path:docs/checkout.md": "b080a0fa4bac1c777c964e2a7fa5afef5f30833989c228c09461ffdb569e99d6",
+      "path:docs/adr-004.md": "81ecff8b1cb1db02eb7c0b5c39f5625d0e3626d13bfa7d1af2651d73ae68e83f"
+    },
+    "watches": {
+      "src/checkout*.py": "53dffd98dfbe70f1bea7bb17a374522068ce93f231ad3e50be7d9ff7a60e3a68",
+      "tests/test_checkout*.py": "124dc9a751db7edf2546d22777db5af7122d03c1aed284817edd7a320aad8d6c",
+      "docs/checkout*.md": "de2d622df61375c2be749849b0a616310b872677490c0dc3fd2ec3789ef8d073",
+      "docs/adr*.md": "ea4329335b2fe1d2e1024e0285f859a85ae48ae658ea939bddadae47421b4d40"
+    },
+    "dependencies": {
+      "CAP-checkout": "90db8c957881d98f0e3a70e8195e7fd76172df7b3e1af32dd4f05fdf5a6e9423"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "2f74527b4fbe1ac7a3031672ac3385c0658979fe0d64f572a45f80fb668319c0",
+    "status": "current",
+    "reasons": []
+  }
+}

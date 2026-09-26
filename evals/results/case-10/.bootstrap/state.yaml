@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "complete",
+      "next_action": "Run freshness before reuse and revalidate changed checkout evidence."
+    }
+  },
+  "next_pb": 2,
+  "next_question": 1
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Docs say the fee is 2; implementation uses 3.",
+    "sources": [
+      "docs/checkout.md",
+      "src/checkout.py",
+      "tests/test_checkout.py"
+    ],
+    "why": "Fee changes affect charged totals.",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "question": "Which fee should checkout apply?",
+    "blocking": true,
+    "status": "conflicting",
+    "answer": {
+      "summary": "FIX: engineering should change implementation to fee 2 and update tests; record remediation only.",
+      "github_id": "product-owner",
+      "sources": []
+    },
+    "decision": "R-001",
+    "validation": "The human establishes intended fee 2 and chooses future engineering remediation. Current code remains FEE=3 and the test expects 13 for subtotal 10. The fix has not occurred, so the fee claim remains blocked."
+  }
+]

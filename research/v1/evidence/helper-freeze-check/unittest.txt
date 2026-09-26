@@ -1,0 +1,28 @@
+test_bounded_scan_skips_dependencies_and_marks_truncation (test_runtime.RuntimeTests.test_bounded_scan_skips_dependencies_and_marks_truncation) ... ok
+test_changed_dependency_doc_invalidates_even_when_republished (test_runtime.RuntimeTests.test_changed_dependency_doc_invalidates_even_when_republished) ... ok
+test_changed_source_invalidates_only_related_pages (test_runtime.RuntimeTests.test_changed_source_invalidates_only_related_pages) ... ok
+test_complete_requires_linked_fresh_scope (test_runtime.RuntimeTests.test_complete_requires_linked_fresh_scope) ... ok
+test_cyclic_dependencies_can_recover (test_runtime.RuntimeTests.test_cyclic_dependencies_can_recover) ... ok
+test_decision_interruption_recovers_without_duplicate (test_runtime.RuntimeTests.test_decision_interruption_recovers_without_duplicate) ... ok
+test_dependency_propagation_and_revalidation (test_runtime.RuntimeTests.test_dependency_propagation_and_revalidation) ... ok
+test_external_revision_expiry_and_selectivity (test_runtime.RuntimeTests.test_external_revision_expiry_and_selectivity) ... ok
+test_fix_never_changes_application_or_resolves_question (test_runtime.RuntimeTests.test_fix_never_changes_application_or_resolves_question) ... ok
+test_ignore_is_scoped_and_source_changes_require_review (test_runtime.RuntimeTests.test_ignore_is_scoped_and_source_changes_require_review) ... ok
+test_lock_and_unknown_schema_preserve_state (test_runtime.RuntimeTests.test_lock_and_unknown_schema_preserve_state) ... ok
+test_manual_page_edit_is_untrusted (test_runtime.RuntimeTests.test_manual_page_edit_is_untrusted) ... ok
+test_material_question_blocks_only_affected_publication (test_runtime.RuntimeTests.test_material_question_blocks_only_affected_publication) ... ok
+test_missing_tracking_fails_closed (test_runtime.RuntimeTests.test_missing_tracking_fails_closed) ... ok
+test_nested_context_package_is_real_evidence (test_runtime.RuntimeTests.test_nested_context_package_is_real_evidence) ... ok
+test_path_escape_and_symlink_writes_rejected (test_runtime.RuntimeTests.test_path_escape_and_symlink_writes_rejected) ... ok
+test_removed_source_does_not_refresh_trust (test_runtime.RuntimeTests.test_removed_source_does_not_refresh_trust) ... ok
+test_resume_preserves_ids_and_checkpoint (test_runtime.RuntimeTests.test_resume_preserves_ids_and_checkpoint) ... ok
+test_revalidated_scope_returns_to_partial_not_stale (test_runtime.RuntimeTests.test_revalidated_scope_returns_to_partial_not_stale) ... ok
+test_scope_expansion_preserves_old_scope (test_runtime.RuntimeTests.test_scope_expansion_preserves_old_scope) ... ok
+test_traceability_requires_product_anchor_and_verification (test_runtime.RuntimeTests.test_traceability_requires_product_anchor_and_verification) ... ok
+test_watch_detects_new_hidden_consumer (test_runtime.RuntimeTests.test_watch_detects_new_hidden_consumer) ... ok
+test_watch_zero_directory_glob (test_runtime.RuntimeTests.test_watch_zero_directory_glob) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 3.687s
+
+OK

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "waiting for human",
+      "next_action": "Resolve Q-001 via explicit human decision and recheck evidence",
+      "checkpoint": ".bootstrap/runs/current.md"
+    }
+  },
+  "next_pb": 3,
+  "next_question": 2
+}

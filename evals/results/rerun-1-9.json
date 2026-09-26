@@ -1,0 +1,328 @@
+{
+  "cases": [
+    {
+      "case": 1,
+      "result": "pass",
+      "observations": [
+        "Historical/current scope distinction resolved without a question.",
+        "Updated relative-path and final republish guidance followed without helper errors."
+      ],
+      "helper_errors": [],
+      "final_status": {
+        "schema_version": 1,
+        "scopes": {
+          "checkout": {
+            "status": "complete",
+            "next_action": "Revalidate checkout sources and requirements when they change."
+          }
+        },
+        "next_pb": 2,
+        "next_question": 1
+      },
+      "commands": [
+        {
+          "command": [
+            "init",
+            "--scope",
+            "checkout"
+          ],
+          "returncode": 0,
+          "output": {
+            "schema_version": 1,
+            "scopes": {
+              "checkout": {
+                "status": "not started",
+                "next_action": "Select one bounded investigation"
+              }
+            },
+            "next_pb": 1,
+            "next_question": 1
+          }
+        },
+        {
+          "command": [
+            "allocate-pb"
+          ],
+          "returncode": 0,
+          "output": {
+            "behavior": "PB-001"
+          }
+        },
+        {
+          "command": [
+            "publish",
+            "--draft",
+            ".bootstrap/runs/CAP-checkout.md",
+            "--to",
+            "context/product/checkout.md"
+          ],
+          "returncode": 0,
+          "output": {
+            "published": "context/product/checkout.md",
+            "freshness": "needs revalidation"
+          }
+        },
+        {
+          "command": [
+            "publish",
+            "--draft",
+            ".bootstrap/runs/CMP-checkout.md",
+            "--to",
+            "context/engineering/checkout.md"
+          ],
+          "returncode": 0,
+          "output": {
+            "published": "context/engineering/checkout.md",
+            "freshness": "needs revalidation"
+          }
+        },
+        {
+          "command": [
+            "freshness"
+          ],
+          "returncode": 0,
+          "output": {
+            "pages": {
+              "context/product/checkout.md": {
+                "status": "needs revalidation",
+                "reasons": [
+                  "dependencies changed",
+                  "dependency needs revalidation: CMP-checkout"
+                ]
+              },
+              "context/engineering/checkout.md": {
+                "status": "needs revalidation",
+                "reasons": [
+                  "dependency needs revalidation: CAP-checkout"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "command": [
+            "publish",
+            "--draft",
+            "context/product/checkout.md",
+            "--to",
+            "context/product/checkout.md"
+          ],
+          "returncode": 0,
+          "output": {
+            "published": "context/product/checkout.md",
+            "freshness": "current"
+          }
+        },
+        {
+          "command": [
+            "check"
+          ],
+          "returncode": 0,
+          "output": {
+            "valid": true,
+            "pages": 2,
+            "note": "Structure only; evidence truth requires model review."
+          }
+        },
+        {
+          "command": [
+            "checkpoint",
+            "--scope",
+            "checkout",
+            "--status",
+            "complete",
+            "--next",
+            "Revalidate checkout sources and requirements when they change."
+          ],
+          "returncode": 0,
+          "output": {
+            "status": "complete",
+            "next_action": "Revalidate checkout sources and requirements when they change."
+          }
+        },
+        {
+          "command": [
+            "freshness"
+          ],
+          "returncode": 0,
+          "output": {
+            "pages": {
+              "context/product/checkout.md": {
+                "status": "current",
+                "reasons": []
+              },
+              "context/engineering/checkout.md": {
+                "status": "current",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "artifacts": [
+        "/private/tmp/bootstrap-context-behavior-v2/case-01/context/product/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v2/case-01/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v2/case-01/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v2/case-01/.bootstrap/state.yaml"
+      ]
+    },
+    {
+      "case": 9,
+      "result": "pass",
+      "observations": [
+        "Resumed saved checkout scope and pending publish action without resetting state or requesting prior conversation.",
+        "Checked source evidence against saved finding; allocated PB-012 and preserved counter continuity.",
+        "Complete checkpoint cleared saved checkpoint pointer.",
+        "Updated cleanup rule verified: removed previous-session Bootstrap-owned .bootstrap/runs/current.md after its finding was durably published. No saved checkpoint or next action needed it; all other files, including sources, context and state, remained byte-identical."
+      ],
+      "helper_errors": [],
+      "final_status": {
+        "schema_version": 1,
+        "scopes": {
+          "checkout": {
+            "status": "complete",
+            "next_action": "Revalidate checkout sources and requirements when they change."
+          }
+        },
+        "next_pb": 13,
+        "next_question": 1
+      },
+      "commands": [
+        {
+          "command": [
+            "allocate-pb"
+          ],
+          "returncode": 0,
+          "output": {
+            "behavior": "PB-012"
+          }
+        },
+        {
+          "command": [
+            "publish",
+            "--draft",
+            ".bootstrap/runs/CAP-checkout.md",
+            "--to",
+            "context/product/checkout.md"
+          ],
+          "returncode": 0,
+          "output": {
+            "published": "context/product/checkout.md",
+            "freshness": "needs revalidation"
+          }
+        },
+        {
+          "command": [
+            "publish",
+            "--draft",
+            ".bootstrap/runs/CMP-checkout.md",
+            "--to",
+            "context/engineering/checkout.md"
+          ],
+          "returncode": 0,
+          "output": {
+            "published": "context/engineering/checkout.md",
+            "freshness": "needs revalidation"
+          }
+        },
+        {
+          "command": [
+            "freshness"
+          ],
+          "returncode": 0,
+          "output": {
+            "pages": {
+              "context/product/checkout.md": {
+                "status": "needs revalidation",
+                "reasons": [
+                  "dependencies changed",
+                  "dependency needs revalidation: CMP-checkout"
+                ]
+              },
+              "context/engineering/checkout.md": {
+                "status": "needs revalidation",
+                "reasons": [
+                  "dependency needs revalidation: CAP-checkout"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "command": [
+            "publish",
+            "--draft",
+            "context/product/checkout.md",
+            "--to",
+            "context/product/checkout.md"
+          ],
+          "returncode": 0,
+          "output": {
+            "published": "context/product/checkout.md",
+            "freshness": "current"
+          }
+        },
+        {
+          "command": [
+            "check"
+          ],
+          "returncode": 0,
+          "output": {
+            "valid": true,
+            "pages": 2,
+            "note": "Structure only; evidence truth requires model review."
+          }
+        },
+        {
+          "command": [
+            "checkpoint",
+            "--scope",
+            "checkout",
+            "--status",
+            "complete",
+            "--next",
+            "Revalidate checkout sources and requirements when they change."
+          ],
+          "returncode": 0,
+          "output": {
+            "status": "complete",
+            "next_action": "Revalidate checkout sources and requirements when they change."
+          }
+        },
+        {
+          "command": [
+            "freshness"
+          ],
+          "returncode": 0,
+          "output": {
+            "pages": {
+              "context/product/checkout.md": {
+                "status": "current",
+                "reasons": []
+              },
+              "context/engineering/checkout.md": {
+                "status": "current",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "artifacts": [
+        "/private/tmp/bootstrap-context-behavior-v2/case-09/context/product/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v2/case-09/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v2/case-09/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v2/case-09/.bootstrap/state.yaml"
+      ],
+      "cleanup_verification": {
+        "removed": [
+          ".bootstrap/runs/current.md"
+        ],
+        "changed_other_files": [],
+        "dangling_checkpoint_references": [],
+        "result": "pass"
+      }
+    }
+  ],
+  "failures": []
+}

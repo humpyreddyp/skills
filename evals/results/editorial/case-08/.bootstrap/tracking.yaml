@@ -1,0 +1,39 @@
+{
+  "context/product/fee.md": {
+    "sources": {
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+      "path:tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb",
+      "external:answer-Q-001": "0106ed7906c29aac42d579c03df3a89a1a711809531a986f6b33ae54f0e356c4"
+    },
+    "watches": {
+      "src/checkout*.py": "53dffd98dfbe70f1bea7bb17a374522068ce93f231ad3e50be7d9ff7a60e3a68",
+      "tests/test_checkout*.py": "124dc9a751db7edf2546d22777db5af7122d03c1aed284817edd7a320aad8d6c",
+      "docs/checkout*.md": "3b253079553ff3ea9cc781469dae190b56bcd8450624c3053753092058e829fe"
+    },
+    "dependencies": {
+      "CMP-checkout": "98173cd825ec8fd37f05a15c17908a30c8cb9ef4f1b4cc2c87e6861e1d969f28"
+    },
+    "exclusions": "6f5da038e6aa4b6f1f09c7c917280042bfcc33667198a83b72972041b9c6f922",
+    "document_hash": "480f0d84015dcbd0c3be231a648eb2f294ff412b18b16479b56afbd7e4b8c671",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/checkout.md": {
+    "sources": {
+      "path:src/checkout.py": "3ee6f57c89187aca5866d6fcae566e69d453281f94bac87fead798bbcaeec2ca",
+      "path:tests/test_checkout.py": "6be4693557b6df7b4c9ce20882ee6ab98ec67da42d32a28ac19ee4d5707eeeeb"
+    },
+    "watches": {
+      "src/checkout*.py": "53dffd98dfbe70f1bea7bb17a374522068ce93f231ad3e50be7d9ff7a60e3a68",
+      "tests/test_checkout*.py": "124dc9a751db7edf2546d22777db5af7122d03c1aed284817edd7a320aad8d6c",
+      "docs/checkout*.md": "3b253079553ff3ea9cc781469dae190b56bcd8450624c3053753092058e829fe"
+    },
+    "dependencies": {
+      "CAP-fee": "480f0d84015dcbd0c3be231a648eb2f294ff412b18b16479b56afbd7e4b8c671"
+    },
+    "exclusions": "6f5da038e6aa4b6f1f09c7c917280042bfcc33667198a83b72972041b9c6f922",
+    "document_hash": "98173cd825ec8fd37f05a15c17908a30c8cb9ef4f1b4cc2c87e6861e1d969f28",
+    "status": "current",
+    "reasons": []
+  }
+}

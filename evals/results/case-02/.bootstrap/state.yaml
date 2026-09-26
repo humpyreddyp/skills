@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "waiting for human",
+      "next_action": "Resolve Q-001 with explicit human decision or further evidence; do not publish disputed fee."
+    }
+  },
+  "next_pb": 2,
+  "next_question": 2
+}

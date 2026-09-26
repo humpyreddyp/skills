@@ -1,0 +1,1 @@
+Scope: checkout. Current fee 3 is supported after narrow X-001 exclusion. Fee purpose remains unknown (Q-002); no other sources exist in the fixture. Next: obtain rationale evidence, while retaining published observed behavior.

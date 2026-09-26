@@ -1,0 +1,24 @@
+[
+  {
+    "question_id": "Q-001",
+    "scope": "checkout",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "decision": {
+      "choice": "IGNORE",
+      "human_statement": "IGNORE only the outdated docs/checkout.md claim that checkout fee is 2; current fee 3 is supported by code and test. Preserve other claims and recheck when fee documentation changes.",
+      "github_id": "product-owner"
+    },
+    "status": "active",
+    "source": {
+      "path": "docs/checkout.md"
+    },
+    "claim": "The fee is 2.",
+    "rationale": "product-owner identifies this fee claim as outdated; the exclusion does not cover other document claims.",
+    "recheck_when": "The fee documentation changes.",
+    "source_snapshot": "3884cb34dc586b3c704203b2f5d0237b47aaa0f2b40ad6f72c8852b7d59ff118",
+    "id": "X-001"
+  }
+]

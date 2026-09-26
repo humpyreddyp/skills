@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Await independently completed engineering remediation; then verify source and tests before resolving Q-001 or publishing PB-001"
+    }
+  },
+  "next_pb": 1,
+  "next_question": 2
+}

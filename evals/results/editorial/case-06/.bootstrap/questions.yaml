@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "The current docs, code and test all use fee 3; a stakeholder recalled fee 2.",
+    "sources": [
+      "docs/checkout.md",
+      "src/checkout.py",
+      "tests/test_checkout.py"
+    ],
+    "why": "Fee changes affect charged totals.",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "question": "Code, test, and docs all use fee 3, while your answer says current fee 2. Should engineering FIX implementation/tests/docs to fee 2, or should a specific conflicting source or claim be IGNOREd (which one and why)? You may leave the question unresolved.",
+    "blocking": true,
+    "status": "conflicting",
+    "answer": {
+      "summary": "The current fee is definitely 2; make the baseline reflect that.",
+      "github_id": "product-owner",
+      "sources": []
+    },
+    "validation": "The requested current fee 2 conflicts with FEE=3, test expectation total(10)=13, and current docs stating fee 3 for packing. No version or environment distinction is present. A request to reflect 2 does not explicitly choose FIX or IGNORE."
+  }
+]

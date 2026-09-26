@@ -1,0 +1,106 @@
+{
+  "skill": "/Users/humpyreddypininti/Documents/ChatGPT/skilly/bootstrap-context/SKILL.md",
+  "authentication": "recovered; all tool calls executed",
+  "cases": [
+    {
+      "case": 1,
+      "repo": "/private/tmp/bootstrap-context-editorial-evals/case-01",
+      "observed_decisions": [
+        "Resolved apparent conflict by version: historical v1 fee 2 is retired; accepted v2 ADR, code, and test support current fee 3 for packing costs.",
+        "Published linked product/engineering context; no human question required."
+      ],
+      "status": "complete",
+      "helper_errors": [],
+      "checks": "Helper freshness and check passed. Existing single test function executed directly via python3 -B and runpy at no-git; passed. No full pytest/CI run.",
+      "questions": null,
+      "artifacts": [
+        "/private/tmp/bootstrap-context-editorial-evals/case-01/.bootstrap/exclusions.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-01/.bootstrap/external.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-01/.bootstrap/questions.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-01/.bootstrap/remediation.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-01/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-01/.bootstrap/tracking.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-01/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-editorial-evals/case-01/context/index.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-01/context/product/checkout.md"
+      ],
+      "simulated_final_response": "The current checkout fee baseline is complete: v2 adds 3 for packing costs. The fee of 2 belongs to retired v1. Product and engineering context are linked and current; the existing total test passed when executed directly."
+    },
+    {
+      "case": 2,
+      "repo": "/private/tmp/bootstrap-context-editorial-evals/case-02",
+      "observed_decisions": [
+        "Preserved current-contract fee 2 versus implementation/test fee 3 contradiction.",
+        "Kept PB-001 unpublished, saved Q-001, selected neither FIX nor IGNORE, and made no remediation/exclusion decision."
+      ],
+      "status": "waiting for human",
+      "helper_errors": [],
+      "checks": "Helper freshness and check passed. Existing single test function executed directly via python3 -B and runpy at no-git; passed. No full pytest/CI run.",
+      "questions": "/private/tmp/bootstrap-context-editorial-evals/case-02/.bootstrap/questions.yaml",
+      "artifacts": [
+        "/private/tmp/bootstrap-context-editorial-evals/case-02/.bootstrap/exclusions.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-02/.bootstrap/external.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-02/.bootstrap/questions.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-02/.bootstrap/remediation.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-02/.bootstrap/runs/current.md",
+        "/private/tmp/bootstrap-context-editorial-evals/case-02/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-02/.bootstrap/tracking.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-02/context/index.yaml"
+      ],
+      "simulated_final_response": "Checkout is waiting on one unresolved policy conflict: docs/checkout.md requires fee 2 for current checkout, while the implementation adds 3 and its passing test expects that result. I saved Q-001 and kept the disputed claim unpublished. When you have context, which policy should apply? Choose FIX and identify the correction, or IGNORE and identify the exact outdated claim and reason. Bootstrap records that choice without changing application code."
+    },
+    {
+      "case": 3,
+      "repo": "/private/tmp/bootstrap-context-editorial-evals/case-03",
+      "observed_decisions": [
+        "Published observed fee addition supported by implementation and passing direct test execution.",
+        "Did not infer purpose from code; saved completion-blocking Q-001 for the separate unpublished purpose claim, retained partial scope."
+      ],
+      "status": "partial",
+      "helper_errors": [],
+      "checks": "Helper freshness and check passed. Existing single test function executed directly via python3 -B and runpy at no-git; passed. No full pytest/CI run.",
+      "questions": "/private/tmp/bootstrap-context-editorial-evals/case-03/.bootstrap/questions.yaml",
+      "artifacts": [
+        "/private/tmp/bootstrap-context-editorial-evals/case-03/.bootstrap/exclusions.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-03/.bootstrap/external.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-03/.bootstrap/questions.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-03/.bootstrap/remediation.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-03/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-03/.bootstrap/tracking.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-03/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-editorial-evals/case-03/context/index.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-03/context/product/checkout.md"
+      ],
+      "simulated_final_response": "The observed checkout behavior is published: subtotal plus 3. Its purpose is unknown, so the scope remains partial and Q-001 is saved. When available, why is this fee charged, and what intended policy should future changes preserve? An explanation is enough if no product document exists."
+    },
+    {
+      "case": 4,
+      "repo": "/private/tmp/bootstrap-context-editorial-evals/case-04",
+      "observed_decisions": [
+        "Established producer-to-consumer relationship from deploy/subscriptions.json, not an import or similar names.",
+        "Recorded event name/payload, ownership/non-ownership, and inventory handoff with PB traceability.",
+        "Classified the literal-equality test as inadequate and recorded producer, consumer, and routing verification gaps; no test infrastructure was added.",
+        "Marked complete for bounded code/config baseline; unavailable bus/inventory runtime guarantees are explicit coverage limits."
+      ],
+      "status": "complete",
+      "helper_errors": [],
+      "checks": "Helper freshness and check passed. Existing single test function executed directly via python3 -B and runpy at no-git; passed. No full pytest/CI run.",
+      "questions": null,
+      "artifacts": [
+        "/private/tmp/bootstrap-context-editorial-evals/case-04/.bootstrap/exclusions.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-04/.bootstrap/external.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-04/.bootstrap/questions.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-04/.bootstrap/remediation.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-04/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-04/.bootstrap/tracking.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-04/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-editorial-evals/case-04/context/engineering/warehouse.md",
+        "/private/tmp/bootstrap-context-editorial-evals/case-04/context/index.yaml",
+        "/private/tmp/bootstrap-context-editorial-evals/case-04/context/product/paid-order.md"
+      ],
+      "simulated_final_response": "The paid-order baseline is complete for the supplied code and configuration. Checkout publishes order.paid with the order ID; subscription configuration routes it to warehouse, which calls inventory.reserve with that ID. Ownership and handoff boundaries are documented. The existing test only compares literals; producer, consumer-contract, and routing checks are recorded as gaps."
+    }
+  ],
+  "instruction_clarity": "No substantive ambiguity blocked execution. For case 3, missing purpose blocks completion but not independently supported observed behavior; Q-001 targets the unpublished CAP-checkout-purpose claim while published PB-001 remains current. This requires agent judgment about affects IDs, consistent with the partial-publication guidance.",
+  "fixture_mutations": "Only .bootstrap/ and context/ artifacts were written within the four temporary repos; no source fixtures, skill, harness, or external systems were modified."
+}

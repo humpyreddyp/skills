@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "CMP-checkout",
+      "kind": "engineering",
+      "scope": "checkout",
+      "title": "Checkout implementation",
+      "behaviors": [],
+      "implements": [
+        "PB-012"
+      ],
+      "depends_on": [
+        "CAP-checkout"
+      ],
+      "path": "context/engineering/checkout.md",
+      "freshness": "current",
+      "reasons": []
+    },
+    {
+      "id": "CAP-checkout",
+      "kind": "product",
+      "scope": "checkout",
+      "title": "Checkout fee",
+      "behaviors": [
+        "PB-012"
+      ],
+      "implements": [],
+      "depends_on": [
+        "CMP-checkout"
+      ],
+      "path": "context/product/checkout.md",
+      "freshness": "current",
+      "reasons": []
+    }
+  ],
+  "exclusions": ".bootstrap/exclusions.yaml",
+  "questions": ".bootstrap/questions.yaml",
+  "read_contract": "Run freshness; use current pages only; respect active and needs-review exclusions."
+}

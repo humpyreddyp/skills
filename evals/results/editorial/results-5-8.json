@@ -1,0 +1,115 @@
+{
+  "5": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-05",
+    "decisions": "Validated matching answer, no FIX/IGNORE needed. Published PB-001 with packing rationale.",
+    "scope_status": "complete",
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "resolved",
+        "blocking": true
+      }
+    ],
+    "helper_errors": [],
+    "helper_notes": "Forward mutual dependency initially marked both publications stale; reviewed product republish and freshness made both current.",
+    "verification": "Inspected test_total and ran it directly with runpy; passed, no-git revision.",
+    "artifacts": [
+      "/private/tmp/bootstrap-context-editorial-evals/case-05/.bootstrap/exclusions.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-05/.bootstrap/external.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-05/.bootstrap/questions.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-05/.bootstrap/remediation.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-05/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-05/.bootstrap/tracking.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-05/context/engineering/checkout.md",
+      "/private/tmp/bootstrap-context-editorial-evals/case-05/context/index.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-05/context/product/fee.md"
+    ],
+    "simulated_response": "Q-001 is resolved: fee 3 and its packing-cost purpose agree with the documentation, code, and passing test. Product and engineering context are published and checkout is complete."
+  },
+  "6": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-06",
+    "decisions": "Preserved contradicting answer; did not infer FIX from request to change baseline.",
+    "scope_status": "waiting for human",
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "conflicting",
+        "blocking": true
+      }
+    ],
+    "helper_errors": [],
+    "helper_notes": "freshness and check passed; no blocked publication attempted.",
+    "verification": "Code/test/docs inspected. No tests needed for recording a decision; test execution not claimed.",
+    "artifacts": [
+      "/private/tmp/bootstrap-context-editorial-evals/case-06/.bootstrap/exclusions.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-06/.bootstrap/external.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-06/.bootstrap/questions.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-06/.bootstrap/remediation.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-06/.bootstrap/runs/fee.md",
+      "/private/tmp/bootstrap-context-editorial-evals/case-06/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-06/.bootstrap/tracking.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-06/context/index.yaml"
+    ],
+    "simulated_response": "Your answer says current fee 2, but docs/checkout.md, FEE=3, and the test expecting total(10)=13 all indicate fee 3. I saved your answer as conflicting and left the disputed claim unpublished. Should engineering FIX the implementation/tests/docs, or should a specific source or claim be IGNOREd (which one and why)? This choice is required by bootstrap-context/references/questions.md: \u201cNever infer a choice from silence or choose on their behalf.\u201d"
+  },
+  "7": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-07",
+    "decisions": "Recorded explicit FIX as open remediation only; preserved fee contradiction.",
+    "scope_status": "partial",
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "conflicting",
+        "blocking": true
+      }
+    ],
+    "helper_errors": [],
+    "helper_notes": "freshness and check passed; no blocked publication attempted.",
+    "verification": "Code/test/docs inspected. No tests needed for recording a decision; test execution not claimed.",
+    "artifacts": [
+      "/private/tmp/bootstrap-context-editorial-evals/case-07/.bootstrap/exclusions.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-07/.bootstrap/external.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-07/.bootstrap/questions.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-07/.bootstrap/remediation.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-07/.bootstrap/runs/fee.md",
+      "/private/tmp/bootstrap-context-editorial-evals/case-07/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-07/.bootstrap/tracking.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-07/context/index.yaml"
+    ],
+    "simulated_response": "Recorded R-001 for engineering to change the fee to 2 and update its test. No application code was changed. Q-001 remains conflicting and its fee claim unpublished until the completed remediation is verified; checkout remains partial."
+  },
+  "8": {
+    "repo": "/private/tmp/bootstrap-context-editorial-evals/case-08",
+    "decisions": "Recorded exact claim-level IGNORE and source snapshot; independently revalidated fee 3; retained document eligibility for other claims.",
+    "scope_status": "partial",
+    "questions": [
+      {
+        "id": "Q-001",
+        "status": "resolved",
+        "blocking": true
+      },
+      {
+        "id": "Q-002",
+        "status": "open",
+        "blocking": true
+      }
+    ],
+    "helper_errors": [],
+    "helper_notes": "Forward mutual dependency initially marked both publications stale; reviewed product republish and freshness made both current.",
+    "verification": "Inspected test_total and ran it directly with runpy; passed, no-git revision.",
+    "artifacts": [
+      "/private/tmp/bootstrap-context-editorial-evals/case-08/.bootstrap/exclusions.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-08/.bootstrap/external.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-08/.bootstrap/questions.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-08/.bootstrap/remediation.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-08/.bootstrap/runs/purpose.md",
+      "/private/tmp/bootstrap-context-editorial-evals/case-08/.bootstrap/state.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-08/.bootstrap/tracking.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-08/context/engineering/checkout.md",
+      "/private/tmp/bootstrap-context-editorial-evals/case-08/context/index.yaml",
+      "/private/tmp/bootstrap-context-editorial-evals/case-08/context/product/fee.md"
+    ],
+    "simulated_response": "Recorded X-001 for only the docs/checkout.md sentence \u201cThe fee is 2.\u201d Other document claims remain eligible. Q-001 is resolved using code and the passing test, and current fee-3 context is published. Checkout remains partial because its fee purpose is unknown: what product purpose does the fee serve, and what evidence supports it? bootstrap-context/references/evidence.md says to \u201cpublish the supported behavior and save the purpose question separately.\u201d"
+  },
+  "instruction_clarity": "The workflow clearly separates answer validation, FIX, and claim-level IGNORE. One judgment point: missing fee purpose can block scope completion while observed behavior is published; represented case 8 as partial with a separate purpose question. Existing fixture next_question=1 despite Q-001 was normalized to avoid duplicate IDs."
+}

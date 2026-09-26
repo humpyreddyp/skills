@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "The current docs, code and test all use fee 3; a stakeholder recalled fee 2.",
+    "sources": [
+      "docs/checkout.md",
+      "src/checkout.py",
+      "tests/test_checkout.py"
+    ],
+    "why": "Fee changes affect charged totals.",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "question": "Which fee should checkout apply?",
+    "blocking": true,
+    "status": "conflicting",
+    "answer": {
+      "summary": "Resolve Q-001. My GitHub ID is product-owner. The current fee is definitely 2; please make the baseline reflect that.",
+      "github_id": "product-owner",
+      "sources": []
+    },
+    "validation": "The human asserts current fee 2, while docs state fee 3 for packing costs, implementation adds FEE=3, and test_total expects 13 from subtotal 10. No version/environment/configuration distinction is present in this four-file repository."
+  }
+]

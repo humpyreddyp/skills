@@ -1,0 +1,46 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Docs say the fee is 2; implementation uses 3.",
+    "sources": [
+      "docs/checkout.md",
+      "src/checkout.py",
+      "tests/test_checkout.py"
+    ],
+    "why": "Fee changes affect charged totals.",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "question": "Which fee should checkout apply?",
+    "blocking": true,
+    "status": "resolved",
+    "answer": {
+      "summary": "IGNORE only the outdated docs/checkout.md claim that checkout fee is 2; current fee 3 is supported by code and test. Preserve other claims and recheck when fee documentation changes.",
+      "github_id": "product-owner",
+      "sources": [
+        "docs/checkout.md"
+      ]
+    },
+    "decision": "X-001",
+    "validation": "After excluding exactly the outdated fee-2 claim under X-001, inspected FEE=3 and test_total expectation 13 for subtotal 10 independently support current fee 3; the human answer agrees. Other claims in docs/checkout.md remain eligible. No fee-purpose evidence was found."
+  },
+  {
+    "id": "Q-002",
+    "scope": "checkout",
+    "found": "Code and test establish fee 3. The only doc claim describes the excluded old fee 2; no rationale exists in available files.",
+    "sources": [
+      "src/checkout.py",
+      "tests/test_checkout.py",
+      "docs/checkout.md"
+    ],
+    "why": "A future fee change needs the product rationale rather than an invented explanation.",
+    "affects": [
+      "CAP-fee-purpose"
+    ],
+    "question": "What product purpose does the fixed checkout fee serve, and is there a requirement or other evidence supporting that purpose?",
+    "blocking": true,
+    "status": "open"
+  }
+]

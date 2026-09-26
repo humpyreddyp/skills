@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "waiting for human",
+      "next_action": "Resolve Q-001 with a human FIX/IGNORE decision on the fee contradiction; receipt pages are reviewed and current."
+    }
+  },
+  "next_pb": 3,
+  "next_question": 2
+}

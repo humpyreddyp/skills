@@ -1,0 +1,29 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Current contract requires fee 2; implementation adds 3 and its test expects 13 from subtotal 10. No version, environment, flag, or date distinction reconciles these sources.",
+    "sources": [
+      {
+        "path": "docs/checkout.md"
+      },
+      {
+        "path": "src/checkout.py",
+        "section": "FEE,total"
+      },
+      {
+        "path": "tests/test_checkout.py",
+        "section": "test_total"
+      }
+    ],
+    "why": "The competing fee policies change customer totals and future implementation decisions.",
+    "affects": [
+      "PB-001",
+      "CAP-checkout",
+      "CMP-checkout"
+    ],
+    "question": "docs/checkout.md requires 2 for all current checkouts, but src/checkout.py adds 3 and test_total expects 13 for subtotal 10. Which policy should apply? Choose FIX and identify what should be corrected, or IGNORE and identify the exact outdated source or claim and why; you may leave this unresolved.",
+    "blocking": true,
+    "status": "conflicting"
+  }
+]

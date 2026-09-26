@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Resolve Q-001 about product purpose when evidence is available; observed arithmetic is published."
+    }
+  },
+  "next_pb": 2,
+  "next_question": 2
+}

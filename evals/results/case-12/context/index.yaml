@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "CMP-checkout",
+      "kind": "engineering",
+      "scope": "paid-order",
+      "title": "checkout",
+      "behaviors": [],
+      "implements": [
+        "PB-001"
+      ],
+      "depends_on": [
+        "CAP-paid-order"
+      ],
+      "path": "context/engineering/checkout.md",
+      "freshness": "current",
+      "reasons": []
+    },
+    {
+      "id": "CMP-warehouse",
+      "kind": "engineering",
+      "scope": "paid-order",
+      "title": "warehouse",
+      "behaviors": [],
+      "implements": [
+        "PB-002"
+      ],
+      "depends_on": [
+        "CAP-paid-order",
+        "CMP-checkout"
+      ],
+      "path": "context/engineering/warehouse.md",
+      "freshness": "current",
+      "reasons": []
+    },
+    {
+      "id": "CAP-paid-order",
+      "kind": "product",
+      "scope": "paid-order",
+      "title": "paid-order",
+      "behaviors": [
+        "PB-001",
+        "PB-002"
+      ],
+      "implements": [],
+      "depends_on": [],
+      "path": "context/product/paid-order.md",
+      "freshness": "current",
+      "reasons": []
+    }
+  ],
+  "exclusions": ".bootstrap/exclusions.yaml",
+  "questions": ".bootstrap/questions.yaml",
+  "read_contract": "Run freshness; use current pages only; respect active and needs-review exclusions."
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Published fee behavior is current; obtain missing rationale for Q-002 before broad checkout baseline completion"
+    }
+  },
+  "next_pb": 2,
+  "next_question": 3
+}

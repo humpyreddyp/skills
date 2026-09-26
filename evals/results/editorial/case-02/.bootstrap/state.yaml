@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "waiting for human",
+      "next_action": "Resume Q-001 when policy context is available; obtain explicit FIX or IGNORE before recording a disposition",
+      "checkpoint": ".bootstrap/runs/current.md"
+    }
+  },
+  "next_pb": 2,
+  "next_question": 2
+}

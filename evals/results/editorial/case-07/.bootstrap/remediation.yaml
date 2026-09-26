@@ -1,0 +1,23 @@
+[
+  {
+    "question_id": "Q-001",
+    "scope": "checkout",
+    "affects": [
+      "CAP-fee",
+      "PB-001"
+    ],
+    "decision": {
+      "choice": "FIX",
+      "human_statement": "FIX: engineering should change implementation to fee 2 and update tests; record remediation only.",
+      "github_id": "product-owner"
+    },
+    "status": "open",
+    "action": "Engineering: change src/checkout.py fee from 3 to 2 and update tests/test_checkout.py to assert total(10) == 12. Verify the completed change against docs/checkout.md before closing this remediation.",
+    "sources": [
+      "docs/checkout.md",
+      "src/checkout.py",
+      "tests/test_checkout.py"
+    ],
+    "id": "R-001"
+  }
+]

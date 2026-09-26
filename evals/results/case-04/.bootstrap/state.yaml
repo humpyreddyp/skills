@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "complete",
+      "next_action": "Revalidate source, subscription mapping and verification changes; runtime delivery guarantees are outside observed baseline."
+    }
+  },
+  "next_pb": 3,
+  "next_question": 1
+}

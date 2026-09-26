@@ -1,0 +1,27 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "Documentation says current fee is 2; implementation adds 3 and test asserts total(10)==13. No supplied environment, flag, or version evidence resolves this.",
+    "sources": [
+      {
+        "path": "src/checkout.py"
+      },
+      {
+        "path": "docs/checkout.md"
+      },
+      {
+        "path": "tests/test_checkout.py"
+      }
+    ],
+    "why": "Current fee is materially disputed; independent receipt behavior remains publishable.",
+    "affects": [
+      "PB-001",
+      "CAP-fee",
+      "CMP-fee"
+    ],
+    "question": "Choose FIX with the intended target rule and remediation, IGNORE with the precise outdated claim and rationale, or leave the fee unresolved.",
+    "blocking": true,
+    "status": "open"
+  }
+]

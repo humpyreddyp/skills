@@ -1,0 +1,36 @@
+{
+  "context/product/receipt.md": {
+    "sources": {
+      "path:src/receipt.py": "fecd98ac71a31b8b5bafcda08c1db57dfacdb9fc25ebc8cf2765bbfce83887df",
+      "path:docs/receipt.md": "872b825172694c24ef97b155a09f0db6c9d48489269058fdbe02cd6ec317c925"
+    },
+    "watches": {
+      "src/*.py": "d944a7094be959999ac3a42b31b6513c822ad3e3220affc763825ab9075340b3",
+      "docs/*.md": "43a4757d70322669aee26891e7cfc1479922ffe9eaa3fbf1ac542398959503a3",
+      "tests/test_receipt*.py": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "dependencies": {},
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "10c34ff98b01bdaa698c05dffdfa3f639cca83a469e01c84ffb0d646ebc235c3",
+    "status": "current",
+    "reasons": []
+  },
+  "context/engineering/receipt.md": {
+    "sources": {
+      "path:src/receipt.py": "fecd98ac71a31b8b5bafcda08c1db57dfacdb9fc25ebc8cf2765bbfce83887df",
+      "path:docs/receipt.md": "872b825172694c24ef97b155a09f0db6c9d48489269058fdbe02cd6ec317c925"
+    },
+    "watches": {
+      "src/*.py": "d944a7094be959999ac3a42b31b6513c822ad3e3220affc763825ab9075340b3",
+      "docs/*.md": "43a4757d70322669aee26891e7cfc1479922ffe9eaa3fbf1ac542398959503a3",
+      "tests/test_receipt*.py": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "dependencies": {
+      "CAP-receipt": "10c34ff98b01bdaa698c05dffdfa3f639cca83a469e01c84ffb0d646ebc235c3"
+    },
+    "exclusions": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "document_hash": "71ed8b05e80a49aec75f005241b9eb25fd4a43df814c520836f69217d9d31e8c",
+    "status": "current",
+    "reasons": []
+  }
+}

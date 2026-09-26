@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "paid-order": {
+      "status": "complete",
+      "next_action": "Run freshness before reuse. Obtain bus/inventory contracts before changes requiring delivery, retry or fulfillment guarantees."
+    }
+  },
+  "next_pb": 3,
+  "next_question": 1
+}

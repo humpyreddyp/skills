@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "partial",
+      "next_action": "Obtain purpose and intended fee policy for Q-001, validate against observed behavior, and complete purpose context"
+    }
+  },
+  "next_pb": 2,
+  "next_question": 2
+}

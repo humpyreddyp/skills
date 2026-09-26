@@ -1,0 +1,27 @@
+[
+  {
+    "id": "Q-001",
+    "scope": "checkout",
+    "found": "docs/checkout.md says current fee 2; src/checkout.py sets FEE=3; tests/test_checkout.py expects total(10)=13. No version/environment distinction settles this.",
+    "sources": [
+      {
+        "path": "docs/checkout.md"
+      },
+      {
+        "path": "src/checkout.py"
+      },
+      {
+        "path": "tests/test_checkout.py"
+      }
+    ],
+    "why": "The fee rule is disputed and cannot safely guide future changes.",
+    "affects": [
+      "CAP-fee",
+      "CMP-fee",
+      "PB-001"
+    ],
+    "question": "Which fee should apply? Choose FIX with correction to record, or IGNORE with the exact outdated claim and rationale; you may also leave this unresolved.",
+    "blocking": true,
+    "status": "conflicting"
+  }
+]

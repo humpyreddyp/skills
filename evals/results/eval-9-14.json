@@ -1,0 +1,305 @@
+{
+  "cases": [
+    {
+      "case": 9,
+      "repo": "/private/tmp/bootstrap-context-behavior-v1/case-09",
+      "outcome": "completed",
+      "observations": [
+        "Resumed saved checkpoint without asking for previous conversation. Verified listed source evidence, preserved scope, allocated PB-012 (next_pb was 12), and completed product/component linkage. Removed obsolete saved finding after publication.",
+        "Initial model error passed absolute --draft path; helper rejected it clearly and no publication occurred. Retried with repository-relative path.",
+        "Mutually dependent product/component publication yielded structurally valid but stale pages; complete checkpoint correctly rejected. Republishing reviewed product after component existed restored current freshness. This recovery is not explained explicitly in command guidance."
+      ],
+      "errors": [
+        "absolute draft path rejected and recovered",
+        "completion checkpoint blocked stale mutual dependencies; recovered by reviewed republish"
+      ],
+      "response": "Resumed the saved checkout scope and published PB-012 with engineering and verification links. Scope complete; run freshness before reuse.",
+      "state": {
+        "schema_version": 1,
+        "scopes": {
+          "checkout": {
+            "status": "complete",
+            "next_action": "Run freshness before reuse and revalidate changed evidence."
+          }
+        },
+        "next_pb": 13,
+        "next_question": 1
+      },
+      "freshness": {
+        "pages": {
+          "context/product/checkout.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/checkout.md": {
+            "status": "current",
+            "reasons": []
+          }
+        }
+      },
+      "artifact_paths": [
+        "/private/tmp/bootstrap-context-behavior-v1/case-09/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-09/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-09/context/product/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-09/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-09/.bootstrap/tracking.yaml"
+      ],
+      "cleanup_check": {
+        "remaining_run_files": []
+      }
+    },
+    {
+      "case": 10,
+      "repo": "/private/tmp/bootstrap-context-behavior-v1/case-10",
+      "outcome": "completed",
+      "observations": [
+        "Initial bounded scan saw 1204 paths and truncated list; narrowed scan to src instead of inferring absence. Read only 4 relevant files and no noise file contents. Published fee/rationale/inventory boundary plus check linkage."
+      ],
+      "errors": [],
+      "response": "Published the checkout baseline after inspecting four relevant files. Fee behavior, packing-cost rationale, inventory boundary, and existing verification are linked; unrelated modules were not inspected.",
+      "state": {
+        "schema_version": 1,
+        "scopes": {
+          "checkout": {
+            "status": "complete",
+            "next_action": "Run freshness before reuse and revalidate changed checkout evidence."
+          }
+        },
+        "next_pb": 2,
+        "next_question": 1
+      },
+      "freshness": {
+        "pages": {
+          "context/product/checkout.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/checkout.md": {
+            "status": "current",
+            "reasons": []
+          }
+        }
+      },
+      "artifact_paths": [
+        "/private/tmp/bootstrap-context-behavior-v1/case-10/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-10/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-10/context/product/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-10/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-10/.bootstrap/tracking.yaml"
+      ],
+      "cleanup_check": {
+        "remaining_run_files": []
+      }
+    },
+    {
+      "case": 11,
+      "repo": "/private/tmp/bootstrap-context-behavior-v1/case-11",
+      "outcome": "supported subset published; human input required",
+      "observations": [
+        "Investigated all six relevant supplied files. Material fee contradiction remained; allocated PB-001 but withheld disputed fee pages. Persisted blocking Q-001. Independently published PB-002 receipt product/component pages with verification gap and receipt-test watch. Scope waiting for human; no decision inferred.",
+        "Follow-up audit: receipt publication draft had already been removed by the original evaluator before audit; runs directory is empty. No cleanup deletion was needed. Re-publishing receipt pages to add a test discovery watch temporarily made the scope needs revalidation; all pages were current afterward, but the final waiting-for-human checkpoint had been omitted. Recovered with an explicit checkpoint preserving Q-001 and its next action."
+      ],
+      "errors": [
+        "Final scope checkpoint omitted after late receipt republish; stale scope status recovered to waiting for human."
+      ],
+      "response": "Published the supported receipt baseline. The fee remains blocked: documentation says 2, but code and the test use 3. For Q-001, choose FIX with the intended rule and remediation target, IGNORE a precise outdated claim with rationale, or leave it unresolved. Bootstrap will only record the decision.",
+      "state": {
+        "schema_version": 1,
+        "scopes": {
+          "checkout": {
+            "status": "waiting for human",
+            "next_action": "Resolve Q-001 with a human FIX/IGNORE decision on the fee contradiction; receipt pages are reviewed and current."
+          }
+        },
+        "next_pb": 3,
+        "next_question": 2
+      },
+      "freshness": {
+        "pages": {
+          "context/product/receipt.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/receipt.md": {
+            "status": "current",
+            "reasons": []
+          }
+        }
+      },
+      "artifact_paths": [
+        "/private/tmp/bootstrap-context-behavior-v1/case-11/context/engineering/receipt.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-11/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-11/context/product/receipt.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-11/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-11/.bootstrap/tracking.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-11/.bootstrap/questions.yaml"
+      ],
+      "cleanup_check": {
+        "remaining_run_files": []
+      }
+    },
+    {
+      "case": 12,
+      "repo": "/private/tmp/bootstrap-context-behavior-v1/case-12",
+      "outcome": "completed",
+      "observations": [
+        "Traced checkout -> order.paid payload -> deployment subscription -> warehouse handler -> injected inventory. Product behaviors link to two components and verification expectations. Classified constant-string test as lacking implementation assurance, discovered exact CI command, and did not report tests run. Documented missing runtime bus/inventory evidence and did not invent delivery guarantees."
+      ],
+      "errors": [],
+      "response": "Published paid-order product and engineering context linking checkout, event payload, subscription, warehouse, and verification gaps. The supplied test does not exercise the flow; runtime bus/inventory guarantees remain outside available evidence.",
+      "state": {
+        "schema_version": 1,
+        "scopes": {
+          "paid-order": {
+            "status": "complete",
+            "next_action": "Run freshness before reuse. Obtain bus/inventory contracts before changes requiring delivery, retry or fulfillment guarantees."
+          }
+        },
+        "next_pb": 3,
+        "next_question": 1
+      },
+      "freshness": {
+        "pages": {
+          "context/product/paid-order.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/checkout.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/warehouse.md": {
+            "status": "current",
+            "reasons": []
+          }
+        }
+      },
+      "artifact_paths": [
+        "/private/tmp/bootstrap-context-behavior-v1/case-12/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-12/context/engineering/warehouse.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-12/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-12/context/product/paid-order.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-12/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-12/.bootstrap/tracking.yaml"
+      ],
+      "cleanup_check": {
+        "remaining_run_files": []
+      }
+    },
+    {
+      "case": 13,
+      "repo": "/private/tmp/bootstrap-context-behavior-v1/case-13",
+      "outcome": "completed",
+      "observations": [
+        "Read saved state/index first, status and freshness. Marked only CAP-fee and CMP-fee needs revalidation; CAP-receipt and CMP-receipt stay current. Baseline pages were read only and not rewritten. Saved targeted next action. Source now fee 4 while documentation/test remain fee 3; review this conflict before re-publication.",
+        "Follow-up cleanup audit preserved preexisting .bootstrap/runs/draft.md under the status-only scope; no baseline or preexisting draft was removed."
+      ],
+      "errors": [],
+      "response": "Fee product and engineering pages need revalidation after the checkout source change; receipt pages remain current. No baseline pages were rewritten. Review the changed fee against documentation and test before restoring trust.",
+      "state": {
+        "schema_version": 1,
+        "scopes": {
+          "checkout": {
+            "status": "needs revalidation",
+            "next_action": "Revalidate PB-001 and CAP-fee/CMP-fee against changed checkout source and fee documentation/test; preserve receipt context. Do not rewrite pages until requested."
+          }
+        },
+        "next_pb": 1,
+        "next_question": 1
+      },
+      "freshness": {
+        "pages": {
+          "context/product/fee.md": {
+            "status": "needs revalidation",
+            "reasons": [
+              "sources changed"
+            ]
+          },
+          "context/engineering/fee.md": {
+            "status": "needs revalidation",
+            "reasons": [
+              "sources changed",
+              "dependency needs revalidation: CAP-fee"
+            ]
+          },
+          "context/product/receipt.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/receipt.md": {
+            "status": "current",
+            "reasons": []
+          }
+        }
+      },
+      "artifact_paths": [
+        "/private/tmp/bootstrap-context-behavior-v1/case-13/context/engineering/fee.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-13/context/engineering/receipt.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-13/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-13/context/product/fee.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-13/context/product/receipt.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-13/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-13/.bootstrap/tracking.yaml"
+      ],
+      "cleanup_check": {
+        "remaining_run_files": [
+          ".bootstrap/runs/draft.md"
+        ]
+      }
+    },
+    {
+      "case": 14,
+      "repo": "/private/tmp/bootstrap-context-behavior-v1/case-14",
+      "outcome": "completed",
+      "observations": [
+        "Documented checkout does not reserve stock or guarantee fulfillment; warehouse does not collect payment. Used explicit docs plus local implementation, not mere import absence. Traced subscription-backed handoff and documented decoupling rationale. Linked product/component/verification gap records."
+      ],
+      "errors": [],
+      "response": "Published checkout and warehouse responsibilities, explicit non-ownership boundaries, configured event handoff, and verification gaps. Runtime delivery and fulfillment are not established by the supplied evidence.",
+      "state": {
+        "schema_version": 1,
+        "scopes": {
+          "paid-order": {
+            "status": "complete",
+            "next_action": "Run freshness before reuse. Obtain bus/inventory contracts before changes requiring delivery, retry or fulfillment guarantees."
+          }
+        },
+        "next_pb": 3,
+        "next_question": 1
+      },
+      "freshness": {
+        "pages": {
+          "context/product/paid-order.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/checkout.md": {
+            "status": "current",
+            "reasons": []
+          },
+          "context/engineering/warehouse.md": {
+            "status": "current",
+            "reasons": []
+          }
+        }
+      },
+      "artifact_paths": [
+        "/private/tmp/bootstrap-context-behavior-v1/case-14/context/engineering/checkout.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-14/context/engineering/warehouse.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-14/context/index.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-14/context/product/paid-order.md",
+        "/private/tmp/bootstrap-context-behavior-v1/case-14/.bootstrap/state.yaml",
+        "/private/tmp/bootstrap-context-behavior-v1/case-14/.bootstrap/tracking.yaml"
+      ],
+      "cleanup_check": {
+        "remaining_run_files": []
+      }
+    }
+  ],
+  "failures": [],
+  "workflow_friction": [
+    "Incremental mutual-dependency publication requires republishing reviewed product after engineering page exists, even though structural check passes. Document this recovery.",
+    "After a late dependency-related republish restores page freshness, scope status still requires an explicit final checkpoint; evaluator corrected case 11 to waiting for human."
+  ],
+  "execution_notes": "No application sources or original baseline pages in case 13 were changed. No repository tests were executed. No external systems or human questions were invoked."
+}

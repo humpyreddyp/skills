@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scopes": {
+    "checkout": {
+      "status": "needs revalidation",
+      "next_action": "Investigate changed src/checkout.py against fee product and engineering claims before republishing; leave receipt pages unchanged"
+    }
+  },
+  "next_pb": 1,
+  "next_question": 1
+}

@@ -1,0 +1,8 @@
+{
+  "answer-Q-001": {
+    "label": "Product owner answer to Q-001",
+    "location": ".bootstrap/questions.yaml#Q-001",
+    "revision": "sha256:77537ce97ca18e866b20e3459e8b4fdb9d253b7d63a1014db5ddd80ab527d5f2",
+    "review_after": "2026-10-25"
+  }
+}

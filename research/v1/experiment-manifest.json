@@ -1,0 +1,646 @@
+{
+  "schema_version": 1,
+  "experiment_id": "bootstrap-context-v1-behavioral-baseline",
+  "research_name": "Bootstrap Context V1",
+  "skill_name": "bootstrap-context",
+  "skill_version": "v0.1",
+  "status": "frozen",
+  "freeze_date": "2026-09-26",
+  "date_timezone": "America/New_York",
+  "git_commit": "eb996aa8d59458a3d0d9b411bf4680cbbe9b86fc",
+  "git_tag": "bootstrap-context-v0.1",
+  "git_tree": "15d04b78aa05de5a708df3a68c5f35e012c99674",
+  "revision_record": {
+    "evaluation_preceded_first_git_commit": true,
+    "historical_revision_label": "editorial-2026-09-26",
+    "snapshot_author": "Codex <codex@local.invalid>",
+    "repository_remote": null,
+    "repository_remote_note": "Local snapshot; no publication or remote URL recorded.",
+    "research_documents": "Handoff, evidence index, manifest and downstream design are a follow-up documentation commit referencing this immutable source/evidence commit."
+  },
+  "skill_directory": "bootstrap-context",
+  "skill_files": [
+    {
+      "path": "bootstrap-context/SKILL.md",
+      "sha256": "0c67613e3f68b1ed99bda98138eeeb07512d243ff764eeabc9f35011316443e2"
+    },
+    {
+      "path": "bootstrap-context/agents/openai.yaml",
+      "sha256": "5c9c0815037bc2cc7038bb5b799adc965e4999b580012a8eb2129032388935d2"
+    },
+    {
+      "path": "bootstrap-context/references/evidence.md",
+      "sha256": "90fc9eff51a293d258d2981ac2e239412ad9ce7a66dac355c27384605c08d99d"
+    },
+    {
+      "path": "bootstrap-context/references/questions.md",
+      "sha256": "bfec60eecc48552248c1ad89f17d8efc877b68e907fc207ce758d3c648b205e2"
+    },
+    {
+      "path": "bootstrap-context/references/state-format.md",
+      "sha256": "95397e5b357c07ed2d13d460daa2d299f1ea4ff80cab74b407d99a87978ee4bc"
+    },
+    {
+      "path": "bootstrap-context/references/commands.md",
+      "sha256": "48de5ffb0eed5059d65b63c73620c9832c88db77cb7b4b794231a27e9bf86e23"
+    },
+    {
+      "path": "bootstrap-context/assets/product.md",
+      "sha256": "80433bb4287c88fc64fb7f02ee52538a7daa41796fc82ad687bd4ba1225b552a"
+    },
+    {
+      "path": "bootstrap-context/assets/engineering.md",
+      "sha256": "cbe5344aac0da5e949d5e4ad6e7b32d888757ed46dc3463f05ef2542c0ad3f0c"
+    },
+    {
+      "path": "bootstrap-context/scripts/bootstrap.py",
+      "sha256": "f4a51f84d0499e6e2754770e8e31293c31925edd7f584c55c4017156fdf31c08"
+    }
+  ],
+  "distribution": {
+    "path": "bootstrap-context.zip",
+    "sha256": "50f56dce38e88b68a4b3df16333771bc2d2b1d4872138e2e479869442b802aa0",
+    "contains_exact_nine_runtime_files": true,
+    "installed_copy_matched_at_freeze": true,
+    "installed_copy_is_authoritative": false
+  },
+  "evaluation_dates": {
+    "initial_behavioral": "2026-09-25",
+    "targeted_reruns": "2026-09-25",
+    "editorial_behavioral": "2026-09-26",
+    "helper_freeze_check_utc": "2026-09-26T13:28:26.341798+00:00",
+    "source": "evals/RESULTS.md and supplemental helper result timestamps; exact historical per-case times unavailable"
+  },
+  "models": {
+    "model_ids": null,
+    "reasoning_settings": null,
+    "sampling_settings": null,
+    "seeds": null,
+    "host": "Codex desktop",
+    "evaluator_sessions": [
+      {
+        "cases": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "model": null,
+        "reasoning": null,
+        "selection": "inherited parent configuration; no explicit override recorded"
+      },
+      {
+        "cases": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "model": null,
+        "reasoning": null,
+        "selection": "inherited parent configuration; no explicit override recorded"
+      },
+      {
+        "cases": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "model": null,
+        "reasoning": null,
+        "selection": "inherited parent configuration; no explicit override recorded"
+      }
+    ],
+    "unknown_reason": "Exact historical model identifiers and reasoning configuration were not persisted in the evaluation reports; no values inferred from current host defaults."
+  },
+  "methodology": {
+    "kind": "development-time synthetic behavioral execution and deterministic helper regressions",
+    "behavioral_reports_contain_actual_generated_artifacts": true,
+    "parent_review": "Reports and representative generated artifacts inspected against scenario expectations.",
+    "blinded_external_adjudication": false,
+    "shared_sessions_within_groups": true,
+    "repeated_statistical_sampling": false,
+    "human_inputs": "Specified fixture answers/decisions; unresolved questions represented by simulated responses.",
+    "pass_semantics": "Correct supported, partial, waiting-for-human or needs-revalidation behavior; not universal baseline completion."
+  },
+  "fixture_generator": {
+    "path": "evals/make_fixtures.py",
+    "version": "git:eb996aa8d59458a3d0d9b411bf4680cbbe9b86fc",
+    "sha256": "a8b103a78c76ec36f0299fd1e744e17795eadd208ac7f07b8ba34b8effa8d450",
+    "runtime_helper_sha256": "f4a51f84d0499e6e2754770e8e31293c31925edd7f584c55c4017156fdf31c08",
+    "dependencies": "Python standard library, Python >=3.9; invokes frozen helper",
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 evals/make_fixtures.py /tmp/bootstrap-context-v1-fresh-fixtures",
+    "destination_must_not_exist": true,
+    "requests_snapshot": "research/v1/evidence/editorial-requests.json",
+    "retained_source_archive": "research/v1/evidence/editorial-fixture-source-files.zip",
+    "source_inventory": "research/v1/evidence/fixture-source-inventory.json",
+    "reproduction_limits": [
+      "State timestamps, absolute repository paths and Git environment metadata can vary.",
+      "Retained source archive was captured after evaluation, not an independently timestamped pre-run snapshot.",
+      "Recreate seed state with the generator; archived final state/context are outcomes, not fresh input.",
+      "Behavioral agents must receive requests and fixtures, not reports or expected-outcome tables."
+    ]
+  },
+  "behavioral_scenarios": [
+    {
+      "id": "BCV1-01",
+      "historical_case_id": 1,
+      "name": "Stale docs versus current code",
+      "assessment": "expected outcome reached",
+      "observation": "Historical v1 fee distinguished from current v2; complete without unnecessary question.",
+      "editorial_report": "evals/results/editorial/results-1-4.json",
+      "report_json_pointer": "/cases/0",
+      "artifacts": "evals/results/editorial/case-01",
+      "initial_final_artifacts": "evals/results/case-01",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/1/request",
+      "initial_targeted_rerun": true
+    },
+    {
+      "id": "BCV1-02",
+      "historical_case_id": 2,
+      "name": "Current docs/code contradiction",
+      "assessment": "expected outcome reached",
+      "observation": "Disputed fee withheld; Q-001 saved; waiting for human.",
+      "editorial_report": "evals/results/editorial/results-1-4.json",
+      "report_json_pointer": "/cases/1",
+      "artifacts": "evals/results/editorial/case-02",
+      "initial_final_artifacts": "evals/results/case-02",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/2/request",
+      "initial_targeted_rerun": false
+    },
+    {
+      "id": "BCV1-03",
+      "historical_case_id": 3,
+      "name": "Missing product context",
+      "assessment": "expected outcome reached",
+      "observation": "Observed arithmetic supported; rationale unknown; partial.",
+      "editorial_report": "evals/results/editorial/results-1-4.json",
+      "report_json_pointer": "/cases/2",
+      "artifacts": "evals/results/editorial/case-03",
+      "initial_final_artifacts": "evals/results/case-03",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/3/request",
+      "initial_targeted_rerun": false
+    },
+    {
+      "id": "BCV1-04",
+      "historical_case_id": 4,
+      "name": "Hidden cross-component dependency",
+      "assessment": "expected outcome reached",
+      "observation": "Event/deployment subscription connects checkout to warehouse; runtime assurance not invented.",
+      "editorial_report": "evals/results/editorial/results-1-4.json",
+      "report_json_pointer": "/cases/3",
+      "artifacts": "evals/results/editorial/case-04",
+      "initial_final_artifacts": "evals/results/case-04",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/4/request",
+      "initial_targeted_rerun": false
+    },
+    {
+      "id": "BCV1-05",
+      "historical_case_id": 5,
+      "name": "Supported human answer",
+      "assessment": "expected outcome reached",
+      "observation": "Supported answer and supplied identity recorded; linked baseline complete.",
+      "editorial_report": "evals/results/editorial/results-5-8.json",
+      "report_json_pointer": "/5",
+      "artifacts": "evals/results/editorial/case-05",
+      "initial_final_artifacts": "evals/results/case-05",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/5/request",
+      "initial_targeted_rerun": true
+    },
+    {
+      "id": "BCV1-06",
+      "historical_case_id": 6,
+      "name": "Conflicting human answer",
+      "assessment": "expected outcome reached",
+      "observation": "Conflicting answer retained; unsupported rewrite withheld.",
+      "editorial_report": "evals/results/editorial/results-5-8.json",
+      "report_json_pointer": "/6",
+      "artifacts": "evals/results/editorial/case-06",
+      "initial_final_artifacts": "evals/results/case-06",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/6/request",
+      "initial_targeted_rerun": false
+    },
+    {
+      "id": "BCV1-07",
+      "historical_case_id": 7,
+      "name": "Human chooses FIX",
+      "assessment": "expected outcome reached",
+      "observation": "Open remediation recorded; no application fix; claim unresolved.",
+      "editorial_report": "evals/results/editorial/results-5-8.json",
+      "report_json_pointer": "/7",
+      "artifacts": "evals/results/editorial/case-07",
+      "initial_final_artifacts": "evals/results/case-07",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/7/request",
+      "initial_targeted_rerun": false
+    },
+    {
+      "id": "BCV1-08",
+      "historical_case_id": 8,
+      "name": "Human chooses IGNORE",
+      "assessment": "expected outcome reached",
+      "observation": "Only specified claim excluded; fingerprint/recheck trigger retained; purpose gap remains.",
+      "editorial_report": "evals/results/editorial/results-5-8.json",
+      "report_json_pointer": "/8",
+      "artifacts": "evals/results/editorial/case-08",
+      "initial_final_artifacts": "evals/results/case-08",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/8/request",
+      "initial_targeted_rerun": true
+    },
+    {
+      "id": "BCV1-09",
+      "historical_case_id": 9,
+      "name": "Fresh-session resume",
+      "assessment": "expected outcome reached",
+      "observation": "PB-012 preserved and next ID advanced; saved publication resumed; obsolete checkpoint removed.",
+      "editorial_report": "evals/results/editorial/results-9-14.json",
+      "report_json_pointer": "/0",
+      "artifacts": "evals/results/editorial/case-09",
+      "initial_final_artifacts": "evals/results/case-09",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/9/request",
+      "initial_targeted_rerun": true
+    },
+    {
+      "id": "BCV1-10",
+      "historical_case_id": 10,
+      "name": "Large/noisy repository",
+      "assessment": "expected outcome reached",
+      "observation": "Four relevant files inspected after narrowing; 1200 unrelated modules avoided.",
+      "editorial_report": "evals/results/editorial/results-9-14.json",
+      "report_json_pointer": "/1",
+      "artifacts": "evals/results/editorial/case-10",
+      "initial_final_artifacts": "evals/results/case-10",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/10/request",
+      "initial_targeted_rerun": false
+    },
+    {
+      "id": "BCV1-11",
+      "historical_case_id": 11,
+      "name": "Incremental publication",
+      "assessment": "expected outcome reached",
+      "observation": "Receipt published; conflicting fee unpublished; waiting question retained.",
+      "editorial_report": "evals/results/editorial/results-9-14.json",
+      "report_json_pointer": "/2",
+      "artifacts": "evals/results/editorial/case-11",
+      "initial_final_artifacts": "evals/results/case-11",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/11/request",
+      "initial_targeted_rerun": false
+    },
+    {
+      "id": "BCV1-12",
+      "historical_case_id": 12,
+      "name": "Behavior to implementation to verification traceability",
+      "assessment": "expected outcome reached",
+      "observation": "Product IDs linked to components/dependencies and verification gaps.",
+      "editorial_report": "evals/results/editorial/results-9-14.json",
+      "report_json_pointer": "/3",
+      "artifacts": "evals/results/editorial/case-12",
+      "initial_final_artifacts": "evals/results/case-12",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/12/request",
+      "initial_targeted_rerun": false
+    },
+    {
+      "id": "BCV1-13",
+      "historical_case_id": 13,
+      "name": "Selective freshness after changed source",
+      "assessment": "expected outcome reached",
+      "observation": "Fee context needs revalidation; receipt current; Markdown unchanged.",
+      "editorial_report": "evals/results/editorial/results-9-14.json",
+      "report_json_pointer": "/4",
+      "artifacts": "evals/results/editorial/case-13",
+      "initial_final_artifacts": "evals/results/case-13",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/13/request",
+      "initial_targeted_rerun": false
+    },
+    {
+      "id": "BCV1-14",
+      "historical_case_id": 14,
+      "name": "Responsibility and negative boundaries",
+      "assessment": "expected outcome reached",
+      "observation": "Ownership, non-ownership and handoff documented without fulfillment guarantee.",
+      "editorial_report": "evals/results/editorial/results-9-14.json",
+      "report_json_pointer": "/5",
+      "artifacts": "evals/results/editorial/case-14",
+      "initial_final_artifacts": "evals/results/case-14",
+      "request_file": "research/v1/evidence/editorial-requests.json",
+      "request_json_pointer": "/14/request",
+      "initial_targeted_rerun": false
+    }
+  ],
+  "behavioral_scenario_count": 14,
+  "helper_tests": {
+    "test_file": "evals/test_runtime.py",
+    "test_file_sha256": "d8568d674e9da2e69fcc248c1a23be6128a353ec6bbeafb35e0eab3cd081edc9",
+    "count": 23,
+    "historical_results": [
+      {
+        "python_version": "3.9.6",
+        "passed": 23,
+        "evidence": "evals/results/initial-manifest.json",
+        "raw_console_log_retained": false
+      },
+      {
+        "python_version": "3.14.2",
+        "passed": 23,
+        "evidence": "evals/results/initial-manifest.json",
+        "raw_console_log_retained": false
+      },
+      {
+        "python_version": "3.14.2",
+        "passed": 23,
+        "phase": "editorial",
+        "evidence": "evals/results/manifest.json",
+        "raw_console_log_retained": false
+      }
+    ],
+    "supplemental_freeze_verification": {
+      "json": "research/v1/evidence/helper-freeze-check/results.json",
+      "verbose_log": "research/v1/evidence/helper-freeze-check/unittest.txt",
+      "runner": "research/v1/tools/capture_helper_checks.py",
+      "purpose": "Capture fresh durable per-test results without changing runtime files; not a historical transcript.",
+      "environment": {
+        "python_version": "3.14.2",
+        "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "platform": "macOS-15.7.9-arm64-arm-64bit-Mach-O",
+        "machine": "arm64",
+        "dependencies": "Python standard library; no model API or network"
+      },
+      "tests_run": 23,
+      "passed": 23,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "id": "test_runtime.RuntimeTests.test_bounded_scan_skips_dependencies_and_marks_truncation",
+          "status": "passed",
+          "duration_seconds": 0.09412712499988629
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_changed_dependency_doc_invalidates_even_when_republished",
+          "status": "passed",
+          "duration_seconds": 0.19927404200007004
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_changed_source_invalidates_only_related_pages",
+          "status": "passed",
+          "duration_seconds": 0.20030358399981196
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_complete_requires_linked_fresh_scope",
+          "status": "passed",
+          "duration_seconds": 0.23087524999982634
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_cyclic_dependencies_can_recover",
+          "status": "passed",
+          "duration_seconds": 0.19892470800004958
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_decision_interruption_recovers_without_duplicate",
+          "status": "passed",
+          "duration_seconds": 0.11957954199988308
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_dependency_propagation_and_revalidation",
+          "status": "passed",
+          "duration_seconds": 0.26521670799957064
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_external_revision_expiry_and_selectivity",
+          "status": "passed",
+          "duration_seconds": 0.2022289589999673
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_fix_never_changes_application_or_resolves_question",
+          "status": "passed",
+          "duration_seconds": 0.11630337499991583
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_ignore_is_scoped_and_source_changes_require_review",
+          "status": "passed",
+          "duration_seconds": 0.15818562499998734
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_lock_and_unknown_schema_preserve_state",
+          "status": "passed",
+          "duration_seconds": 0.11933033400009663
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_manual_page_edit_is_untrusted",
+          "status": "passed",
+          "duration_seconds": 0.12418225000010352
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_material_question_blocks_only_affected_publication",
+          "status": "passed",
+          "duration_seconds": 0.12472600000000966
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_missing_tracking_fails_closed",
+          "status": "passed",
+          "duration_seconds": 0.12807800000018688
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_nested_context_package_is_real_evidence",
+          "status": "passed",
+          "duration_seconds": 0.12814250000019456
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_path_escape_and_symlink_writes_rejected",
+          "status": "passed",
+          "duration_seconds": 0.12061937499993292
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_removed_source_does_not_refresh_trust",
+          "status": "passed",
+          "duration_seconds": 0.16048408399956315
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_resume_preserves_ids_and_checkpoint",
+          "status": "passed",
+          "duration_seconds": 0.19898425000019415
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_revalidated_scope_returns_to_partial_not_stale",
+          "status": "passed",
+          "duration_seconds": 0.1640798330004145
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_scope_expansion_preserves_old_scope",
+          "status": "passed",
+          "duration_seconds": 0.08287483399999473
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_traceability_requires_product_anchor_and_verification",
+          "status": "passed",
+          "duration_seconds": 0.2937251660000584
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_watch_detects_new_hidden_consumer",
+          "status": "passed",
+          "duration_seconds": 0.12776875000008658
+        },
+        {
+          "id": "test_runtime.RuntimeTests.test_watch_zero_directory_glob",
+          "status": "passed",
+          "duration_seconds": 0.1277444170000308
+        }
+      ]
+    },
+    "reproduce_command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s evals -p 'test_*.py' -v"
+  },
+  "results": {
+    "narrative": "evals/RESULTS.md",
+    "initial_reports": [
+      "evals/results/eval-1-4.json",
+      "evals/results/eval-5-8.json",
+      "evals/results/eval-9-14.json"
+    ],
+    "targeted_rerun_reports": [
+      "evals/results/rerun-1-9.json",
+      "evals/results/rerun-5-8.json"
+    ],
+    "editorial_reports": [
+      "evals/results/editorial/results-1-4.json",
+      "evals/results/editorial/results-5-8.json",
+      "evals/results/editorial/results-9-14.json"
+    ],
+    "historical_hash_manifests": [
+      "evals/results/initial-manifest.json",
+      "evals/results/manifest.json"
+    ],
+    "development_documents": [
+      "DESIGN.md",
+      "REPORT.md"
+    ],
+    "detailed_failures_and_limitations": "evals/RESULTS.md",
+    "integrity_index": "research/v1/EVIDENCE-INDEX.json",
+    "integrity_index_sha256": "fb418a15b0cc945089a55f273d6568b654374272563d4a7606a8d953f26fef97",
+    "original_evidence_hashes": "research/v1/evidence/pre-freeze-sha256.json"
+  },
+  "historical_path_mappings": [
+    {
+      "from_prefix": "/private/tmp/bootstrap-context-editorial-evals/case-XX",
+      "to_prefix": "evals/results/editorial/case-XX",
+      "note": "Archived context and .bootstrap outputs; source inputs in retained ZIP or fixture generator."
+    },
+    {
+      "from_prefix": "/private/tmp/bootstrap-context-behavior-v1/case-XX",
+      "to_prefix": "evals/results/case-XX",
+      "note": "Final archived outputs; cases 01,05,08,09 use targeted-rerun outputs, not separate original intermediate states."
+    },
+    {
+      "from_prefix": "/private/tmp/bootstrap-context-behavior-v2/case-XX",
+      "to_prefix": "evals/results/case-XX",
+      "note": "Targeted-rerun final outputs for cases 01,05,08,09."
+    }
+  ],
+  "development_history": [
+    {
+      "event": "Initial recursive-watch failure",
+      "result": "20/21 helper tests passed",
+      "correction": "Anchored segment matcher for recursive watches; regression passed."
+    },
+    {
+      "event": "Absolute draft paths and unpublished-ID invalidation",
+      "result": "Safely rejected helper calls",
+      "correction": "Explicit command guidance and targeted reruns 1,5,8,9."
+    },
+    {
+      "event": "Mutual forward dependencies stale",
+      "result": "Completion correctly rejected",
+      "correction": "Reviewed republishing and documented final pass."
+    },
+    {
+      "event": "Scope stayed stale after pages current",
+      "correction": "Return scope to partial for explicit final checkpoint; regression added; case11 checkpoint recovered."
+    },
+    {
+      "event": "Nested src/context excluded",
+      "correction": "Root-only generated-output skipping; regression added."
+    },
+    {
+      "event": "Cross-session cleanup ambiguity",
+      "correction": "Clarified Bootstrap-owned obsolete checkpoint cleanup; case9 verified."
+    },
+    {
+      "event": "Editorial evaluation launch authentication failure",
+      "correction": "Retry succeeded before any affected task execution; no user credentials changed."
+    },
+    {
+      "event": "Editorial case9 JSON response parsing error",
+      "correction": "Recovered allocated PB-012 without reset; commands.md JSON-output explanation added afterward."
+    }
+  ],
+  "coverage_caveat": {
+    "post_behavioral_documentation_clarification": true,
+    "path": "bootstrap-context/references/commands.md",
+    "description": "Successful commands print JSON; allocate-pb exposes behavior field.",
+    "full_behavioral_rerun_after_clarification": false,
+    "helper_unchanged": true,
+    "exact_preclarification_source_snapshot_available": false
+  },
+  "limitations": [
+    "Synthetic development cases; no real-repository downstream task comparison.",
+    "No exact historical model/reasoning/seed metadata or complete raw model transcripts.",
+    "No blinded independent adjudication or statistical generalization.",
+    "No live Claude Code, remote-system integration, or adversarial suite.",
+    "Model judgments and undeclared dependencies remain outside deterministic guarantees.",
+    "Freshness requires declared inputs and active consumer compliance; external revisions are registered manually or by review expiry.",
+    "Historical pre-fix source snapshots and all intermediate failed outputs were not retained; original reports and documented corrections are retained.",
+    "Final documentation clarification followed full behavioral run; exact-byte coverage caveat applies."
+  ],
+  "claims": {
+    "establishes": [
+      "Observed Bootstrap behavior on the 14 named synthetic scenarios.",
+      "Deterministic helper regression outcomes under recorded Python environments.",
+      "Identifiable immutable source/evidence snapshot for future research."
+    ],
+    "does_not_establish": [
+      "Improved downstream coding-agent correctness, efficiency, product preservation, or dependency reasoning.",
+      "Production reliability or generalization across models, hosts and repositories.",
+      "Exhaustive dependency discovery or truth of all generated content."
+    ]
+  },
+  "downstream_experiment": {
+    "status": "design_only_not_run",
+    "runs_executed": 0,
+    "design": "research/v1/DOWNSTREAM-DESIGN.md",
+    "primary_contrast": "C minus B",
+    "conditions": {
+      "A": "Repository only",
+      "B": "Repository plus engineering baseline",
+      "C": "Repository plus identical engineering baseline plus product baseline"
+    },
+    "same_change_request_across_conditions": true,
+    "frozen_skill_may_be_modified": false
+  },
+  "research_handoff": "research/v1/HANDOFF.md",
+  "freeze_integrity": {
+    "existing_files_byte_identical": true,
+    "no_runtime_changes_during_freeze": true,
+    "correctness_issue_invalidating_observations_discovered": false,
+    "blockers_to_immutable_snapshot": [],
+    "limitations_on_exact_historical_replay": [
+      "Unknown model/reasoning settings",
+      "Missing pre-fix and exact preclarification source snapshots",
+      "Incomplete raw execution transcripts"
+    ]
+  }
+}
